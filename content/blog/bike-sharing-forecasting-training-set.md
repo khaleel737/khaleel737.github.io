@@ -1,7 +1,7 @@
 +++
 date = "2024-04-04"
 title = "A training set for bike sharing forecasting"
-tags = ['data-science']
+tags = ['data-eng', 'machine-learning']
 +++
 
 <style>

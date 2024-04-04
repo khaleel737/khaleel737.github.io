@@ -46,7 +46,8 @@ h3 {
   margin-top: 0;
 }
 
-.markdown-body h2, h3 {
+.markdown-body h2,
+h3 {
   font-family: "Helvetica Neue", Helvetica, sans-serif;
   font-size: 1.3em;
   font-weight: bold;
@@ -67,23 +68,23 @@ pre {
 /* header */
 
 .header {
-    margin-bottom: 30px;
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
+  margin-bottom: 30px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
 }
 
 .header-parts {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .header-links {
-    display: flex;
-    flex-direction: row;
-    gap: 15px;
-    justify-content: center;
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+  justify-content: center;
 }
 
 .header-link {
@@ -92,7 +93,7 @@ pre {
 }
 
 .post-header {
-    margin-bottom: 30px;
+  margin-bottom: 30px;
 }
 
 .site-title {
@@ -137,38 +138,44 @@ body {
 }
 
 .posts-line-subtitle {
-    padding-top: 5px;
-    display: flex;
-    flex-direction: row;
-    gap: 10px;
+  padding-top: 5px;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
 }
 
 .posts-line-date {
   color: gray;
   font-size: 1rem;
   padding-top: 4px;
-  font-family: "SFMono-Regular","Consolas","Liberation Mono","Menlo","Courier",monospace;
+  font-family: "SFMono-Regular", "Consolas", "Liberation Mono", "Menlo",
+    "Courier", monospace;
+
+  display: flex;
+  align-items: center;
 }
 
 .posts-line-emoji {
-    font-size: 1rem;
-    padding-top: 3px;
-  }
+  font-size: 1rem;
+  padding-top: 2px;
+}
 
 .post-date {
-    font-family: "SFMono-Regular","Consolas","Liberation Mono","Menlo","Courier",monospace;
+  font-family: "SFMono-Regular", "Consolas", "Liberation Mono", "Menlo",
+    "Courier", monospace;
 }
 
 .posts-line-tag {
-    color: gray;
-    border: solid;
-    border-color: #eaecef;
-    border-width: 2px;
-    border-radius: 8px;
-    padding: 2px 5px;
-    margin-top: 1px;
-    font-size: 0.9rem;
-    font-family: "SFMono-Regular","Consolas","Liberation Mono","Menlo","Courier",monospace;
+  color: gray;
+  border: solid;
+  border-color: #eaecef;
+  border-width: 2px;
+  border-radius: 8px;
+  padding: 4px 5px;
+  margin-top: 1px;
+  font-size: 0.9rem;
+  font-family: "SFMono-Regular", "Consolas", "Liberation Mono", "Menlo",
+    "Courier", monospace;
 }
 
 .site-footer {
@@ -207,9 +214,9 @@ body {
 }
 
 .post-desc-items {
-    display: flex;
-    flex-direction: row;
-    gap: 15px;
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
 }
 
 .post-date {
@@ -392,5 +399,5 @@ code.has-jax {
 }
 
 .markdown-body hr {
-    height: .05em;
+  height: 0.05em;
 }

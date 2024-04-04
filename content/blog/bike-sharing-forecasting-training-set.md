@@ -174,7 +174,17 @@ with duckdb.connect(":memory:") as con:
     SELECT *
     FROM READ_PARQUET('s3://weather-forecast-history/toulouse/*/*.parquet');
     """).fetch_df()
+
+print(weather.head().to_markdown(index=False))
 ```
+
+| commit_at           | forecast_at      | temperature | rain | wind_speed |
+| :------------------ | :--------------- | ----------: | ---: | ---------: |
+| 2023-08-01 01:44:46 | 2023-08-01T00:00 |        19.5 |    0 |       10.3 |
+| 2023-08-01 01:44:46 | 2023-08-01T01:00 |        18.3 |    0 |        8.3 |
+| 2023-08-01 01:44:46 | 2023-08-01T02:00 |        17.9 |    0 |        6.6 |
+| 2023-08-01 01:44:46 | 2023-08-01T03:00 |        17.8 |    0 |        5.5 |
+| 2023-08-01 01:44:46 | 2023-08-01T04:00 |        17.3 |    0 |        5.7 |
 
 Using weather data can be tricky, though, because in production you'll have to retrieve the weather forecast in order to make a prediction. It's straightforward, but it's an extra step that has to be justified.
 

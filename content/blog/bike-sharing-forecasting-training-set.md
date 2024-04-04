@@ -178,4 +178,4 @@ with duckdb.connect(":memory:") as con:
 
 Using weather data can be tricky, though, because in production you'll have to retrieve the weather forecast in order to make a prediction. It's straightforward, but it's an extra step that has to be justified.
 
-That's it, I hope this can be useful to some people. As for our objective of building a model for the Olympic Games, it turns out Smovengo (Paris' bike sharing provider) shut their API down back in November! There is a new endpoint available [here](https://opendata.paris.fr/explore/dataset/velib-disponibilite-en-temps-reel/information/?disjunctive.name&disjunctive.is_installed&disjunctive.is_renting&disjunctive.is_returning&disjunctive.nom_arrondissement_communes), which I will start scraping right away 🏃‍♂️
+That's it, I hope this can be useful to some people. As for our objective of building a model for the Olympic Games, it turns out that the Paris API was updated last fall! There is a [new endpoint](https://www.velib-metropole.fr/donnees-open-data-gbfs-du-service-velib-metropole), which I shall start scraping right away 🏃‍♂️

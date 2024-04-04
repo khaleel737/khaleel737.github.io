@@ -212,6 +212,7 @@ toc: true
 - [Who is the average nomad?](https://nomadlist.com/digital-nomad-statistics#unattractive) -- feeds from NomadList live data.
 - [Every Noise at Once](https://everynoise.com/engenremap.html) -- uses PCA to map music genres.
 - [How Big is YouTube? - Ethan Zuckerman](https://ethanzuckerman.com/2023/12/22/how-big-is-youtube/)
+- [NYC Taxi Rides viz](https://uwdata.github.io/mosaic-framework-example/nyc-taxi-rides)
 
 ## Data sources
 

@@ -137,6 +137,8 @@ model = ensemble.HistGradientBoostingRegressor(
     random_state=42
 )
 
+features = history.loc[bikes_ahead.index]
+
 cv = model_selection.GroupKFold(n_splits=5)
 groups = bikes_ahead.index.get_level_values('station')
 

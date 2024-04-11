@@ -213,6 +213,7 @@ toc: true
 - [Every Noise at Once](https://everynoise.com/engenremap.html) -- uses PCA to map music genres.
 - [How Big is YouTube? - Ethan Zuckerman](https://ethanzuckerman.com/2023/12/22/how-big-is-youtube/)
 - [NYC Taxi Rides viz](https://uwdata.github.io/mosaic-framework-example/nyc-taxi-rides)
+- [Mario meets Pareto - Antoine Mayerowitz](https://www.mayerowitz.io/blog/mario-meets-pareto)
 
 ## Data sources
 

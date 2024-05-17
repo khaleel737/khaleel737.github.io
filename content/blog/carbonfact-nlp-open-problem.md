@@ -36,26 +36,26 @@ lace 87% nylon 13% spandex; mesh: 95% nylon 5% spandex
 
 ```json
 {
-    "lace": [
-        {
-            "material": "nylon",
-            "proportion": 87.0
-        },
-        {
-            "material": "spandex",
-            "proportion": 13.0
-        }
-    ],
-    "mesh": [
-        {
-            "material": "nylon",
-            "proportion": 95.0
-        },
-        {
-            "material": "spandex",
-            "proportion": 5.0
-        }
-    ]
+  "lace": [
+    {
+      "material": "nylon",
+      "proportion": 87.0
+    },
+    {
+      "material": "spandex",
+      "proportion": 13.0
+    }
+  ],
+  "mesh": [
+    {
+      "material": "nylon",
+      "proportion": 95.0
+    },
+    {
+      "material": "spandex",
+      "proportion": 5.0
+    }
+  ]
 }
 ```
 
@@ -253,6 +253,7 @@ for inp in inputs:
 expected_outputs = json.loads(pathlib.Path('outputs.json').read_text())
 outputs == expected_outputs
 ```
+
 </details>
 
 The core parsing logic happens in `split_composition_into_component_materials`. It begins by splitting the text into tokens. Tokens that end with a `:` are classified as component names. That allows regrouping tokens into groups, each group corresponding to one component. Once that's done, a regex pattern is used to recognize all the `(proportion, material)` pairs within a group. This logic is straightforward and dead easy to unit test. The only problem is that each piece of text doesn't always follow this idealized pattern.
@@ -263,9 +264,9 @@ The details are not very interesting. I guess what's more important is the proce
 
 ## Room for improvement
 
-What I dislike with my current solution is that the parsing system is dumb and isn't learning by itself. I would love to build a feedback loop between the system and myself, which would enable the system to *learn* how to parse each sentence from the examples I provide it with. If the system is unsure, then it asks me to confirm/edit a parsing. For this to work, the feedback loop must be data-driven: I only label parts of the sentence, and I delegate the parsing logic to the system.
+What I dislike with my current solution is that the parsing system is dumb and isn't learning by itself. I would love to build a feedback loop between the system and myself, which would enable the system to _learn_ how to parse each sentence from the examples I provide it with. If the system is unsure, then it asks me to confirm/edit a parsing. For this to work, the feedback loop must be data-driven: I only label parts of the sentence, and I delegate the parsing logic to the system.
 
-Of course, what I'm describing has a name: it's an [active learning](https://www.wikiwand.com/en/Active_learning_(machine_learning)) scenario. I'm also well aware that I could create this feedback loop with a tool like [Prodigy](https://prodi.gy/). For instance, I've spotted [this](https://prodi.gy/docs/dependencies-relations#ner) recipe for combining named entity recognition with relation extraction.
+Of course, what I'm describing has a name: it's an [active learning](<https://www.wikiwand.com/en/Active_learning_(machine_learning)>) scenario. I'm also well aware that I could create this feedback loop with a tool like [Prodigy](https://prodi.gy/). For instance, I've spotted [this](https://prodi.gy/docs/dependencies-relations#ner) recipe for combining named entity recognition with relation extraction.
 
 I haven't yet reached the point where I feel overwhelmed and in need of setting up this feedback loop. As of now, I can manage the workload. I don't feel like the initial investment of setting up something more complex will yield significant benefits. On the contrary, I'm still in doubt as to what an all-in-one solution would look like. For instance, I haven't seen good examples of using Prodigy to correct spelling errors and normalize names, which are important aspects to me. But that's likely because I'm just lacking NLP experience. At some point, I will likely spend some time and put a smarter solution in place.
 

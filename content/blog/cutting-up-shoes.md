@@ -1,6 +1,6 @@
 +++
 date = "2024-05-17"
-title = "Cutting up shoes to measure their environmental footprint"
+title = "Cutting up shoes to measure their footprint"
 toc = true
 tags = ['sustainability', 'data-science']
 +++

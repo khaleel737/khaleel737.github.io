@@ -3,6 +3,7 @@ date = "2024-05-17"
 title = "Cutting up shoes to measure their footprint"
 toc = true
 tags = ['sustainability', 'data-science']
+images = ["/img/blog/cutting-up-shoes/wordcloud.png"]
 +++
 
 Our mission at [Carbonfact](https://www.carbonfact.com/) is to measure the environmental impact of clothes. This involves a lot of steps. The main one is to determine what materials a product is made of, along with each material's mass. This is straightforward for most clothes like jumpers and pants. These are typically made of a single fabric, such as cotton or polyester. The mass of each material is roughly the same as the product's mass.

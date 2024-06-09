@@ -160,11 +160,6 @@ body {
   padding-top: 2px;
 }
 
-.post-date {
-  font-family: "SFMono-Regular", "Consolas", "Liberation Mono", "Menlo",
-    "Courier", monospace;
-}
-
 .posts-line-tag {
   color: gray;
   border: solid;
@@ -220,8 +215,9 @@ body {
 }
 
 .post-date {
+  font-family: "SFMono-Regular", "Consolas", "Liberation Mono", "Menlo",
+    "Courier", monospace;
   color: gray;
-  margin-top: 4px;
 }
 
 .post-author {

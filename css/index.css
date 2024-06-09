@@ -144,20 +144,20 @@ body {
   gap: 10px;
 }
 
+.posts-line-emoji {
+  font-size: 1rem;
+  padding-top: 5px;
+}
+
 .posts-line-date {
   color: gray;
   font-size: 1rem;
   padding-top: 3px;
   font-family: "SFMono-Regular", "Consolas", "Liberation Mono", "Menlo",
     "Courier", monospace;
-
+  white-space: nowrap;
   display: flex;
   align-items: center;
-}
-
-.posts-line-emoji {
-  font-size: 1rem;
-  padding-top: 5px;
 }
 
 .posts-line-tag {
@@ -169,6 +169,7 @@ body {
   padding: 4px 5px;
   margin-top: 1px;
   font-size: 0.9rem;
+  white-space: nowrap;
   font-family: "SFMono-Regular", "Consolas", "Liberation Mono", "Menlo",
     "Courier", monospace;
 }

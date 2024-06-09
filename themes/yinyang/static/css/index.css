@@ -147,7 +147,7 @@ body {
 .posts-line-date {
   color: gray;
   font-size: 1rem;
-  padding-top: 4px;
+  padding-top: 3px;
   font-family: "SFMono-Regular", "Consolas", "Liberation Mono", "Menlo",
     "Courier", monospace;
 
@@ -157,7 +157,7 @@ body {
 
 .posts-line-emoji {
   font-size: 1rem;
-  padding-top: 2px;
+  padding-top: 5px;
 }
 
 .posts-line-tag {
@@ -211,13 +211,7 @@ body {
 .post-desc-items {
   display: flex;
   flex-direction: row;
-  gap: 15px;
-}
-
-.post-date {
-  font-family: "SFMono-Regular", "Consolas", "Liberation Mono", "Menlo",
-    "Courier", monospace;
-  color: gray;
+  gap: 14px;
 }
 
 .post-author {

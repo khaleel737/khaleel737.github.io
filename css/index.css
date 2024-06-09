@@ -241,6 +241,15 @@ body {
   margin: 5px 0;
 }
 
+.subscribe {
+  border-width: 2px;
+  border-style: dashed;
+  border-color: #333;
+  padding: 10px 15px;
+  margin-bottom: 30px;
+  margin-top: 30px;
+}
+
 /* taxonomy */
 
 .taxonomy-term {

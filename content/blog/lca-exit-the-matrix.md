@@ -40,7 +40,7 @@ In the recent workshop material, there is a [toy notebook](https://github.com/De
 </figure>
 </div>
 
-The example sounds rather straightforward. The bike is made of carbon fibre, which requires natural gas and emits CO2. However, the required Brightway required is surprisingly complex. The object-oriented approach is [simpler](https://github.com/Depart-de-Sentier/Spring-School-2024/blob/main/class-materials/brightway-basics/1%20-%20The%20supply%20chain%20graph.ipynb). But it's still too complex because it writes data to a database, which feels unnecessary. I think it could be simpler.
+The example sounds rather straightforward. The bike is made of carbon fibre, which requires natural gas and emits CO2. However, the required Brightway matrix logic is overwhelming. The object-oriented approach is [simpler](https://github.com/Depart-de-Sentier/Spring-School-2024/blob/main/class-materials/brightway-basics/1%20-%20The%20supply%20chain%20graph.ipynb). But it's still too complex because it writes data to a database, which feels unnecessary. I think it could be simpler.
 
 Here's a little Python framework I came up with:
 
@@ -97,4 +97,4 @@ Brightway's isn't just useful for LCA. It also has tooling to import emission fa
 
 I want to emphasize that I'm not against Brightway. I'm just trying to figure out why it's so complex. If there are good reasons for this, then I'm not aware of them. I think it's healthy to question existing software when it doesn't feel good to use. This is how we make progress. A good recent example is [llm.c](https://github.com/karpathy/llm.c), which is an attempt by Andrej Karpathy and others to write a minimalistic alternative to PyTorch.
 
-So what's next? I'm not entirely sure. I'm busy at Carbonfact with day-to-day operations. I don't think I have time to work on a new LCA framework. But we're going to be using Brightway for the foreseeable future. We have more and more customers who require bespoke LCAs. We also heavily rely on emission factor databases such as Ecoinvent. I hope that the Brightway community can address the concerns I raised. If not, I'm sure someone else will eventually come up with an alternative.
+So what's next? I'm not entirely sure. I'm busy at [Carbonfact](https://www.carbonfact.com/) with day-to-day operations. I don't think I have time to work on a new LCA framework. But we're going to be using Brightway for the foreseeable future. We have more and more customers who require bespoke LCAs. We also heavily rely on emission factor databases such as Ecoinvent. I hope that the Brightway community can address the concerns I raised. If not, I'm sure someone else will eventually come up with an alternative.

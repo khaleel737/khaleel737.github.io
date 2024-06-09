@@ -1,6 +1,6 @@
 +++
 date = "2024-06-09"
-title = 'LCA: exit the matrix'
+title = 'LCA software: exit the matrix'
 tags = ['sustainability', 'python']
 +++
 

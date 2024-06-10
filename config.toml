@@ -5,7 +5,7 @@ theme = "yinyang"
 enableRobotsTXT = true
 pygmentsUseClasses = true
 
-[author]
+[params.author]
   email = "maxhalford25@gmail.com"
   name = "Max Halford"
 

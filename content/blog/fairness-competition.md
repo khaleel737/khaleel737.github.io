@@ -341,7 +341,7 @@ On a personal level, I'm mildly disappointed with the turn out. Until now, the c
 
 Nonetheless, I got some positive feedback from a significant number of students. Hopefully, this competition will have provided them with a decent setting to explore the ever-changing world of NLP. Even though it seems the students didn't put a lot of effort into the fair learning aspect, hopefully they're now aware of the concept and will it in mind during their professional career.
 
-For the participants, here are the [test labels](/files/fairness_competition/test_labels.csv) as well as the [final standings](/files/fairness_competition/standings.csv).
+For the participants, here are the [test labels](/files/fairness_competition/test_labels.csv) as well as the [final standings](/files/fairness_competition/standings.csv). In case the data used for the competition is of interest to you, you can download by clicking [here](/files/fairness_competition/kaggle.zip).
 
 Feel free to reach out and/or comment if you have any questions!
 

@@ -324,6 +324,7 @@ toc: true
 - [Dear Data](https://www.dear-data.com/theproject)
 - [FAA Aviation Maps](https://www.beautifulpublicdata.com/faa-aviation-maps/)
 - [Floor796](https://floor796.com)
+- [John Martin](https://artsandculture.google.com/entity/john-martin/m0383lx?hl=en)
 
 ## Pretty websites
 

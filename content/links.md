@@ -215,6 +215,7 @@ toc: true
 - [How Big is YouTube? - Ethan Zuckerman](https://ethanzuckerman.com/2023/12/22/how-big-is-youtube/)
 - [NYC Taxi Rides viz](https://uwdata.github.io/mosaic-framework-example/nyc-taxi-rides)
 - [Mario meets Pareto - Antoine Mayerowitz](https://www.mayerowitz.io/blog/mario-meets-pareto)
+- [We mapped weather forecast accuracy across the U.S. Look up your city](https://www.washingtonpost.com/climate-environment/interactive/2024/how-accurate-is-the-weather-forecast/)
 
 ## Data sources
 
@@ -325,6 +326,7 @@ toc: true
 - [FAA Aviation Maps](https://www.beautifulpublicdata.com/faa-aviation-maps/)
 - [Floor796](https://floor796.com)
 - [John Martin](https://artsandculture.google.com/entity/john-martin/m0383lx?hl=en)
+- [marimekko.com](https://www.marimekko.com/eu_en/maripedia/patterns)
 
 ## Pretty websites
 

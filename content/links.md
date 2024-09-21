@@ -145,6 +145,7 @@ toc: true
 - [Creating Confidence Intervals for Machine Learning Classifiers - Sebastian Raschka](https://sebastianraschka.com/blog/2022/confidence-intervals-for-ml.html)
 - [Machine Learning @ VU](https://mlvu.github.io/)
 - [SVD Image Compression, Explained - Dennis Miczek](https://dmicz.github.io/machine-learning/svd-image-compression/)
+- [Classifying all of the pdfs on the internet - Santiago Pedroza](https://snats.xyz/pages/articles/classifying_a_bunch_of_pdfs.html)
 
 ## Deep learning
 
@@ -197,6 +198,7 @@ toc: true
 - [Differential Dataflow](https://timelydataflow.github.io/differential-dataflow/) -- also see the [Naiad](https://dl.acm.org/doi/pdf/10.1145/2517349.2522738) paper
 - [Time, Clocks, and the Ordering of Events in a Distributed System - Leslie Lamport](https://lamport.azurewebsites.net/pubs/time-clocks.pdf)
 - [How Query Engines Work](https://howqueryengineswork.com/00-introduction.html)
+- [Building a cost-effective analytics stack with Modal, dlt, and dbt](https://modal.com/blog/analytics-stack) -- prime example of what a modern analytics stack looks like in late 2024.
 
 ## Inspiring data analysis
 
@@ -216,6 +218,11 @@ toc: true
 - [NYC Taxi Rides viz](https://uwdata.github.io/mosaic-framework-example/nyc-taxi-rides)
 - [Mario meets Pareto - Antoine Mayerowitz](https://www.mayerowitz.io/blog/mario-meets-pareto)
 - [We mapped weather forecast accuracy across the U.S. Look up your city](https://www.washingtonpost.com/climate-environment/interactive/2024/how-accurate-is-the-weather-forecast/)
+- [Resurfacing the past](https://storymaps.arcgis.com/stories/41d4bd6029044afbb1b9ad805a4731d8) - a madlad decides to pinpoint all the ships that sank during WWII.
+
+## Life cycle assessment (LCA)
+
+- [Consumer Hardware Carbon Reduction Guide - Google](https://www.gstatic.com/gumdrop/sustainability/google-2024-consumer-hardware-carbon-reduction.pdf)
 
 ## Data sources
 
@@ -228,6 +235,11 @@ toc: true
 - [Reverse Engineering Bumble’s API](https://blog.securityevaluators.com/reverse-engineering-bumbles-api-a2a0d39b3a87) -- a fun/scary API reverse engineering example that worked in 2020
 - [ccxt](https://github.com/ccxt/ccxt) -- access cryptocurrency exchanges' APIs
 - [Our World in Data](https://ourworldindata.org/)
+
+## Data visualization
+
+- [Datawrapper](https://www.datawrapper.de/) -- great way to produce professional looking charts and tabels.
+- [SlidesCodeHighlighter](https://romannurik.github.io/SlidesCodeHighlighter/)
 
 ## Food for thought
 
@@ -243,6 +255,7 @@ toc: true
 ## SQL
 
 - [The Best Medium-Hard Data Analyst SQL Interview Questions](https://quip.com/2gwZArKuWk7W) -- There are some great interactive SQL tutorials out there, such as [SQLBolt](https://sqlbolt.com/) and [Select Star SQL](https://selectstarsql.com/), but this one takes the cake due to its complexity. [The Ultimate SQL guide](https://count.co/canvas/pB7iGb4yyi2) is a comprehensive guide made with Count.
+- [Bypassing airport security via SQL injection](https://ian.sh/tsa) -- A ~~fun~~ dangerous example of what can happen when you don't sanitize your inputs.
 
 ## Programming
 
@@ -262,6 +275,7 @@ toc: true
 - [Visual design rules you can safely follow every time - Anthony Hobday](https://anthonyhobday.com/sideprojects/saferules/) -- Good follow-up to [Web Design in 4 minutes](https://jgthms.com/web-design-in-4-minutes/) by Jeremy Thomas.
 - [Typography in ten minutes](https://practicaltypography.com/typography-in-ten-minutes.html)
 - [alpine.js](https://alpinejs.dev/) -- I usually go to Vue.js for web dev, but my brother made me realize alpine.js is a great alternative for small projects.
+- [Hot Page](https://hot.page/) -- looks like a good idea to create a landing page.
 
 ## Building a product
 

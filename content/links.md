@@ -235,6 +235,7 @@ toc: true
 - [Reverse Engineering Bumble’s API](https://blog.securityevaluators.com/reverse-engineering-bumbles-api-a2a0d39b3a87) -- a fun/scary API reverse engineering example that worked in 2020
 - [ccxt](https://github.com/ccxt/ccxt) -- access cryptocurrency exchanges' APIs
 - [Our World in Data](https://ourworldindata.org/)
+- [Beyond the route: Introducing granular MTA bus speed data](https://new.mta.info/article/beyond-route-introducing-granular-mta-bus-speed-data)
 
 ## Data visualization
 

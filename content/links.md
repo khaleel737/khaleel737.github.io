@@ -199,6 +199,8 @@ toc: true
 - [Time, Clocks, and the Ordering of Events in a Distributed System - Leslie Lamport](https://lamport.azurewebsites.net/pubs/time-clocks.pdf)
 - [How Query Engines Work](https://howqueryengineswork.com/00-introduction.html)
 - [Building a cost-effective analytics stack with Modal, dlt, and dbt](https://modal.com/blog/analytics-stack) -- prime example of what a modern analytics stack looks like in late 2024.
+- [Should Your Data Warehouse Have an SLA?](https://locallyoptimistic.com/post/data-warehouse-sla-p1/#:~:text=Yes%2C%20if%20you%20want%20to,and%20it%20will%20be%20accurate.)
+- [Dimensional Modeling Techniques - Kimball Group](https://www.kimballgroup.com/data-warehouse-business-intelligence-resources/kimball-techniques/dimensional-modeling-techniques/)
 
 ## Inspiring data analysis
 
@@ -223,6 +225,8 @@ toc: true
 ## Life cycle assessment (LCA)
 
 - [Consumer Hardware Carbon Reduction Guide - Google](https://www.gstatic.com/gumdrop/sustainability/google-2024-consumer-hardware-carbon-reduction.pdf)
+- [The LCA paradox - Frida Røyne](https://meaningfulsustainabilityjobs.blog/2024/09/29/the-lca-paradox/)
+- [Scope 3 Data in LCA of organisations Between Simplification, Overwhelming & Greenwashing](https://video.ethz.ch/events/lca/2023/autumn/83rd/9094196a-4300-4494-87d3-c5e872ad8e62.html)
 
 ## Data sources
 
@@ -236,6 +240,7 @@ toc: true
 - [ccxt](https://github.com/ccxt/ccxt) -- access cryptocurrency exchanges' APIs
 - [Our World in Data](https://ourworldindata.org/)
 - [Beyond the route: Introducing granular MTA bus speed data](https://new.mta.info/article/beyond-route-introducing-granular-mta-bus-speed-data)
+- [csvbase](https://csvbase.com/)
 
 ## Data visualization
 
@@ -252,6 +257,7 @@ toc: true
 - [The Final Speech from The Great Dictator](https://www.charliechaplin.com/en/articles/29-the-final-speech-from-the-great-dictator-)
 - [The tyranny of the algorithm: why every coffee shop looks the same](https://www.theguardian.com/news/2024/jan/16/the-tyranny-of-the-algorithm-why-every-coffee-shop-looks-the-same)
 - [Against Disruption: On the Bulletpointization of Books](https://lithub.com/against-disruption-on-the-bulletpointization-of-books/)
+- [hacker definition](http://catb.org/jargon/html/H/hacker.html)
 
 ## SQL
 
@@ -270,6 +276,8 @@ toc: true
 - [Common Bugs in Writing](https://www.cs.columbia.edu/~hgs/etc/writing-bugs.html)
 - [Novelist Cormac McCarthy’s tips on how to write a great science paper - Savage and Yeh](https://www.signalsblog.ca/right-turn-cormac-mccarthy-and-me-on-how-to-write-a-good-science-paper/)
 - [How to Build an Economic Model in Your Spare Time - Hal R. Varian](https://fermatslibrary.com/p/e2e6484d#email-newsletter) -- The academic wisdom in this article goes beyond the world of economics.
+- [The Double-Entry Counting Method](https://beancount.github.io/docs/the_double_entry_counting_method.html#double-entry-bookkeeping) - Great example of documenting a technical concept.
+- [Technical discussions are hard; a few tips](https://gael-varoquaux.info/programming/technical-discussions-are-hard-a-few-tips.html)
 
 ## Web development
 
@@ -342,6 +350,8 @@ toc: true
 - [Floor796](https://floor796.com)
 - [John Martin](https://artsandculture.google.com/entity/john-martin/m0383lx?hl=en)
 - [marimekko.com](https://www.marimekko.com/eu_en/maripedia/patterns)
+- [Wacław Szpakowski's rhythmical lines](https://www.theparisreview.org/blog/2017/02/15/rhythmical-lines/)
+- [10,946: a Year-Long Post-It Note Animation](https://vimeo.com/1023120442)
 
 ## Pretty websites
 
@@ -366,6 +376,7 @@ toc: true
 I like these retrocool websites:
 
 - [learntarot.com](http://www.learntarot.com/cards.htm)
+- [HyperPhysics](http://hyperphysics.phy-astr.gsu.edu/hbase/hframe.html)
 
 ## Cool
 
@@ -384,3 +395,8 @@ I like these retrocool websites:
 - [Anna's Archive](https://annas-archive.org/)
 - [Browser games](https://www.asahi-net.or.jp/~cs8k-cyu/browser.html) -- these are made by a single _doujin_ developer called Kenta Cho
 - [Pong wars](https://pong-wars.vercel.app/)
+
+## Documentaries
+
+- [King of the Fells: Joss Naylor, the shepherd with an unbeatable running record](https://www.theguardian.com/sport/ng-interactive/2024/dec/18/king-of-the-fells-joss-naylor-the-shepherd-with-an-unbeatable-running-record)
+- [Hamburger America](https://www.youtube.com/watch?v=Mkpc5Q1Mgdc&ab_channel=banjoe)

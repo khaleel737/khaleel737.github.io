@@ -61,7 +61,7 @@ This is called a [multisourced](https://en.wikipedia.org/wiki/Multisourcing) sup
 
 We have access to our customers ERP, so we have a good view of the purchase orders they issue to their tier 1 suppliers. We can therefore create one copy of an SKU for each of its T1 suppliers, and allocate the associated purchase order quantities to it. But we don't have access to the tier 1 suppliers' ERP. This means we don't usually know from which tier 2 suppliers the tier 1 suppliers get their materials from. And even when we do, we don't necessarily know what are the quantities involved.
 
-Sometimes, the bill of materials has one record for each tier 2 supplier of each material. This is a small victory. The problem is that there aren't volumes associated: we don't know how much of each material gets supplied from each tier 2 supplier.
+Sometimes, the bill of materials has one record for each tier 2 supplier of each material. This is a small victory. The problem is that there aren't volumes associated: we don't know how much of each material gets supplied from each tier 2 supplier. Therefore, we can't tell which of the products sent by each tier 1 supplier come from a particular supply chain.
 
 The workaround is what you would expect: we assume each tier 1 supplier gets its materials from a single tier 2 supplier -- typically the most important one. This is a simplification, but it's the best we can do. The problem is that this assumption is not always true. For instance, a tier 1 supplier might source 80% of its materials from tier 2 supplier A and 20% from tier 2 supplier B.
 

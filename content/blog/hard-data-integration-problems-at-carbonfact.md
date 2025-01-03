@@ -81,7 +81,7 @@ This happens regularly when we meet with customers for the first time. Let's say
 
 I find this problem particularly hard to deal with from a human perspective. The people who sign the contract on our side and that of the customer are not the people who actually do the work. The people signing the contract don't have in mind that integrating multiple systems is a necessity, and that each integration essentially involves a separate data pipeline. This can cause friction when the people doing the work realize they have double (or triple!) the work they initially thought.
 
-## Information isn't correct, and nobody really cares
+## Information isn't correct, and nobody has ownership
 
 Our points of contact at our customers are usually part of the company's sustainability team. They don't necessarily master the nuances of their IT system. And they don't necessarily someone from their IT team to provide guidance. It's often the case that our point of contact assumes information is available in the system, when in fact it isn't.
 

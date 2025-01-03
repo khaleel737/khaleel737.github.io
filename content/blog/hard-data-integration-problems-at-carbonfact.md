@@ -51,10 +51,10 @@ One solution is that we could version customers files ourselves. But that would 
 
 ## Multisourced supply chains don't surface to the top
 
-Most of our customers are clothing brands. They don't usually make the clothes themselves, and instead order them from so-called tier 1 suppliers. Several tier 1 suppliers might supply the same SKU. For instance, a brand might order 1000 units of a t-shirt from supplier A and 2000 units from supplier B. Likewise, tier 1 suppliers might get their materials from several tier 2 suppliers.
+Most of our customers are clothing brands. They don't usually make the clothes themselves, and instead order them from so-called tier 1 suppliers. Several tier 1 suppliers might supply the same SKU. For instance, a brand might order 400 units of a t-shirt from supplier A and 600 units from supplier B. Likewise, tier 1 suppliers might get their materials from several tier 2 suppliers.
 
 <p>
-  <img src="/img/blog/hard-data-integration-problems-at-carbonfact/multisourcing.svg" width="80%" style="box-shadow: none;">
+  <img src="/img/blog/hard-data-integration-problems-at-carbonfact/multisourcing.svg" width="95%" style="box-shadow: none;">
 </p>
 
 This is called a [multisourced](https://en.wikipedia.org/wiki/Multisourcing) supply chain. Distinguishing each supply chain variation is important to us, because each one leads to a different carbon footprint. For instance, tier 1 supplier A might use a factory in Bangladesh and source its materials from India, while tier 1 supplier B might use a factory in China and source its materials from Vietnam.
@@ -76,7 +76,7 @@ The problem with IT migrations is that they are not retroactive. Existing data i
 This happens regularly when we meet with customers for the first time. Let's say we're doing their carbon accounting for 2024. They also want us to their carbon accounting for 2023, in order to compare the two years. We agree, but then we learn that they kicked off their new PLM in 2024. This means that we have to deal with two different PLMs, and we have to make sure that the data from the old PLM is comparable to the new PLM. This isn't usually the case, because the new PLM has more fields and is more detailed.
 
 <p>
-  <img src="/img/blog/hard-data-integration-problems-at-carbonfact/retroactive.svg" width="80%" style="box-shadow: none;">
+  <img src="/img/blog/hard-data-integration-problems-at-carbonfact/retroactive.svg" width="95%" style="box-shadow: none;">
 </p>
 
 I find this problem particularly hard to deal with from a human perspective. The people who sign the contract on our side and that of the customer are not the people who actually do the work. The people signing the contract don't have in mind that integrating multiple systems is a necessity, and that each integration essentially involves a separate data pipeline. This can cause friction when the people doing the work realize they have double (or triple!) the work they initially thought.
@@ -90,7 +90,7 @@ We recently worked with a customer who told us 70% of their fabrics were recycle
 I often notice a disconnect between the goals the sustainability team wants to achieve, and what their IT system is capable of. Recently, a customer told us they wanted to highlight that some of their jackets used an innovative water-repellent coating process. The problem of course is that their PLM doesn't have a field for this. The sustainability team was quite disappointed when we told them we couldn't do anything about it. They then asked us if they could compile a manual list of the jackets where this process was used. The problem is that this list would be out of sync with the PLM, would have to be maintained manually, and would require some more adhoc code.
 
 <p>
-  <img src="/img/blog/hard-data-integration-problems-at-carbonfact/misalignment.svg" width="80%" style="box-shadow: none;">
+  <img src="/img/blog/hard-data-integration-problems-at-carbonfact/misalignment.svg" width="95%" style="box-shadow: none;">
 </p>
 
 A lot of this comes down to a misalignment of interests and a lack of ownership. Many of our customers are large companies with many departments. The sustainability team is often a small team with a big mission. They don't have the power to change the IT system, and they don't have the power to force other departments to use the system correctly. They're in a tough spot. On top of this, a lot of their IT systems are deployed and managed by expensive consultants. It's [data hell](https://news.ycombinator.com/item?id=42010249).

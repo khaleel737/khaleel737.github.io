@@ -96,6 +96,8 @@ toc: true
 - [Vicky Boykis](https://vickiboykis.com/) -- the OG behind [Normconf](https://normconf.com/)
 - [Danielle Navarro](https://blog.djnavarro.net/)
 - [Amit Patel](https://www.redblobgames.com/) -- visual explanations of algorithms used in games.
+- [nogilnick](https://nogilnick.com/)
+- [Nat Bullard](https://www.nathanielbullard.com/) -- known for making [annual presentations](https://www.nathanielbullard.com/presentations) on the state of decarbonization.
 
 ## Machine learning
 
@@ -169,6 +171,10 @@ toc: true
 - [Doing Named Entity Recognition? Don't optimize for F1 - Christopher Manning](https://nlpers.blogspot.com/2006/08/doing-named-entity-recognition-dont.html) -- A rather niche topic, but well explained.
 - [Lessons learned building an ML trading system that turned \\$5k into \\$200k](https://archive.ph/A7298#selection-63.0-63.72)
 - [Common statistical tests are linear models (or: how to teach stats)](https://lindeloev.github.io/tests-as-linear/)
+
+## Analytics engineering
+
+- [Input metrics & weekly business review - Working backwards](https://workingbackwards.com/concepts/input-metrics/)
 
 ## Mathematics
 
@@ -263,6 +269,7 @@ toc: true
 
 - [The Best Medium-Hard Data Analyst SQL Interview Questions](https://quip.com/2gwZArKuWk7W) -- There are some great interactive SQL tutorials out there, such as [SQLBolt](https://sqlbolt.com/) and [Select Star SQL](https://selectstarsql.com/), but this one takes the cake due to its complexity. [The Ultimate SQL guide](https://count.co/canvas/pB7iGb4yyi2) is a comprehensive guide made with Count.
 - [Bypassing airport security via SQL injection](https://ian.sh/tsa) -- A ~~fun~~ dangerous example of what can happen when you don't sanitize your inputs.
+- [SQLook](https://sqlook.com/)
 
 ## Programming
 

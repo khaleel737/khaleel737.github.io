@@ -102,7 +102,7 @@ This says the total duration of my DAG is ~9 minutes:
 539
 ```
 
-This is slightly under the 10 minutes I mentioned earlier. This is due to some non-DAG stuff in the GitHub Action counting towards the 10 minutes, as well as rounding errors in durations. Anyway, it doesn't matter. The point is that I have a number to optimize against.
+This is slightly under the 10 minutes I mentioned earlier. That's because of some non-DAG stuff in the GitHub Action counting towards the 10 minutes, as well as rounding errors. Anyway, it doesn't matter. The point is that I have a number to optimize against.
 
 Here's a ranking of the top 10 queries by duration:
 
@@ -120,7 +120,7 @@ Here's a ranking of the top 10 queries by duration:
 
 ```
 
-That top query `#46` is a low hanging fruit to optimize. But it turns out that it's not a bottleneck, and there's actually no point optimizing it:
+That top query `#46` appears as a low hanging fruit to optimize. But it turns out it's not a bottleneck, and there's actually no point optimizing it:
 
 ```python
 >>> dag.set_duration('#46').total_duration

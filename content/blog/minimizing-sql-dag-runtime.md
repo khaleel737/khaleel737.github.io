@@ -187,8 +187,6 @@ That's a potential 26% improvement
 Not bad. I also tried reducing each query's duration by 50%. Same, I kept searching for candidates as long as there were improvements:
 
 ```python
-import dataclasses
-
 current_dag = dag
 current_duration = current_dag.total_duration
 already_optimized = set()
@@ -230,3 +228,5 @@ That's a potential 29% improvement
 Also not bad.
 
 I'm not sure how much of these suggestions I'll implement. But now at least I know where to focus my efforts. I hope this blog post will inspire you to do the same!
+
+_Part of the reason I'm posting this half-baked solution is to manifest Cunningham's Law. If you have a better solution, please let me know! 🙏_

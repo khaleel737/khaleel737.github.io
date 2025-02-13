@@ -298,6 +298,7 @@ toc: true
 - [Beautiful Polished Rocks - Steve Jobs](https://vimeo.com/842437838) -- the best metaphor for product design I've ever heard.
 - [Stevey's Google Platforms Rant](https://gist.github.com/chitchcock/1281611) -- insights about product design at GAFAs.
 - [Jeff Bezos on the disagree and commit principle](https://x.com/StartupArchive_/status/1736006653722362216?s=20)
+- [The Duolinguo Handbook](https://handbook.duolingo.com/)
 
 ## I don't have a clue but it looks cool
 

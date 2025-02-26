@@ -1,11 +1,14 @@
 {{ $curLanguageName := .Site.Language.LanguageName }}
 <header class="header-parts">
   <div class="signatures site-title">
-    <a href="{{ .Site.LanguagePrefix }}/">{{ or .Site.Params.headTitle .Site.Author.name }}</a>
+    <a href="{{ .Site.LanguagePrefix }}/"
+      >{{ or .Site.Params.headTitle .Site.Author.name }}</a
+    >
   </div>
   <div class="header-links">
     <a class="header-link" href="/">Blog</a>
     <a class="header-link" href="/links/">Links</a>
     <a class="header-link" href="/bio/">Bio</a>
+    <a class="header-link" href="/uses/">Uses</a>
   </div>
 </header>

@@ -227,6 +227,7 @@ toc: true
 - [Mario meets Pareto - Antoine Mayerowitz](https://www.mayerowitz.io/blog/mario-meets-pareto)
 - [We mapped weather forecast accuracy across the U.S. Look up your city](https://www.washingtonpost.com/climate-environment/interactive/2024/how-accurate-is-the-weather-forecast/)
 - [Resurfacing the past](https://storymaps.arcgis.com/stories/41d4bd6029044afbb1b9ad805a4731d8) - a madlad decides to pinpoint all the ships that sank during WWII.
+- [The closer to the train station, the worse the kebab - James Pae](https://www.jmspae.se/write-ups/kebabs-train-stations/)
 
 ## Life cycle assessment (LCA)
 
@@ -270,6 +271,7 @@ toc: true
 - [The Best Medium-Hard Data Analyst SQL Interview Questions](https://quip.com/2gwZArKuWk7W) -- There are some great interactive SQL tutorials out there, such as [SQLBolt](https://sqlbolt.com/) and [Select Star SQL](https://selectstarsql.com/), but this one takes the cake due to its complexity. [The Ultimate SQL guide](https://count.co/canvas/pB7iGb4yyi2) is a comprehensive guide made with Count.
 - [Bypassing airport security via SQL injection](https://ian.sh/tsa) -- A ~~fun~~ dangerous example of what can happen when you don't sanitize your inputs.
 - [SQLook](https://sqlook.com/)
+- [SQL Noir](https://www.sqlnoir.com/) -- this hits the sweet spot between two things I enjoy. Try listening [Bohren & Der Club Of Gore](https://www.youtube.com/watch?v=1vxl0Yd7TOY&ab_channel=BOHREN%26DERCLUBOFGORE) while doing the exercises.
 
 ## Programming
 

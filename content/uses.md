@@ -7,7 +7,7 @@ _See [uses.tech](https://uses.tech/)_
 I'm a great admirer of [Choose Boring Technology](https://boringtechnology.club/), [Zen design](https://www.interactiongreen.com/jobs-zen/), and the [KISS principle](https://en.wikipedia.org/wiki/KISS_principle). As such I try to keep my tech stack as simple as possible, for instance by using zero-config tools and the Apple ecosystem.
 
 - I use a 14 inch MacBook Pro. I'm often on the go, so I'm not attached to a proper desktop setup
-- At home I have a [ASUS ProArt PA278QV](https://www.asus.com/fr/displays-desktops/monitors/proart/proart-display-pa278qv/) + Apple Magic Keyboard
+- At home I have a [BenQ GW2790QT](https://www.amazon.fr/dp/B0BZ4Q9NLC?th=1) + [Apple Magic Keyboard](https://www.apple.com/fr/shop/product/MXCL3F/A/magic-keyboard-usb-c-fran%C3%A7ais) + [Logitech MX Anywhere 3S](https://www.amazon.fr/Logitech-Silencieuse-D%C3%A9filement-Programmables-Bluetooth/dp/B07W6HKCX4?th=1)
 - [AltTab](https://alt-tab-macos.netlify.app/) for window management
 - Google Calendar for scheduling pro/personal events
 - Apple Notes for writing down thoughts and ideas -- snappier than Notion and does the job

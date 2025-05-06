@@ -401,3 +401,7 @@ code.has-jax {
 .markdown-body hr {
   height: 0.05em;
 }
+
+.mermaid {
+    background-color: white !important;
+}

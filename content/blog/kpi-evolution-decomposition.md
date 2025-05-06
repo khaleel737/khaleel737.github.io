@@ -10,6 +10,8 @@ toc = true
 
 **Edit 2** -- _I've stumbled on [this article](https://medium.com/@shaozhifei/metric-decomposition-formula-to-understand-metric-trend-e693b7a4c8cf) by Shao Zhifei which provides a good derivation of the ratio decomposition formula. I contacted Shao Zhifei on LinkedIn, and he told me they heavily use these formulas at [Grab](https://www.grab.com/). He also pointed out a typo in the ratio decomposition formula which I have now fixed._
 
+**Edit 3** -- _Someone did some digging and sent me [Decomposition techniques for financial ratios of European non-financial listed groups](https://www.ecb.europa.eu/pub/pdf/scpsps/ecb.sps.21.en.pdf). It appears to use the same methodology, which they call Marshall-Edgeworth decomposition._
+
 ## Motivation
 
 Say you're a data analyst at a company. You've built a dashboard with several KPIs. You're happy because it took you a couple of days of hard work. You even went the extra mile of writing unit tests. You share the dashboard on Slack with the relevant stakeholders, call it a day, and go grab a beer.

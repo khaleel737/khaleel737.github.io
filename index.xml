@@ -3416,25 +3416,4 @@ class: center, middle
 &lt;li>&lt;a href="https://www.browserbear.com/">Browserbear&lt;/a>&lt;/li>
 &lt;li>&lt;a href="https://localghost.dev/blog/this-page-is-under-construction/">This page is under construction&lt;/a> &amp;ndash; the list at the end is great&lt;/li>
 &lt;/ul>
-&lt;p>I like these retrocool websites:&lt;/p></description></item><item><title>The tools I use</title><link>https://maxhalford.github.io/uses/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>maxhalford25@gmail.com (Max Halford)</author><guid>https://maxhalford.github.io/uses/</guid><description>&lt;p>&lt;em>See &lt;a href="https://uses.tech/">uses.tech&lt;/a>&lt;/em>&lt;/p>
-&lt;p>I&amp;rsquo;m a great admirer of &lt;a href="https://boringtechnology.club/">Choose Boring Technology&lt;/a>, &lt;a href="https://www.interactiongreen.com/jobs-zen/">Zen design&lt;/a>, and the &lt;a href="https://en.wikipedia.org/wiki/KISS_principle">KISS principle&lt;/a>. As such I try to keep my tech stack as simple as possible, for instance by using zero-config tools and the Apple ecosystem.&lt;/p>
-&lt;ul>
-&lt;li>I use a 14 inch MacBook Pro. I&amp;rsquo;m often on the go, so I&amp;rsquo;m not attached to a proper desktop setup&lt;/li>
-&lt;li>At home I have a &lt;a href="https://www.amazon.fr/dp/B0BZ4Q9NLC?th=1">BenQ GW2790QT&lt;/a> + &lt;a href="https://www.apple.com/fr/shop/product/MXCL3F/A/magic-keyboard-usb-c-fran%C3%A7ais">Apple Magic Keyboard&lt;/a> + &lt;a href="https://www.amazon.fr/Logitech-Silencieuse-D%C3%A9filement-Programmables-Bluetooth/dp/B07W6HKCX4?th=1">Logitech MX Anywhere 3S&lt;/a>&lt;/li>
-&lt;li>&lt;a href="https://alt-tab-macos.netlify.app/">AltTab&lt;/a> for window management&lt;/li>
-&lt;li>Google Calendar for scheduling pro/personal events&lt;/li>
-&lt;li>Apple Notes for writing down thoughts and ideas &amp;ndash; snappier than Notion and does the job&lt;/li>
-&lt;li>Apple Reminders on my iPhone for tasks that have a deadline&lt;/li>
-&lt;li>Apple Passwords for password management &amp;ndash; it&amp;rsquo;s free!&lt;/li>
-&lt;li>&lt;a href="https://www.warp.dev/">Warp&lt;/a> + &lt;a href="https://en.wikipedia.org/wiki/Z_shell">zsh&lt;/a> for CLI stuff&lt;/li>
-&lt;li>All tools are themed with &lt;a href="https://rosepinetheme.com/">Rosé Pine&lt;/a> when possible&lt;/li>
-&lt;li>&lt;a href="https://code.visualstudio.com/">VSCode&lt;/a> for writing code, including &lt;a href="https://marketplace.visualstudio.com/items?itemName=ms-toolsai.jupyter">Jupyter&lt;/a> notebooks&lt;/li>
-&lt;li>I store &lt;a href="https://github.com/MaxHalford/dotfiles">dotfiles&lt;/a> on GitHub&lt;/li>
-&lt;li>My browser is &lt;a href="https://arc.net/">Arc&lt;/a> &amp;ndash; I heavily use sidebar pins to keep webapps open (e.g. Slack)&lt;/li>
-&lt;li>&lt;a href="https://github.com/apps/desktop">GitHub Desktop&lt;/a> for doing git stuff&lt;/li>
-&lt;li>&lt;a href="https://chat.openai.com/">ChatGPT&lt;/a> for interacting with our overlords&lt;/li>
-&lt;li>&lt;a href="https://docs.github.com/en/get-started/learning-about-github/githubs-plans#github-pro">GitHub Pro&lt;/a> for running code (e.g. &lt;a href="https://github.com/MaxHalford/bike-sharing-history">git scraping&lt;/a>)&lt;/li>
-&lt;li>&lt;a href="https://www.overleaf.com/">Overleaf&lt;/a> for writing LaTeX documents&lt;/li>
-&lt;li>&lt;a href="https://count.co/">Count.co&lt;/a> is my go-to SQL editor&lt;/li>
-&lt;/ul>
-&lt;p>&lt;em>My &lt;a href="https://0x5.be/uses">brother&amp;rsquo;s /uses page&lt;/a> is far more sophisticated than mine&lt;/em>&lt;/p></description></item></channel></rss>
+&lt;p>I like these retrocool websites:&lt;/p></description></item></channel></rss>

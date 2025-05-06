@@ -1,5 +1,5 @@
 +++
-date = "2025-05-07"
+date = "2025-05-06"
 title = "The total derivative of a metric tree"
 toc = true
 tags = ['data-science']

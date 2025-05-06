@@ -98,6 +98,12 @@ toc: true
 - [Amit Patel](https://www.redblobgames.com/) -- visual explanations of algorithms used in games.
 - [nogilnick](https://nogilnick.com/)
 - [Nat Bullard](https://www.nathanielbullard.com/) -- known for making [annual presentations](https://www.nathanielbullard.com/presentations) on the state of decarbonization.
+- [Max Woolf](https://minimaxir.com/)
+- [Yuin Chien](https://yuinchien.com/) -- does design at Google.
+- [Matt Webb](https://interconnected.org/home/) -- this madlad has been blogging since 2000.
+- [Caleb Gross](https://noperator.dev/)
+- [Geoffrey Litt](https://www.geoffreylitt.com/)
+- [Clayton Ramsey](https://claytonwramsey.com/)
 
 ## Machine learning
 
@@ -148,6 +154,7 @@ toc: true
 - [Machine Learning @ VU](https://mlvu.github.io/)
 - [SVD Image Compression, Explained - Dennis Miczek](https://dmicz.github.io/machine-learning/svd-image-compression/)
 - [Classifying all of the pdfs on the internet - Santiago Pedroza](https://snats.xyz/pages/articles/classifying_a_bunch_of_pdfs.html)
+- [Weird Kaggle, the superiority of books, and other reflections - Nick Griffiths](https://blog.griffens.net/blog/weird-kaggle-books-reflections/)
 
 ## Deep learning
 
@@ -183,7 +190,6 @@ toc: true
 
 ## Physics
 
-- [Portail Électricité - Vikidia](https://fr.vikidia.org/wiki/Portail:%C3%89lectricit%C3%A9)
 - [Simulating Fluids, Fire, and Smoke in Real-Time - Andrew Chan](https://andrewkchan.dev/posts/fire.html)
 - [GPS - Bartosz Ciechanowski](https://ciechanow.ski/gps/) -- [all his articles](https://ciechanow.ski/archives/) are great.
 
@@ -207,6 +213,7 @@ toc: true
 - [Building a cost-effective analytics stack with Modal, dlt, and dbt](https://modal.com/blog/analytics-stack) -- prime example of what a modern analytics stack looks like in late 2024.
 - [Should Your Data Warehouse Have an SLA?](https://locallyoptimistic.com/post/data-warehouse-sla-p1/#:~:text=Yes%2C%20if%20you%20want%20to,and%20it%20will%20be%20accurate.)
 - [Dimensional Modeling Techniques - Kimball Group](https://www.kimballgroup.com/data-warehouse-business-intelligence-resources/kimball-techniques/dimensional-modeling-techniques/)
+- [The power of interning: making a time series database 2000x smaller in Rust - Guillaume Endignoux](https://gendignoux.com/blog/2025/03/03/rust-interning-2000x.html) -- this guy takes the git scraping pattern really far, I like his taste.
 
 ## Inspiring data analysis
 
@@ -228,6 +235,7 @@ toc: true
 - [We mapped weather forecast accuracy across the U.S. Look up your city](https://www.washingtonpost.com/climate-environment/interactive/2024/how-accurate-is-the-weather-forecast/)
 - [Resurfacing the past](https://storymaps.arcgis.com/stories/41d4bd6029044afbb1b9ad805a4731d8) - a madlad decides to pinpoint all the ships that sank during WWII.
 - [The closer to the train station, the worse the kebab - James Pae](https://www.jmspae.se/write-ups/kebabs-train-stations/)
+- [Winners of the $10,000 ISBN visualization bounty - Anna's Blog](https://annas-archive.org/blog/all-isbns-winners.html)
 
 ## Life cycle assessment (LCA)
 
@@ -253,6 +261,7 @@ toc: true
 
 - [Datawrapper](https://www.datawrapper.de/) -- great way to produce professional looking charts and tabels.
 - [SlidesCodeHighlighter](https://romannurik.github.io/SlidesCodeHighlighter/)
+- [How to use a histogram as a legend in {ggplot2}](https://www.andrewheiss.com/blog/2025/02/19/ggplot-histogram-legend/#bonus-2-use-a-diverging-color-scheme-nested-legend-circles)
 
 ## Food for thought
 
@@ -265,6 +274,10 @@ toc: true
 - [The tyranny of the algorithm: why every coffee shop looks the same](https://www.theguardian.com/news/2024/jan/16/the-tyranny-of-the-algorithm-why-every-coffee-shop-looks-the-same)
 - [Against Disruption: On the Bulletpointization of Books](https://lithub.com/against-disruption-on-the-bulletpointization-of-books/)
 - [hacker definition](http://catb.org/jargon/html/H/hacker.html)
+- [Finding Flow: Escaping Digital Distractions Through Deep Work and Slow Living - Simon Späti](https://www.ssp.sh/blog/finding-flow/)
+- [The Safe Withdrawal Rate Series](https://earlyretirementnow.com/safe-withdrawal-rate-series/)
+- [Cargo Cult Science](https://calteches.library.caltech.edu/51/2/CargoCult.htm)
+- [Falling Into The Pit of Success](https://blog.codinghorror.com/falling-into-the-pit-of-success/) -- also known as [poka-yoke](https://en.wikipedia.org/wiki/Poka-yoke).
 
 ## SQL
 
@@ -294,6 +307,8 @@ toc: true
 - [Typography in ten minutes](https://practicaltypography.com/typography-in-ten-minutes.html)
 - [alpine.js](https://alpinejs.dev/) -- I usually go to Vue.js for web dev, but my brother made me realize alpine.js is a great alternative for small projects.
 - [Hot Page](https://hot.page/) -- looks like a good idea to create a landing page.
+- [uchū](https://uchu.style/) -- decent default color palettes.
+- [Val Town](https://www.val.town/)
 
 ## Building a product
 
@@ -301,6 +316,10 @@ toc: true
 - [Stevey's Google Platforms Rant](https://gist.github.com/chitchcock/1281611) -- insights about product design at GAFAs.
 - [Jeff Bezos on the disagree and commit principle](https://x.com/StartupArchive_/status/1736006653722362216?s=20)
 - [The Duolinguo Handbook](https://handbook.duolingo.com/)
+
+## Language models
+
+- [The surprising ease and effectiveness of AI in a loop](https://interconnected.org/home/2023/03/16/singularity)
 
 ## I don't have a clue but it looks cool
 
@@ -382,11 +401,13 @@ toc: true
 - [The Creative Independent](https://thecreativeindependent.com/)
 - [Bay 12 Games: Dwarf Fortress](http://www.bay12games.com/dwarves/)
 - [Browserbear](https://www.browserbear.com/)
+- [This page is under construction](https://localghost.dev/blog/this-page-is-under-construction/) -- the list at the end is great
 
 I like these retrocool websites:
 
 - [learntarot.com](http://www.learntarot.com/cards.htm)
-- [HyperPhysics](http://hyperphysics.phy-astr.gsu.edu/hbase/hframe.html)
+- [hyperphysics.phy-astr.gsu.edu](http://hyperphysics.phy-astr.gsu.edu/hbase/hframe.html)
+- [norsys.com](https://www.norsys.com/)
 
 ## Cool
 

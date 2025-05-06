@@ -10,7 +10,7 @@ toc = true
 
 **Edit 2** -- _I've stumbled on [this article](https://medium.com/@shaozhifei/metric-decomposition-formula-to-understand-metric-trend-e693b7a4c8cf) by Shao Zhifei which provides a good derivation of the ratio decomposition formula. I contacted Shao Zhifei on LinkedIn, and he told me they heavily use these formulas at [Grab](https://www.grab.com/). He also pointed out a typo in the ratio decomposition formula which I have now fixed._
 
-**Edit 3** -- _Someone did some digging and sent me [Decomposition techniques for financial ratios of European non-financial listed groups](https://www.ecb.europa.eu/pub/pdf/scpsps/ecb.sps.21.en.pdf). It appears to use the same methodology, which they call Marshall-Edgeworth decomposition._
+**Edit 3** -- _Someone did some digging and sent me [Decomposition techniques for financial ratios of European non-financial listed groups](https://www.ecb.europa.eu/pub/pdf/scpsps/ecb.sps.21.en.pdf). It appears to use the same methodology for unpacking a weighted average, which they call Marshall-Edgeworth decomposition. I also stumbled on [this](https://www.nbb.be/doc/dq/mir/facteurs_fr.pdf) simplified version, written in French._
 
 ## Motivation
 

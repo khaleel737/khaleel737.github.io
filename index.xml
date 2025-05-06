@@ -3110,6 +3110,12 @@ class: center, middle
 &lt;li>&lt;a href="https://www.redblobgames.com/">Amit Patel&lt;/a> &amp;ndash; visual explanations of algorithms used in games.&lt;/li>
 &lt;li>&lt;a href="https://nogilnick.com/">nogilnick&lt;/a>&lt;/li>
 &lt;li>&lt;a href="https://www.nathanielbullard.com/">Nat Bullard&lt;/a> &amp;ndash; known for making &lt;a href="https://www.nathanielbullard.com/presentations">annual presentations&lt;/a> on the state of decarbonization.&lt;/li>
+&lt;li>&lt;a href="https://minimaxir.com/">Max Woolf&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://yuinchien.com/">Yuin Chien&lt;/a> &amp;ndash; does design at Google.&lt;/li>
+&lt;li>&lt;a href="https://interconnected.org/home/">Matt Webb&lt;/a> &amp;ndash; this madlad has been blogging since 2000.&lt;/li>
+&lt;li>&lt;a href="https://noperator.dev/">Caleb Gross&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://www.geoffreylitt.com/">Geoffrey Litt&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://claytonwramsey.com/">Clayton Ramsey&lt;/a>&lt;/li>
 &lt;/ul>
 &lt;h2 id="machine-learning">Machine learning&lt;/h2>
 &lt;ul>
@@ -3160,6 +3166,7 @@ class: center, middle
 &lt;li>&lt;a href="https://mlvu.github.io/">Machine Learning @ VU&lt;/a>&lt;/li>
 &lt;li>&lt;a href="https://dmicz.github.io/machine-learning/svd-image-compression/">SVD Image Compression, Explained - Dennis Miczek&lt;/a>&lt;/li>
 &lt;li>&lt;a href="https://snats.xyz/pages/articles/classifying_a_bunch_of_pdfs.html">Classifying all of the pdfs on the internet - Santiago Pedroza&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://blog.griffens.net/blog/weird-kaggle-books-reflections/">Weird Kaggle, the superiority of books, and other reflections - Nick Griffiths&lt;/a>&lt;/li>
 &lt;/ul>
 &lt;h2 id="deep-learning">Deep learning&lt;/h2>
 &lt;ul>
@@ -3195,7 +3202,6 @@ class: center, middle
 &lt;/ul>
 &lt;h2 id="physics">Physics&lt;/h2>
 &lt;ul>
-&lt;li>&lt;a href="https://fr.vikidia.org/wiki/Portail:%C3%89lectricit%C3%A9">Portail Électricité - Vikidia&lt;/a>&lt;/li>
 &lt;li>&lt;a href="https://andrewkchan.dev/posts/fire.html">Simulating Fluids, Fire, and Smoke in Real-Time - Andrew Chan&lt;/a>&lt;/li>
 &lt;li>&lt;a href="https://ciechanow.ski/gps/">GPS - Bartosz Ciechanowski&lt;/a> &amp;ndash; &lt;a href="https://ciechanow.ski/archives/">all his articles&lt;/a> are great.&lt;/li>
 &lt;/ul>
@@ -3219,6 +3225,7 @@ class: center, middle
 &lt;li>&lt;a href="https://modal.com/blog/analytics-stack">Building a cost-effective analytics stack with Modal, dlt, and dbt&lt;/a> &amp;ndash; prime example of what a modern analytics stack looks like in late 2024.&lt;/li>
 &lt;li>&lt;a href="https://locallyoptimistic.com/post/data-warehouse-sla-p1/#:~:text=Yes%2C%20if%20you%20want%20to,and%20it%20will%20be%20accurate.">Should Your Data Warehouse Have an SLA?&lt;/a>&lt;/li>
 &lt;li>&lt;a href="https://www.kimballgroup.com/data-warehouse-business-intelligence-resources/kimball-techniques/dimensional-modeling-techniques/">Dimensional Modeling Techniques - Kimball Group&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://gendignoux.com/blog/2025/03/03/rust-interning-2000x.html">The power of interning: making a time series database 2000x smaller in Rust - Guillaume Endignoux&lt;/a> &amp;ndash; this guy takes the git scraping pattern really far, I like his taste.&lt;/li>
 &lt;/ul>
 &lt;h2 id="inspiring-data-analysis">Inspiring data analysis&lt;/h2>
 &lt;ul>
@@ -3240,6 +3247,7 @@ class: center, middle
 &lt;li>&lt;a href="https://www.washingtonpost.com/climate-environment/interactive/2024/how-accurate-is-the-weather-forecast/">We mapped weather forecast accuracy across the U.S. Look up your city&lt;/a>&lt;/li>
 &lt;li>&lt;a href="https://storymaps.arcgis.com/stories/41d4bd6029044afbb1b9ad805a4731d8">Resurfacing the past&lt;/a> - a madlad decides to pinpoint all the ships that sank during WWII.&lt;/li>
 &lt;li>&lt;a href="https://www.jmspae.se/write-ups/kebabs-train-stations/">The closer to the train station, the worse the kebab - James Pae&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://annas-archive.org/blog/all-isbns-winners.html">Winners of the $10,000 ISBN visualization bounty - Anna&amp;rsquo;s Blog&lt;/a>&lt;/li>
 &lt;/ul>
 &lt;h2 id="life-cycle-assessment-lca">Life cycle assessment (LCA)&lt;/h2>
 &lt;ul>
@@ -3265,6 +3273,7 @@ class: center, middle
 &lt;ul>
 &lt;li>&lt;a href="https://www.datawrapper.de/">Datawrapper&lt;/a> &amp;ndash; great way to produce professional looking charts and tabels.&lt;/li>
 &lt;li>&lt;a href="https://romannurik.github.io/SlidesCodeHighlighter/">SlidesCodeHighlighter&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://www.andrewheiss.com/blog/2025/02/19/ggplot-histogram-legend/#bonus-2-use-a-diverging-color-scheme-nested-legend-circles">How to use a histogram as a legend in {ggplot2}&lt;/a>&lt;/li>
 &lt;/ul>
 &lt;h2 id="food-for-thought">Food for thought&lt;/h2>
 &lt;ul>
@@ -3277,6 +3286,10 @@ class: center, middle
 &lt;li>&lt;a href="https://www.theguardian.com/news/2024/jan/16/the-tyranny-of-the-algorithm-why-every-coffee-shop-looks-the-same">The tyranny of the algorithm: why every coffee shop looks the same&lt;/a>&lt;/li>
 &lt;li>&lt;a href="https://lithub.com/against-disruption-on-the-bulletpointization-of-books/">Against Disruption: On the Bulletpointization of Books&lt;/a>&lt;/li>
 &lt;li>&lt;a href="http://catb.org/jargon/html/H/hacker.html">hacker definition&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://www.ssp.sh/blog/finding-flow/">Finding Flow: Escaping Digital Distractions Through Deep Work and Slow Living - Simon Späti&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://earlyretirementnow.com/safe-withdrawal-rate-series/">The Safe Withdrawal Rate Series&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://calteches.library.caltech.edu/51/2/CargoCult.htm">Cargo Cult Science&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://blog.codinghorror.com/falling-into-the-pit-of-success/">Falling Into The Pit of Success&lt;/a> &amp;ndash; also known as &lt;a href="https://en.wikipedia.org/wiki/Poka-yoke">poka-yoke&lt;/a>.&lt;/li>
 &lt;/ul>
 &lt;h2 id="sql">SQL&lt;/h2>
 &lt;ul>
@@ -3306,6 +3319,8 @@ class: center, middle
 &lt;li>&lt;a href="https://practicaltypography.com/typography-in-ten-minutes.html">Typography in ten minutes&lt;/a>&lt;/li>
 &lt;li>&lt;a href="https://alpinejs.dev/">alpine.js&lt;/a> &amp;ndash; I usually go to Vue.js for web dev, but my brother made me realize alpine.js is a great alternative for small projects.&lt;/li>
 &lt;li>&lt;a href="https://hot.page/">Hot Page&lt;/a> &amp;ndash; looks like a good idea to create a landing page.&lt;/li>
+&lt;li>&lt;a href="https://uchu.style/">uchū&lt;/a> &amp;ndash; decent default color palettes.&lt;/li>
+&lt;li>&lt;a href="https://www.val.town/">Val Town&lt;/a>&lt;/li>
 &lt;/ul>
 &lt;h2 id="building-a-product">Building a product&lt;/h2>
 &lt;ul>
@@ -3313,6 +3328,10 @@ class: center, middle
 &lt;li>&lt;a href="https://gist.github.com/chitchcock/1281611">Stevey&amp;rsquo;s Google Platforms Rant&lt;/a> &amp;ndash; insights about product design at GAFAs.&lt;/li>
 &lt;li>&lt;a href="https://x.com/StartupArchive_/status/1736006653722362216?s=20">Jeff Bezos on the disagree and commit principle&lt;/a>&lt;/li>
 &lt;li>&lt;a href="https://handbook.duolingo.com/">The Duolinguo Handbook&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;h2 id="language-models">Language models&lt;/h2>
+&lt;ul>
+&lt;li>&lt;a href="https://interconnected.org/home/2023/03/16/singularity">The surprising ease and effectiveness of AI in a loop&lt;/a>&lt;/li>
 &lt;/ul>
 &lt;h2 id="i-dont-have-a-clue-but-it-looks-cool">I don&amp;rsquo;t have a clue but it looks cool&lt;/h2>
 &lt;ul>
@@ -3394,6 +3413,7 @@ class: center, middle
 &lt;li>&lt;a href="https://thecreativeindependent.com/">The Creative Independent&lt;/a>&lt;/li>
 &lt;li>&lt;a href="http://www.bay12games.com/dwarves/">Bay 12 Games: Dwarf Fortress&lt;/a>&lt;/li>
 &lt;li>&lt;a href="https://www.browserbear.com/">Browserbear&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://localghost.dev/blog/this-page-is-under-construction/">This page is under construction&lt;/a> &amp;ndash; the list at the end is great&lt;/li>
 &lt;/ul>
 &lt;p>I like these retrocool websites:&lt;/p></description></item><item><title>The tools I use</title><link>https://maxhalford.github.io/uses/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>maxhalford25@gmail.com (Max Halford)</author><guid>https://maxhalford.github.io/uses/</guid><description>&lt;p>&lt;em>See &lt;a href="https://uses.tech/">uses.tech&lt;/a>&lt;/em>&lt;/p>
 &lt;p>I&amp;rsquo;m a great admirer of &lt;a href="https://boringtechnology.club/">Choose Boring Technology&lt;/a>, &lt;a href="https://www.interactiongreen.com/jobs-zen/">Zen design&lt;/a>, and the &lt;a href="https://en.wikipedia.org/wiki/KISS_principle">KISS principle&lt;/a>. As such I try to keep my tech stack as simple as possible, for instance by using zero-config tools and the Apple ecosystem.&lt;/p>

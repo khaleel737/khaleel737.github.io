@@ -1,13 +1,13 @@
 # Max Halford
 
 > Max Halford's blog ツ
-foo
-- [Blogs](https://maxhalford.github.io/blog/)
+
+- [Blog](https://maxhalford.github.io/blog/)
 - [Bio](https://maxhalford.github.io/bio/)
 - [Links](https://maxhalford.github.io/links/)
 - [Slides](https://maxhalford.github.io/slides/)
 
-## Blogs
+## Blog
 
 
 

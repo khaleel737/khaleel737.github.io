@@ -104,6 +104,8 @@ toc: true
 - [Caleb Gross](https://noperator.dev/)
 - [Geoffrey Litt](https://www.geoffreylitt.com/)
 - [Clayton Ramsey](https://claytonwramsey.com/)
+- [Rusty Conover](https://rusty.today/)
+- [Austin Z. Henley](https://austinhenley.com/blog.html)
 
 ## Machine learning
 
@@ -155,13 +157,12 @@ toc: true
 - [SVD Image Compression, Explained - Dennis Miczek](https://dmicz.github.io/machine-learning/svd-image-compression/)
 - [Classifying all of the pdfs on the internet - Santiago Pedroza](https://snats.xyz/pages/articles/classifying_a_bunch_of_pdfs.html)
 - [Weird Kaggle, the superiority of books, and other reflections - Nick Griffiths](https://blog.griffens.net/blog/weird-kaggle-books-reflections/)
-
-## Deep learning
-
 - [Transformers from scratch - Peter Bloem](http://peterbloem.nl/blog/transformers)
 - [Explaining RNNs without neural networks](https://explained.ai/rnn/index.html)
 - [Practical Deep Learning for Coders](https://course.fast.ai/)
 - [What Is ChatGPT Doing... and Why Does It Work?](https://writings.stephenwolfram.com/2023/02/what-is-chatgpt-doing-and-why-does-it-work/)
+- [CARTE: toward table foundation models - Gaël Varoquaux](https://gael-varoquaux.info/science/carte-toward-table-foundation-models.html)
+- [Everything you always wanted to know about extreme classification - Microsoft Research](https://www.microsoft.com/en-us/research/blog/everything-you-always-wanted-to-know-about-extreme-classification-but-were-afraid-to-ask/) -- I love the idea that recsys can be framed as an extreme classification problem.
 
 ## Data science
 
@@ -177,11 +178,14 @@ toc: true
 - [Tuesday Changes Everything - Jesper Juul](https://www.jesperjuul.net/ludologist/2010/06/08/tuesday-changes-everything-a-mathematical-puzzle/)
 - [Doing Named Entity Recognition? Don't optimize for F1 - Christopher Manning](https://nlpers.blogspot.com/2006/08/doing-named-entity-recognition-dont.html) -- A rather niche topic, but well explained.
 - [Lessons learned building an ML trading system that turned \\$5k into \\$200k](https://archive.ph/A7298#selection-63.0-63.72)
-- [Common statistical tests are linear models (or: how to teach stats)](https://lindeloev.github.io/tests-as-linear/)
+- [Common statistical tests are linear models (or: how to teach stats) - Jonas Kristoffer Lindeløv](https://lindeloev.github.io/tests-as-linear/)
+- [Kelly Can't Fail - John Mount](https://win-vector.com/2024/12/19/kelly-cant-fail/)
 
 ## Analytics engineering
 
 - [Input metrics & weekly business review - Working backwards](https://workingbackwards.com/concepts/input-metrics/)
+- [If spreadsheets are eternal, are BI tools transitory?](https://www.dataduel.co/if-spreadsheets-are-eternal-are-bi-tools-transitory/)
+- [Dimensional Modeling Techniques](https://www.kimballgroup.com/data-warehouse-business-intelligence-resources/kimball-techniques/dimensional-modeling-techniques/) -- old but gold.
 
 ## Mathematics
 
@@ -214,6 +218,7 @@ toc: true
 - [Should Your Data Warehouse Have an SLA?](https://locallyoptimistic.com/post/data-warehouse-sla-p1/#:~:text=Yes%2C%20if%20you%20want%20to,and%20it%20will%20be%20accurate.)
 - [Dimensional Modeling Techniques - Kimball Group](https://www.kimballgroup.com/data-warehouse-business-intelligence-resources/kimball-techniques/dimensional-modeling-techniques/)
 - [The power of interning: making a time series database 2000x smaller in Rust - Guillaume Endignoux](https://gendignoux.com/blog/2025/03/03/rust-interning-2000x.html) -- this guy takes the git scraping pattern really far, I like his taste.
+- [Functional Data Engineering — a modern paradigm for batch data processing](https://maximebeauchemin.medium.com/functional-data-engineering-a-modern-paradigm-for-batch-data-processing-2327ec32c42a) -- I strongly believe in this approach.
 
 ## Inspiring data analysis
 
@@ -237,11 +242,17 @@ toc: true
 - [The closer to the train station, the worse the kebab - James Pae](https://www.jmspae.se/write-ups/kebabs-train-stations/)
 - [Winners of the $10,000 ISBN visualization bounty - Anna's Blog](https://annas-archive.org/blog/all-isbns-winners.html)
 
-## Life cycle assessment (LCA)
+## Sustainability
 
+- [The Limits to Growth - Donella Meadows](https://www.donellameadows.org/wp-content/userfiles/Limits-to-Growth-digital-scan-version.pdf) -- it's not very often that a paper is so accurate in its predictions.
 - [Consumer Hardware Carbon Reduction Guide - Google](https://www.gstatic.com/gumdrop/sustainability/google-2024-consumer-hardware-carbon-reduction.pdf)
 - [The LCA paradox - Frida Røyne](https://meaningfulsustainabilityjobs.blog/2024/09/29/the-lca-paradox/)
 - [Scope 3 Data in LCA of organisations Between Simplification, Overwhelming & Greenwashing](https://video.ethz.ch/events/lca/2023/autumn/83rd/9094196a-4300-4494-87d3-c5e872ad8e62.html)
+- [Climate TRACE](https://climatetrace.org/explore)
+- [Can the economy become fossil free? - Jean-Marc Jancovici](https://jancovici.com/en/video/40-min-can-the-economy-become-fossil-free/)
+- [Forget Shorter Showers](https://orionmagazine.org/article/forget-shorter-showers/)
+- [Conditional Optimism: Economic Perspectives on Deep Decarbonization - Michael Grubb](https://www.ineteconomics.org/perspectives/blog/growth-with-decarbonization-is-not-an-oxymoron)
+- [Climate Change: a practical guide](https://www.tmrow.com/climatechange/)
 
 ## Data sources
 
@@ -278,6 +289,7 @@ toc: true
 - [The Safe Withdrawal Rate Series](https://earlyretirementnow.com/safe-withdrawal-rate-series/)
 - [Cargo Cult Science](https://calteches.library.caltech.edu/51/2/CargoCult.htm)
 - [Falling Into The Pit of Success](https://blog.codinghorror.com/falling-into-the-pit-of-success/) -- also known as [poka-yoke](https://en.wikipedia.org/wiki/Poka-yoke).
+- [You Could Just Choose Optimism](https://quarter--mile.com/You-Could-Just-Choose-Optimism)
 
 ## SQL
 
@@ -300,6 +312,7 @@ toc: true
 - [How to Build an Economic Model in Your Spare Time - Hal R. Varian](https://fermatslibrary.com/p/e2e6484d#email-newsletter) -- The academic wisdom in this article goes beyond the world of economics.
 - [The Double-Entry Counting Method](https://beancount.github.io/docs/the_double_entry_counting_method.html#double-entry-bookkeeping) - Great example of documenting a technical concept.
 - [Technical discussions are hard; a few tips](https://gael-varoquaux.info/programming/technical-discussions-are-hard-a-few-tips.html)
+- [Octavia Butler’s Advice on Writing](https://www.themarginalian.org/2023/09/20/octavia-butler-advice-on-writing/)
 
 ## Web development
 
@@ -326,6 +339,7 @@ toc: true
 - [Superpermutations - Greg Egan](https://www.gregegan.net/SCIENCE/Superpermutations/Superpermutations.html)
 - [Clifford Algebra: A visual introduction](https://slehar.wordpress.com/2014/03/18/clifford-algebra-a-visual-introduction/)
 - [GPT in 500 lines of SQL](https://explainextended.com/2023/12/31/happy-new-year-15/)
+- [Phase behavior of Cacio e Pepe sauce](https://arxiv.org/pdf/2501.00536)
 
 ## Eye candy
 
@@ -381,6 +395,8 @@ toc: true
 - [marimekko.com](https://www.marimekko.com/eu_en/maripedia/patterns)
 - [Wacław Szpakowski's rhythmical lines](https://www.theparisreview.org/blog/2017/02/15/rhythmical-lines/)
 - [10,946: a Year-Long Post-It Note Animation](https://vimeo.com/1023120442)
+- [Mystical](https://suberic.net/~dmm/projects/mystical/README.html)
+- [Teenage Artist Virginia Frances Sterrett's Hauntingly Beautiful Century-Old Dreamscapes for French Fairy Tales](https://www.themarginalian.org/2022/01/27/virginia-frances-sterrett-old-french-fairy-tales/)
 
 ## Pretty websites
 
@@ -402,12 +418,14 @@ toc: true
 - [Bay 12 Games: Dwarf Fortress](http://www.bay12games.com/dwarves/)
 - [Browserbear](https://www.browserbear.com/)
 - [This page is under construction](https://localghost.dev/blog/this-page-is-under-construction/) -- the list at the end is great
+- [Berkeley Mono™](https://usgraphics.com/products/berkeley-mono)
 
 I like these retrocool websites:
 
 - [learntarot.com](http://www.learntarot.com/cards.htm)
 - [hyperphysics.phy-astr.gsu.edu](http://hyperphysics.phy-astr.gsu.edu/hbase/hframe.html)
 - [norsys.com](https://www.norsys.com/)
+- [joerick.me](https://joerick.me/) -- the legend to which we owe [cibuildwheel](https://github.com/pypa/cibuildwheel)
 
 ## Cool
 
@@ -426,6 +444,8 @@ I like these retrocool websites:
 - [Anna's Archive](https://annas-archive.org/)
 - [Browser games](https://www.asahi-net.or.jp/~cs8k-cyu/browser.html) -- these are made by a single _doujin_ developer called Kenta Cho
 - [Pong wars](https://pong-wars.vercel.app/)
+- [Hundred Rabbits](https://100r.co/site/about.html)
+- [Internet Phone Book](https://internetphonebook.net/)
 
 ## Documentaries
 

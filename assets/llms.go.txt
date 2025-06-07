@@ -5,7 +5,7 @@
 {{ with .Site.Params.Description -}}
 > {{ . }}
 {{- end }}
-foo
+
 {{ range (where (sort ((.Site.GetPage "/").Pages) "Weight" "asc" "Date" "desc" "Lastmod" "desc") "Params.sitemap_exclude" "ne" true) -}}
     - [{{ .Title }}]({{ .Permalink }})
 {{ end -}}

@@ -241,6 +241,7 @@ toc: true
 - [Resurfacing the past](https://storymaps.arcgis.com/stories/41d4bd6029044afbb1b9ad805a4731d8) - a madlad decides to pinpoint all the ships that sank during WWII.
 - [The closer to the train station, the worse the kebab - James Pae](https://www.jmspae.se/write-ups/kebabs-train-stations/)
 - [Winners of the $10,000 ISBN visualization bounty - Anna's Blog](https://annas-archive.org/blog/all-isbns-winners.html)
+- [Vanishing home field advantage in English football](https://blog.engora.com/2025/07/vanishing-home-field-advantage-in.html?m=1)
 
 ## Sustainability
 
@@ -268,11 +269,14 @@ toc: true
 - [Beyond the route: Introducing granular MTA bus speed data](https://new.mta.info/article/beyond-route-introducing-granular-mta-bus-speed-data)
 - [csvbase](https://csvbase.com/)
 
-## Data visualization
+## Tables is all you need
 
-- [Datawrapper](https://www.datawrapper.de/) -- great way to produce professional looking charts and tabels.
-- [SlidesCodeHighlighter](https://romannurik.github.io/SlidesCodeHighlighter/)
-- [How to use a histogram as a legend in {ggplot2}](https://www.andrewheiss.com/blog/2025/02/19/ggplot-histogram-legend/#bonus-2-use-a-diverging-color-scheme-nested-legend-circles)
+https://voussoir.net/writing/css_for_printing
+
+- [I've spent years perfecting table design](https://x.com/ash_uxi/status/1775606725795610725?s=46)
+- [Unlimited columns](https://x.com/brotzky_/status/1775553206103474354)
+- [The Design Philosophy of Great Tables](https://posit-dev.github.io/great-tables/blog/design-philosophy/)
+- [Create responsive tables with Datawrapper](https://www.datawrapper.de/tables)
 
 ## Food for thought
 
@@ -290,6 +294,10 @@ toc: true
 - [Cargo Cult Science](https://calteches.library.caltech.edu/51/2/CargoCult.htm)
 - [Falling Into The Pit of Success](https://blog.codinghorror.com/falling-into-the-pit-of-success/) -- also known as [poka-yoke](https://en.wikipedia.org/wiki/Poka-yoke).
 - [You Could Just Choose Optimism](https://quarter--mile.com/You-Could-Just-Choose-Optimism)
+
+## *Mens sana in corpore sano*
+
+- [Burnout profile](https://www.lizandmollie.com/burnout-profile)
 
 ## SQL
 
@@ -322,6 +330,8 @@ toc: true
 - [Hot Page](https://hot.page/) -- looks like a good idea to create a landing page.
 - [uchū](https://uchu.style/) -- decent default color palettes.
 - [Val Town](https://www.val.town/)
+- [mmm.page](https://mmm.page/)
+- [Alto](https://alto.so/) -- turn Apple Notes into a website.
 
 ## Building a product
 
@@ -419,6 +429,7 @@ toc: true
 - [Browserbear](https://www.browserbear.com/)
 - [This page is under construction](https://localghost.dev/blog/this-page-is-under-construction/) -- the list at the end is great
 - [Berkeley Mono™](https://usgraphics.com/products/berkeley-mono)
+- [gatyou.studio](https://www.gatyou.studio/)
 
 I like these retrocool websites:
 

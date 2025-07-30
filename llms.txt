@@ -11,6 +11,7 @@
 
 
 
+- [Do LLMs identify fonts?](https://maxhalford.github.io/blog/llm-font-identification/)
 - [Thoughts on DuckLake](https://maxhalford.github.io/blog/ducklake-thoughts/)
 - [The total derivative of a metric tree](https://maxhalford.github.io/blog/metric-tree-total-derivative/)
 - [Minimizing the runtime of a SQL DAG](https://maxhalford.github.io/blog/minimizing-sql-dag-runtime/)

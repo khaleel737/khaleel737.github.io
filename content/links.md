@@ -106,6 +106,7 @@ toc: true
 - [Clayton Ramsey](https://claytonwramsey.com/)
 - [Rusty Conover](https://rusty.today/)
 - [Austin Z. Henley](https://austinhenley.com/blog.html)
+- [Charlie Marsh](https://notes.crmarsh.com/)
 
 ## Machine learning
 
@@ -197,6 +198,10 @@ toc: true
 - [Simulating Fluids, Fire, and Smoke in Real-Time - Andrew Chan](https://andrewkchan.dev/posts/fire.html)
 - [GPS - Bartosz Ciechanowski](https://ciechanow.ski/gps/) -- [all his articles](https://ciechanow.ski/archives/) are great.
 
+## Finance
+
+- [Quantitative Trading Summary - Headlands Tech](https://blog.headlandstech.com/2017/08/03/quantitative-trading-summary/)
+
 ## Data engineering
 
 - [Emerging Architectures for Modern Data Infrastructure](https://future.com/emerging-architectures-modern-data-infrastructure/)
@@ -242,6 +247,7 @@ toc: true
 - [The closer to the train station, the worse the kebab - James Pae](https://www.jmspae.se/write-ups/kebabs-train-stations/)
 - [Winners of the $10,000 ISBN visualization bounty - Anna's Blog](https://annas-archive.org/blog/all-isbns-winners.html)
 - [Vanishing home field advantage in English football](https://blog.engora.com/2025/07/vanishing-home-field-advantage-in.html?m=1)
+- [I am an Airbus A350 Pilot](https://jameshard.ing/pilot)
 
 ## Sustainability
 
@@ -271,8 +277,6 @@ toc: true
 
 ## Tables is all you need
 
-https://voussoir.net/writing/css_for_printing
-
 - [I've spent years perfecting table design](https://x.com/ash_uxi/status/1775606725795610725?s=46)
 - [Unlimited columns](https://x.com/brotzky_/status/1775553206103474354)
 - [The Design Philosophy of Great Tables](https://posit-dev.github.io/great-tables/blog/design-philosophy/)
@@ -294,6 +298,10 @@ https://voussoir.net/writing/css_for_printing
 - [Cargo Cult Science](https://calteches.library.caltech.edu/51/2/CargoCult.htm)
 - [Falling Into The Pit of Success](https://blog.codinghorror.com/falling-into-the-pit-of-success/) -- also known as [poka-yoke](https://en.wikipedia.org/wiki/Poka-yoke).
 - [You Could Just Choose Optimism](https://quarter--mile.com/You-Could-Just-Choose-Optimism)
+- [Your actions reflect your priorities](https://tombrady.com/posts/your-actions-reflect-your-priorities) -- Tom Brady's take on it being about the process, not the outcome.
+- [Renting is for Suckers](https://andrewkelley.me/post/renting-is-for-suckers.html) -- good arguments as to why you shouldn't default to using cloud services.
+- [I Deleted My Second Brain](https://www.joanwestenberg.com/p/i-deleted-my-second-brain)
+- [Ira Glass on Storytelling](https://www.youtube.com/watch?v=X2wLP0izeJE) -- good taste and being critical of one's own work is the key to becoming a better creator.
 
 ## *Mens sana in corpore sano*
 
@@ -321,6 +329,7 @@ https://voussoir.net/writing/css_for_printing
 - [The Double-Entry Counting Method](https://beancount.github.io/docs/the_double_entry_counting_method.html#double-entry-bookkeeping) - Great example of documenting a technical concept.
 - [Technical discussions are hard; a few tips](https://gael-varoquaux.info/programming/technical-discussions-are-hard-a-few-tips.html)
 - [Octavia Butler’s Advice on Writing](https://www.themarginalian.org/2023/09/20/octavia-butler-advice-on-writing/)
+- [Writing Advice and Literary Wisdom from the Great E.B. White](https://lithub.com/writing-advice-and-literary-wisdom-from-the-great-e-b-white/)
 
 ## Web development
 
@@ -332,6 +341,8 @@ https://voussoir.net/writing/css_for_printing
 - [Val Town](https://www.val.town/)
 - [mmm.page](https://mmm.page/)
 - [Alto](https://alto.so/) -- turn Apple Notes into a website.
+- [Scrappy](https://pontus.granstrom.me/scrappy/) -- loads of links and good ideas in this one.
+- [Hyperclay](https://docs.hyperclay.com/docs/example-apps/)
 
 ## Building a product
 
@@ -339,10 +350,13 @@ https://voussoir.net/writing/css_for_printing
 - [Stevey's Google Platforms Rant](https://gist.github.com/chitchcock/1281611) -- insights about product design at GAFAs.
 - [Jeff Bezos on the disagree and commit principle](https://x.com/StartupArchive_/status/1736006653722362216?s=20)
 - [The Duolinguo Handbook](https://handbook.duolingo.com/)
+- [How to develop product sense](https://www.lennysnewsletter.com/p/product-sense)
+- [The Browser Company's company values](https://www.thebrowser.company/values/) -- they made the Arc browser, which rekindled the browser wars.
 
-## Language models
+## LLMs
 
 - [The surprising ease and effectiveness of AI in a loop](https://interconnected.org/home/2023/03/16/singularity)
+- [Enough AI copilots! We need AI HUDs](https://www.geoffreylitt.com/2025/07/27/enough-ai-copilots-we-need-ai-huds) -- funny how someone had the right idea 33 years ago.
 
 ## I don't have a clue but it looks cool
 
@@ -407,6 +421,8 @@ https://voussoir.net/writing/css_for_printing
 - [10,946: a Year-Long Post-It Note Animation](https://vimeo.com/1023120442)
 - [Mystical](https://suberic.net/~dmm/projects/mystical/README.html)
 - [Teenage Artist Virginia Frances Sterrett's Hauntingly Beautiful Century-Old Dreamscapes for French Fairy Tales](https://www.themarginalian.org/2022/01/27/virginia-frances-sterrett-old-french-fairy-tales/)
+- [MacPaint Art From The Mid-80s Still Looks Great Today](https://blog.decryption.net.au/posts/macpaint.html)
+- [Beautiful Public Data](https://www.beautifulpublicdata.com/)
 
 ## Pretty websites
 
@@ -458,8 +474,18 @@ I like these retrocool websites:
 - [Hundred Rabbits](https://100r.co/site/about.html)
 - [Internet Phone Book](https://internetphonebook.net/)
 - [Cameron's World](https://www.cameronsworld.net/)
+- [WikiTok](https://wikitok.vercel.app/)
+- [url.town](https://url.town/)
+- [neal.fun](https://neal.fun/)
+- [wplace.live](https://wplace.live/)
+- [historicaltechtree.com](https://www.historicaltechtree.com/) -- just like Civ!
 
 ## Documentaries
 
 - [King of the Fells: Joss Naylor, the shepherd with an unbeatable running record](https://www.theguardian.com/sport/ng-interactive/2024/dec/18/king-of-the-fells-joss-naylor-the-shepherd-with-an-unbeatable-running-record)
 - [Hamburger America](https://www.youtube.com/watch?v=Mkpc5Q1Mgdc&ab_channel=banjoe)
+- [tënk](https://www.on-tenk.com/) -- an eclectic French documentary platform
+
+## Kids
+
+- [The Kid Should See This](https://thekidshouldseethis.com/)

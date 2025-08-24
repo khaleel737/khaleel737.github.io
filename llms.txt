@@ -11,6 +11,7 @@
 
 
 
+- [Warmshowers sparks joy](https://maxhalford.github.io/blog/warmshowers-sparks-joy/)
 - [Do LLMs identify fonts?](https://maxhalford.github.io/blog/llm-font-identification/)
 - [Thoughts on DuckLake](https://maxhalford.github.io/blog/ducklake-thoughts/)
 - [The total derivative of a metric tree](https://maxhalford.github.io/blog/metric-tree-total-derivative/)

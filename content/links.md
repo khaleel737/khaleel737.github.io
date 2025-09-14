@@ -164,6 +164,7 @@ toc: true
 - [What Is ChatGPT Doing... and Why Does It Work?](https://writings.stephenwolfram.com/2023/02/what-is-chatgpt-doing-and-why-does-it-work/)
 - [CARTE: toward table foundation models - Gaël Varoquaux](https://gael-varoquaux.info/science/carte-toward-table-foundation-models.html)
 - [Everything you always wanted to know about extreme classification - Microsoft Research](https://www.microsoft.com/en-us/research/blog/everything-you-always-wanted-to-know-about-extreme-classification-but-were-afraid-to-ask/) -- I love the idea that recsys can be framed as an extreme classification problem.
+- [Line scan camera image processing - Daniel Lawrence Lu](https://daniel.lawrence.lu/blog/y2025m09d21/)
 
 ## Data science
 
@@ -357,6 +358,7 @@ toc: true
 
 - [The surprising ease and effectiveness of AI in a loop](https://interconnected.org/home/2023/03/16/singularity)
 - [Enough AI copilots! We need AI HUDs](https://www.geoffreylitt.com/2025/07/27/enough-ai-copilots-we-need-ai-huds) -- funny how someone had the right idea 33 years ago.
+- [How to Build an Agent - Thorsten Ball](https://ampcode.com/how-to-build-an-agent)
 
 ## I don't have a clue but it looks cool
 

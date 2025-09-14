@@ -1,9 +1,9 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Slides on Max Halford</title><link>https://maxhalford.github.io/slides/</link><description>Recent content in Slides on Max Halford</description><generator>Hugo</generator><language>en-us</language><managingEditor>maxhalford25@gmail.com (Max Halford)</managingEditor><webMaster>maxhalford25@gmail.com (Max Halford)</webMaster><atom:link href="https://maxhalford.github.io/slides/index.xml" rel="self" type="application/rss+xml"/><item><title/><link>https://maxhalford.github.io/slides/creme-pydata/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>maxhalford25@gmail.com (Max Halford)</author><guid>https://maxhalford.github.io/slides/creme-pydata/</guid><description>&lt;!DOCTYPE html>
-&lt;html>
- &lt;head>
- &lt;title>Incremental machine learning&lt;/title>
- &lt;meta charset="utf-8">
- &lt;style>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Slides on Max Halford</title><link>https://maxhalford.github.io/slides/</link><description>Recent content in Slides on Max Halford</description><generator>Hugo</generator><language>en-us</language><managingEditor>maxhalford25@gmail.com (Max Halford)</managingEditor><webMaster>maxhalford25@gmail.com (Max Halford)</webMaster><atom:link href="https://maxhalford.github.io/slides/index.xml" rel="self" type="application/rss+xml"/><item><title/><link>https://maxhalford.github.io/slides/creme-pydata/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>maxhalford25@gmail.com (Max Halford)</author><guid>https://maxhalford.github.io/slides/creme-pydata/</guid><description>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+ &lt;head&gt;
+ &lt;title&gt;Incremental machine learning&lt;/title&gt;
+ &lt;meta charset="utf-8"&gt;
+ &lt;style&gt;
  @import url(https://fonts.googleapis.com/css?family=Open+Sans:700);
  @import url(https://fonts.googleapis.com/css?family=Fira+Mono:400,700,400italic);
 
@@ -63,10 +63,10 @@
  a { color: hotpink; text-decoration: none; }
  li { margin: 10px 0; }
 
- &lt;/style>
- &lt;/head>
- &lt;body>
- &lt;textarea id="source">
+ &lt;/style&gt;
+ &lt;/head&gt;
+ &lt;body&gt;
+ &lt;textarea id="source"&gt;
 
 class: center, middle
 
@@ -76,17 +76,17 @@ class: center, middle
 
 #### 11th of May 2019, Amsterdam
 
-&lt;div style="display: flex; flex-direction: row; justify-content: center;">
+&lt;div style="display: flex; flex-direction: row; justify-content: center;"&gt;
 
- &lt;div align="center">
- &lt;img height="100px" src="https://maxhalford.github.io/img/slides/creme/logo_pydata.png" />
- &lt;/div>
+ &lt;div align="center"&gt;
+ &lt;img height="100px" src="https://maxhalford.github.io/img/slides/creme/logo_pydata.png" /&gt;
+ &lt;/div&gt;
 
- &lt;div align="center">
- &lt;img height="125px" src="https://docs.google.com/drawings/d/e/2PACX-1vSl80T4MnWRsPX3KvlB2kn6zVdHdUleG_w2zBiLS7RxLGAHxiSYTnw3LZtXh__YMv6KcIOYOvkSt9PB/pub?w=841&amp;h=350" />
- &lt;/div>
+ &lt;div align="center"&gt;
+ &lt;img height="125px" src="https://docs.google.com/drawings/d/e/2PACX-1vSl80T4MnWRsPX3KvlB2kn6zVdHdUleG_w2zBiLS7RxLGAHxiSYTnw3LZtXh__YMv6KcIOYOvkSt9PB/pub?w=841&amp;h=350" /&gt;
+ &lt;/div&gt;
 
-&lt;/div>
+&lt;/div&gt;
 
 ???
 
@@ -104,9 +104,9 @@ Hello!
 5. Future work
 ]
 
-&lt;div align="center">
- &lt;iframe src="https://giphy.com/embed/ZoAa7lsmym6UE" width="480" height="223" frameBorder="0" class="giphy-embed" allowFullScreen>&lt;/iframe>
-&lt;/div>
+&lt;div align="center"&gt;
+ &lt;iframe src="https://giphy.com/embed/ZoAa7lsmym6UE" width="480" height="223" frameBorder="0" class="giphy-embed" allowFullScreen&gt;&lt;/iframe&gt;
+&lt;/div&gt;
 
 ???
 
@@ -127,10 +127,10 @@ trying to forecast the duration of League of Legends matches.
 With code:
 
 ```python
->>> model.fit(X_train, y_train)
->>> dump(model, 'model.json')
->>> model = load('model.json')
->>> y_pred = model.predict(X_test)
+&gt;&gt;&gt; model.fit(X_train, y_train)
+&gt;&gt;&gt; dump(model, 'model.json')
+&gt;&gt;&gt; model = load('model.json')
+&gt;&gt;&gt; y_pred = model.predict(X_test)
 ```
 
 ???
@@ -143,9 +143,9 @@ class: center, middle
 
 ### Batch machine learning in production
 
-&lt;div align="center">
- &lt;img height="500px" src="https://maxhalford.github.io/img/slides/creme/batch_production.svg" />
-&lt;/div>
+&lt;div align="center"&gt;
+ &lt;img height="500px" src="https://maxhalford.github.io/img/slides/creme/batch_production.svg" /&gt;
+&lt;/div&gt;
 
 ???
 
@@ -157,9 +157,9 @@ class: center, middle
 
 ### Batch machine learning in production is hard
 
-&lt;div align="center">
- &lt;img height="300px" src="https://maxhalford.github.io/img/slides/creme/boromir.jpg" />
-&lt;/div>
+&lt;div align="center"&gt;
+ &lt;img height="300px" src="https://maxhalford.github.io/img/slides/creme/boromir.jpg" /&gt;
+&lt;/div&gt;
 
 ???
 
@@ -201,9 +201,9 @@ This is more subtle. Sometimes it isn't possible to recreate features for past i
 
 class: center, middle
 
-&lt;img height="400px" src="https://maxhalford.github.io/img/slides/creme/edward-bear-bump-bump.png" />
+&lt;img height="400px" src="https://maxhalford.github.io/img/slides/creme/edward-bear-bump-bump.png" /&gt;
 
-> It is, as far as he knows, the only way of coming downstairs, but sometimes he feels that there really is another way, if only he could stop bumping for a moment and think of it.
+&gt; It is, as far as he knows, the only way of coming downstairs, but sometimes he feels that there really is another way, if only he could stop bumping for a moment and think of it.
 
 ???
 
@@ -251,7 +251,7 @@ class: middle, white
 - Recommender systems
 - Ad placement
 - Internet of things
-- Basically, &lt;span style="text-decoration:underline">anything event based&lt;/span>
+- Basically, &lt;span style="text-decoration:underline"&gt;anything event based&lt;/span&gt;
 ]
 
 ---
@@ -260,7 +260,7 @@ class: center, middle
 
 ### Online learning in a nutshell
 
-&lt;iframe src="https://giphy.com/embed/HsXfypimWpPcQ" width="480" height="350" frameBorder="0" class="giphy-embed" allowFullScreen>&lt;/iframe>
+&lt;iframe src="https://giphy.com/embed/HsXfypimWpPcQ" width="480" height="350" frameBorder="0" class="giphy-embed" allowFullScreen&gt;&lt;/iframe&gt;
 
 ---
 
@@ -282,9 +282,9 @@ class: middle, white
 
 class: middle
 
-&lt;div align="center">
- &lt;img height="220" src="https://docs.google.com/drawings/d/e/2PACX-1vSl80T4MnWRsPX3KvlB2kn6zVdHdUleG_w2zBiLS7RxLGAHxiSYTnw3LZtXh__YMv6KcIOYOvkSt9PB/pub?w=841&amp;h=350" alt="creme_logo"/>
-&lt;/div>
+&lt;div align="center"&gt;
+ &lt;img height="220" src="https://docs.google.com/drawings/d/e/2PACX-1vSl80T4MnWRsPX3KvlB2kn6zVdHdUleG_w2zBiLS7RxLGAHxiSYTnw3LZtXh__YMv6KcIOYOvkSt9PB/pub?w=841&amp;h=350" alt="creme_logo"/&gt;
+&lt;/div&gt;
 
 .bullets[
 - Python library for doing online learning
@@ -481,14 +481,14 @@ For every incoming $x$, do:
 2. $\mu\_{i+1} = \mu\_{i} + \frac{x - \mu\_{i}}{n}$
 
 ```python
->>> mean = creme.stats.Mean()
+&gt;&gt;&gt; mean = creme.stats.Mean()
 
->>> mean.update(5)
->>> mean.get()
+&gt;&gt;&gt; mean.update(5)
+&gt;&gt;&gt; mean.get()
 5
 
->>> mean.update(10)
->>> mean.get()
+&gt;&gt;&gt; mean.update(10)
+&gt;&gt;&gt; mean.get()
 7.5
 ```
 
@@ -504,15 +504,15 @@ For every incoming $x$, do:
 4. $\sigma\_{i+1} = \frac{s\_{i+1}}{n}$
 
 ```python
->>> variance = creme.stats.Variance()
+&gt;&gt;&gt; variance = creme.stats.Variance()
 
->>> X = [2, 3, 4, 5]
->>> for x in X:
+&gt;&gt;&gt; X = [2, 3, 4, 5]
+&gt;&gt;&gt; for x in X:
 ... variance.update(x)
->>> variance.get()
+&gt;&gt;&gt; variance.get()
 1.25
 
->>> numpy.var(X)
+&gt;&gt;&gt; numpy.var(X)
 1.25
 
 ```
@@ -528,9 +528,9 @@ This is called Welford's algorithm, it can be extended to skew and kurtosis
 With the mean and the variance, we can scale incoming data so that it has zero mean and unit variance.
 
 ```python
->>> scaler = creme.preprocessing.StandardScaler()
+&gt;&gt;&gt; scaler = creme.preprocessing.StandardScaler()
 
->>> for x in [2, 3, 4, 5]:
+&gt;&gt;&gt; for x in [2, 3, 4, 5]:
 ... print(x, 'becomes', scaler.fit_one(x)['x'])
 2 becomes 0.0
 3 becomes 0.9999999999999996
@@ -539,9 +539,9 @@ With the mean and the variance, we can scale incoming data so that it has zero m
 
 ```
 
-&lt;div align="center">
- &lt;iframe src="https://giphy.com/embed/r1HGFou3mUwMw" width="480" height="180" frameBorder="0" class="giphy-embed" allowFullScreen>&lt;/iframe>
-&lt;/div>
+&lt;div align="center"&gt;
+ &lt;iframe src="https://giphy.com/embed/r1HGFou3mUwMw" width="480" height="180" frameBorder="0" class="giphy-embed" allowFullScreen&gt;&lt;/iframe&gt;
+&lt;/div&gt;
 
 ---
 
@@ -589,22 +589,22 @@ lin_reg = linear_model.LinearRegression(
 ### Online aggregations
 
 ```python
->>> import creme
+&gt;&gt;&gt; import creme
 
->>> X = [
+&gt;&gt;&gt; X = [
 ... {'place': 'Taco Bell', 'revenue': 42},
 ... {'place': 'Burger King', 'revenue': 16},
 ... {'place': 'Burger King', 'revenue': 24},
 ... {'place': 'Taco Bell', 'revenue': 58}
 ... ]
 
->>> agg = creme.feature_extraction.Agg(
+&gt;&gt;&gt; agg = creme.feature_extraction.Agg(
 ... on='revenue',
 ... by='place',
 ... how=creme.stats.Mean()
 ... )
 
->>> for x in X:
+&gt;&gt;&gt; for x in X:
 ... print(agg.fit_one(x).transform_one(x))
 {'revenue_mean_by_place': 42.0}
 {'revenue_mean_by_place': 16.0}
@@ -661,25 +661,25 @@ def predict_proba_one(self, x):
 
 ### League of Legends match duration forecasting (1)
 
-&lt;div align="center">
- &lt;img height="400px" src="https://maxhalford.github.io/img/slides/creme/lol_home.png" />
-&lt;/div>
+&lt;div align="center"&gt;
+ &lt;img height="400px" src="https://maxhalford.github.io/img/slides/creme/lol_home.png" /&gt;
+&lt;/div&gt;
 
 ---
 
 ### League of Legends match duration forecasting (2)
 
-&lt;div align="center">
- &lt;img height="400px" src="https://maxhalford.github.io/img/slides/creme/lol_matches.png" />
-&lt;/div>
+&lt;div align="center"&gt;
+ &lt;img height="400px" src="https://maxhalford.github.io/img/slides/creme/lol_matches.png" /&gt;
+&lt;/div&gt;
 
 ---
 
 ### Architecture
 
-&lt;div align="center">
- &lt;img height="450px" src="https://maxhalford.github.io/img/slides/creme/lol_architecture.svg" />
-&lt;/div>
+&lt;div align="center"&gt;
+ &lt;img height="450px" src="https://maxhalford.github.io/img/slides/creme/lol_architecture.svg" /&gt;
+&lt;/div&gt;
 
 ---
 
@@ -777,9 +777,9 @@ avg_error = agg['duration__avg']
 - Way more fun than batch learning
 ]
 
-&lt;div align="center" style="margin-top: 50px;">
- &lt;iframe src="https://giphy.com/embed/26tPplGWjN0xLybiU" width="480" height="180" frameBorder="0" class="giphy-embed" allowFullScreen>&lt;/iframe>
-&lt;/div>
+&lt;div align="center" style="margin-top: 50px;"&gt;
+ &lt;iframe src="https://giphy.com/embed/26tPplGWjN0xLybiU" width="480" height="180" frameBorder="0" class="giphy-embed" allowFullScreen&gt;&lt;/iframe&gt;
+&lt;/div&gt;
 
 ---
 
@@ -798,9 +798,9 @@ avg_error = agg['duration__avg']
 ]
 .right-column[
 
-&lt;div align="center" style="margin-top: 80px;">
- &lt;iframe src="https://giphy.com/embed/SuEFqeWxlLcvm" width="240" height="240" frameBorder="0" class="giphy-embed" allowFullScreen>&lt;/iframe>
-&lt;/div>
+&lt;div align="center" style="margin-top: 80px;"&gt;
+ &lt;iframe src="https://giphy.com/embed/SuEFqeWxlLcvm" width="240" height="240" frameBorder="0" class="giphy-embed" allowFullScreen&gt;&lt;/iframe&gt;
+&lt;/div&gt;
 
 ]
 
@@ -814,9 +814,9 @@ avg_error = agg['duration__avg']
 - Get in contact if you want to try `creme` and want advice
 - Spread the word!
 
-&lt;div align="center">
- &lt;img height="230px" src="https://maxhalford.github.io/img/slides/creme/we_need_you.jpg" />
-&lt;/div>
+&lt;div align="center"&gt;
+ &lt;img height="230px" src="https://maxhalford.github.io/img/slides/creme/we_need_you.jpg" /&gt;
+&lt;/div&gt;
 
 ---
 
@@ -825,24 +825,24 @@ class: center, middle
 # Thanks for listening!
 
 .left-column[
-&lt;div align="center" style="margin-top: 50px;">
- &lt;iframe src="https://giphy.com/embed/7zusy37fwKjfy" width="480px" height="343px" frameBorder="0" class="giphy-embed" allowFullScreen>&lt;/iframe>
-&lt;/div>
+&lt;div align="center" style="margin-top: 50px;"&gt;
+ &lt;iframe src="https://giphy.com/embed/7zusy37fwKjfy" width="480px" height="343px" frameBorder="0" class="giphy-embed" allowFullScreen&gt;&lt;/iframe&gt;
+&lt;/div&gt;
 ]
 
 .right-column[
-&lt;div align="center" style="margin-top: 50px;">
- &lt;img height="343px" src="https://maxhalford.github.io/img/slides/creme/qr_code.svg" />
-&lt;/div>
+&lt;div align="center" style="margin-top: 50px;"&gt;
+ &lt;img height="343px" src="https://maxhalford.github.io/img/slides/creme/qr_code.svg" /&gt;
+&lt;/div&gt;
 ]
 
- &lt;/textarea>
- &lt;script src="https://remarkjs.com/downloads/remark-latest.min.js">&lt;/script>
- &lt;script src="https://gnab.github.io/remark/downloads/remark-latest.min.js">&lt;/script>
- &lt;script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.5.1/katex.min.js">&lt;/script>
- &lt;script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.5.1/contrib/auto-render.min.js">&lt;/script>
- &lt;link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.5.1/katex.min.css">
- &lt;script type="text/javascript">
+ &lt;/textarea&gt;
+ &lt;script src="https://remarkjs.com/downloads/remark-latest.min.js"&gt;&lt;/script&gt;
+ &lt;script src="https://gnab.github.io/remark/downloads/remark-latest.min.js"&gt;&lt;/script&gt;
+ &lt;script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.5.1/katex.min.js"&gt;&lt;/script&gt;
+ &lt;script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.5.1/contrib/auto-render.min.js"&gt;&lt;/script&gt;
+ &lt;link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.5.1/katex.min.css"&gt;
+ &lt;script type="text/javascript"&gt;
  var options = {};
  var renderMath = function() {
  renderMathInElement(document.body, {delimiters: [ // mind the order of delimiters(!?)
@@ -864,14 +864,14 @@ class: center, middle
  },
  renderMath
  );
- &lt;/script>
- &lt;/body>
-&lt;/html></description></item><item><title/><link>https://maxhalford.github.io/slides/creme-tds/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>maxhalford25@gmail.com (Max Halford)</author><guid>https://maxhalford.github.io/slides/creme-tds/</guid><description>&lt;!DOCTYPE html>
-&lt;html>
- &lt;head>
- &lt;title>Machine learning incrémental: des concepts à la pratique&lt;/title>
- &lt;meta charset="utf-8">
- &lt;style>
+ &lt;/script&gt;
+ &lt;/body&gt;
+&lt;/html&gt;</description></item><item><title/><link>https://maxhalford.github.io/slides/creme-tds/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>maxhalford25@gmail.com (Max Halford)</author><guid>https://maxhalford.github.io/slides/creme-tds/</guid><description>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+ &lt;head&gt;
+ &lt;title&gt;Machine learning incrémental: des concepts à la pratique&lt;/title&gt;
+ &lt;meta charset="utf-8"&gt;
+ &lt;style&gt;
  @import url(https://fonts.googleapis.com/css?family=Open+Sans:700);
  @import url(https://fonts.googleapis.com/css?family=Fira+Mono:400,700,400italic);
 
@@ -931,10 +931,10 @@ class: center, middle
  a { color: hotpink; text-decoration: none; }
  li { margin: 10px 0; }
 
- &lt;/style>
- &lt;/head>
- &lt;body>
- &lt;textarea id="source">
+ &lt;/style&gt;
+ &lt;/head&gt;
+ &lt;body&gt;
+ &lt;textarea id="source"&gt;
 
 class: center, middle
 
@@ -946,17 +946,17 @@ class: center, middle
 
 #### Toulouse Data Science Meetup
 
-&lt;div style="display: flex; flex-direction: row; justify-content: center;">
+&lt;div style="display: flex; flex-direction: row; justify-content: center;"&gt;
 
- &lt;div align="center">
- &lt;img height="100px" src="https://maxhalford.github.io/img/slides/creme/logo_tds.png" />
- &lt;/div>
+ &lt;div align="center"&gt;
+ &lt;img height="100px" src="https://maxhalford.github.io/img/slides/creme/logo_tds.png" /&gt;
+ &lt;/div&gt;
 
- &lt;div align="center">
- &lt;img height="125px" src="https://docs.google.com/drawings/d/e/2PACX-1vSl80T4MnWRsPX3KvlB2kn6zVdHdUleG_w2zBiLS7RxLGAHxiSYTnw3LZtXh__YMv6KcIOYOvkSt9PB/pub?w=841&amp;h=350" />
- &lt;/div>
+ &lt;div align="center"&gt;
+ &lt;img height="125px" src="https://docs.google.com/drawings/d/e/2PACX-1vSl80T4MnWRsPX3KvlB2kn6zVdHdUleG_w2zBiLS7RxLGAHxiSYTnw3LZtXh__YMv6KcIOYOvkSt9PB/pub?w=841&amp;h=350" /&gt;
+ &lt;/div&gt;
 
-&lt;/div>
+&lt;/div&gt;
 
 ???
 
@@ -973,9 +973,9 @@ Hello!
 4. Bike stations forecasting demo 🚲 🔮
 ]
 
-&lt;div align="center">
- &lt;iframe src="https://giphy.com/embed/ZoAa7lsmym6UE" width="480" height="223" frameBorder="0" class="giphy-embed" allowFullScreen>&lt;/iframe>
-&lt;/div>
+&lt;div align="center"&gt;
+ &lt;iframe src="https://giphy.com/embed/ZoAa7lsmym6UE" width="480" height="223" frameBorder="0" class="giphy-embed" allowFullScreen&gt;&lt;/iframe&gt;
+&lt;/div&gt;
 
 ---
 
@@ -983,9 +983,9 @@ class: center, middle
 
 ### PyData Amsterdam 2019 🐍 🇳🇱 🧀
 
-&lt;div align="center">
- &lt;img height="400px" src="https://maxhalford.github.io/img/slides/creme/max_pydata.jpg" />
-&lt;/div>
+&lt;div align="center"&gt;
+ &lt;img height="400px" src="https://maxhalford.github.io/img/slides/creme/max_pydata.jpg" /&gt;
+&lt;/div&gt;
 
 ---
 
@@ -1001,10 +1001,10 @@ class: center, middle
 With code:
 
 ```python
->>> model.fit(X_train, y_train)
->>> dump(model, 'model.json')
->>> model = load('model.json')
->>> y_pred = model.predict(X_test)
+&gt;&gt;&gt; model.fit(X_train, y_train)
+&gt;&gt;&gt; dump(model, 'model.json')
+&gt;&gt;&gt; model = load('model.json')
+&gt;&gt;&gt; y_pred = model.predict(X_test)
 ```
 ---
 
@@ -1012,9 +1012,9 @@ class: center, middle
 
 ### Batch machine learning in production
 
-&lt;div align="center">
- &lt;img height="500px" src="https://maxhalford.github.io/img/slides/creme/batch_production.svg" />
-&lt;/div>
+&lt;div align="center"&gt;
+ &lt;img height="500px" src="https://maxhalford.github.io/img/slides/creme/batch_production.svg" /&gt;
+&lt;/div&gt;
 
 ---
 
@@ -1048,9 +1048,9 @@ class: center, middle, white
 
 class: center, middle
 
-&lt;img height="400px" src="https://maxhalford.github.io/img/slides/creme/edward-bear-bump-bump.png" />
+&lt;img height="400px" src="https://maxhalford.github.io/img/slides/creme/edward-bear-bump-bump.png" /&gt;
 
-> It is, as far as he knows, the only way of coming downstairs, but sometimes he feels that there really is another way, if only he could stop bumping for a moment and think of it.
+&gt; It is, as far as he knows, the only way of coming downstairs, but sometimes he feels that there really is another way, if only he could stop bumping for a moment and think of it.
 
 ???
 
@@ -1073,13 +1073,13 @@ class: middle, white
 
 ## Everything changes 💥
 
-&lt;div style="display: flex; flex-direction: row;">
-&lt;iframe src="https://giphy.com/embed/1xdHOjP8eRr6tpuYJG" width="480" height="480" frameBorder="0" class="giphy-embed" allowFullScreen>&lt;/iframe>
-&lt;div style="display: flex; flex-direction: column;">
-&lt;iframe src="https://giphy.com/embed/H1BE3dRF6z5FtR7bGo" width="480" height="225" frameBorder="0" class="giphy-embed" allowFullScreen style="margin-bottom: 30px">&lt;/iframe>
-&lt;iframe src="https://giphy.com/embed/l1J9wSXhprtRF1HYA" width="480" height="225" frameBorder="0" class="giphy-embed" allowFullScreen>&lt;/iframe>
-&lt;/div>
-&lt;/div>
+&lt;div style="display: flex; flex-direction: row;"&gt;
+&lt;iframe src="https://giphy.com/embed/1xdHOjP8eRr6tpuYJG" width="480" height="480" frameBorder="0" class="giphy-embed" allowFullScreen&gt;&lt;/iframe&gt;
+&lt;div style="display: flex; flex-direction: column;"&gt;
+&lt;iframe src="https://giphy.com/embed/H1BE3dRF6z5FtR7bGo" width="480" height="225" frameBorder="0" class="giphy-embed" allowFullScreen style="margin-bottom: 30px"&gt;&lt;/iframe&gt;
+&lt;iframe src="https://giphy.com/embed/l1J9wSXhprtRF1HYA" width="480" height="225" frameBorder="0" class="giphy-embed" allowFullScreen&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+&lt;/div&gt;
 
 ---
 
@@ -1110,7 +1110,7 @@ class: middle, white
 - Recommender systems
 - Ad placement
 - Internet of things
-- Basically, &lt;span style="text-decoration:underline">anything event based&lt;/span>
+- Basically, &lt;span style="text-decoration:underline"&gt;anything event based&lt;/span&gt;
 ]
 
 ---
@@ -1119,7 +1119,7 @@ class: center, middle
 
 ### Online learning in a nutshell
 
-&lt;iframe src="https://giphy.com/embed/HsXfypimWpPcQ" width="480" height="350" frameBorder="0" class="giphy-embed" allowFullScreen>&lt;/iframe>
+&lt;iframe src="https://giphy.com/embed/HsXfypimWpPcQ" width="480" height="350" frameBorder="0" class="giphy-embed" allowFullScreen&gt;&lt;/iframe&gt;
 
 ---
 
@@ -1146,9 +1146,9 @@ class: center, middle
 
 class: middle
 
-&lt;div align="center">
- &lt;img height="250" src="https://docs.google.com/drawings/d/e/2PACX-1vSl80T4MnWRsPX3KvlB2kn6zVdHdUleG_w2zBiLS7RxLGAHxiSYTnw3LZtXh__YMv6KcIOYOvkSt9PB/pub?w=841&amp;h=350" alt="creme_logo"/>
-&lt;/div>
+&lt;div align="center"&gt;
+ &lt;img height="250" src="https://docs.google.com/drawings/d/e/2PACX-1vSl80T4MnWRsPX3KvlB2kn6zVdHdUleG_w2zBiLS7RxLGAHxiSYTnw3LZtXh__YMv6KcIOYOvkSt9PB/pub?w=841&amp;h=350" alt="creme_logo"/&gt;
+&lt;/div&gt;
 
 .bullets[
 - Online machine learning library for Python 🐍
@@ -1359,14 +1359,14 @@ For every incoming $x$, do:
 2. $\mu\_{i+1} = \mu\_{i} + \frac{x - \mu\_{i}}{n}$
 
 ```python
->>> mean = creme.stats.Mean()
+&gt;&gt;&gt; mean = creme.stats.Mean()
 
->>> mean.update(5)
->>> mean.get()
+&gt;&gt;&gt; mean.update(5)
+&gt;&gt;&gt; mean.get()
 5
 
->>> mean.update(10)
->>> mean.get()
+&gt;&gt;&gt; mean.update(10)
+&gt;&gt;&gt; mean.get()
 7.5
 ```
 
@@ -1382,15 +1382,15 @@ For every incoming $x$, do:
 4. $\sigma\_{i+1} = \frac{s\_{i+1}}{n}$
 
 ```python
->>> variance = creme.stats.Variance()
+&gt;&gt;&gt; variance = creme.stats.Variance()
 
->>> X = [2, 3, 4, 5]
->>> for x in X:
+&gt;&gt;&gt; X = [2, 3, 4, 5]
+&gt;&gt;&gt; for x in X:
 ... variance.update(x)
->>> variance.get()
+&gt;&gt;&gt; variance.get()
 1.25
 
->>> numpy.var(X)
+&gt;&gt;&gt; numpy.var(X)
 1.25
 
 ```
@@ -1406,9 +1406,9 @@ This is called Welford's algorithm, it can be extended to skew and kurtosis
 Using the mean and the variance, we can rescale incoming data.
 
 ```python
->>> scaler = creme.preprocessing.StandardScaler()
+&gt;&gt;&gt; scaler = creme.preprocessing.StandardScaler()
 
->>> for x in [2, 3, 4, 5]:
+&gt;&gt;&gt; for x in [2, 3, 4, 5]:
 ... features = {'x': x}
 ... scaler.fit_one(features)
 ... new_x = scaler.transform_one(features)['x']
@@ -1420,9 +1420,9 @@ Using the mean and the variance, we can rescale incoming data.
 
 ```
 
-&lt;div align="center">
- &lt;iframe src="https://giphy.com/embed/nlWGe7Q64zwQ0" width="480" height="180" frameBorder="0" class="giphy-embed" allowFullScreen>&lt;/iframe>
-&lt;/div>
+&lt;div align="center"&gt;
+ &lt;iframe src="https://giphy.com/embed/nlWGe7Q64zwQ0" width="480" height="180" frameBorder="0" class="giphy-embed" allowFullScreen&gt;&lt;/iframe&gt;
+&lt;/div&gt;
 
 ---
 
@@ -1468,22 +1468,22 @@ lin_reg = linear_model.LinearRegression(
 ### Online aggregations
 
 ```python
->>> import creme
+&gt;&gt;&gt; import creme
 
->>> X = [
+&gt;&gt;&gt; X = [
 ... {'meal': 🍕, 'sales': 42},
 ... {'meal': 🍔, 'sales': 16},
 ... {'meal': 🍔, 'sales': 24},
 ... {'meal': 🍕, 'sales': 58}
 ... ]
 
->>> agg = creme.feature_extraction.Agg(
+&gt;&gt;&gt; agg = creme.feature_extraction.Agg(
 ... on='sales',
 ... by='meal',
 ... how=creme.stats.Mean()
 ... )
 
->>> for x in X:
+&gt;&gt;&gt; for x in X:
 ... print(agg.fit_one(x).transform_one(x))
 {'sales_mean_by_meal': 42.0}
 {'sales_mean_by_meal': 16.0}
@@ -1555,37 +1555,37 @@ class: center, middle
 
 ### `creme`'s current modules
 
-&lt;div style="display: flex; justify-content: space-around;">
- &lt;ul>
- &lt;li>&lt;pre>cluster&lt;/pre>&lt;/li>
- &lt;li>&lt;pre>compat&lt;/pre>&lt;/li>
- &lt;li>&lt;pre>compose&lt;/pre>&lt;/li>
- &lt;li>&lt;pre>datasets&lt;/pre>&lt;/li>
- &lt;li>&lt;pre>dummy&lt;/pre>&lt;/li>
- &lt;li>&lt;pre>ensemble&lt;/pre>&lt;/li>
- &lt;li>&lt;pre>feature_extraction&lt;/pre>&lt;/li>
- &lt;/ul>
- &lt;ul>
- &lt;li>&lt;pre>feature_selection&lt;/pre>&lt;/li>
- &lt;li>&lt;pre>impute&lt;/pre>&lt;/li>
- &lt;li>&lt;pre>linear_model&lt;/pre>&lt;/li>
- &lt;li>&lt;pre>model_selection&lt;/pre>&lt;/li>
- &lt;li>&lt;pre>multiclass&lt;/pre>&lt;/li>
- &lt;li>&lt;pre>naive_bayes&lt;/pre>&lt;/li>
- &lt;li>&lt;pre>optim&lt;/pre>&lt;/li>
- &lt;li>&lt;pre>plot&lt;/pre>&lt;/li>
- &lt;/ul>
- &lt;ul>
- &lt;li>&lt;pre>preprocessing&lt;/pre>&lt;/li>
- &lt;li>&lt;pre>proba&lt;/pre>&lt;/li>
- &lt;li>&lt;pre>reco&lt;/pre>&lt;/li>
- &lt;li>&lt;pre>stats&lt;/pre>&lt;/li>
- &lt;li>&lt;pre>stream&lt;/pre>&lt;/li>
- &lt;li>&lt;pre>tree&lt;/pre>&lt;/li>
- &lt;li>&lt;pre>utils&lt;/pre>&lt;/li>
- &lt;/ul>
+&lt;div style="display: flex; justify-content: space-around;"&gt;
+ &lt;ul&gt;
+ &lt;li&gt;&lt;pre&gt;cluster&lt;/pre&gt;&lt;/li&gt;
+ &lt;li&gt;&lt;pre&gt;compat&lt;/pre&gt;&lt;/li&gt;
+ &lt;li&gt;&lt;pre&gt;compose&lt;/pre&gt;&lt;/li&gt;
+ &lt;li&gt;&lt;pre&gt;datasets&lt;/pre&gt;&lt;/li&gt;
+ &lt;li&gt;&lt;pre&gt;dummy&lt;/pre&gt;&lt;/li&gt;
+ &lt;li&gt;&lt;pre&gt;ensemble&lt;/pre&gt;&lt;/li&gt;
+ &lt;li&gt;&lt;pre&gt;feature_extraction&lt;/pre&gt;&lt;/li&gt;
+ &lt;/ul&gt;
+ &lt;ul&gt;
+ &lt;li&gt;&lt;pre&gt;feature_selection&lt;/pre&gt;&lt;/li&gt;
+ &lt;li&gt;&lt;pre&gt;impute&lt;/pre&gt;&lt;/li&gt;
+ &lt;li&gt;&lt;pre&gt;linear_model&lt;/pre&gt;&lt;/li&gt;
+ &lt;li&gt;&lt;pre&gt;model_selection&lt;/pre&gt;&lt;/li&gt;
+ &lt;li&gt;&lt;pre&gt;multiclass&lt;/pre&gt;&lt;/li&gt;
+ &lt;li&gt;&lt;pre&gt;naive_bayes&lt;/pre&gt;&lt;/li&gt;
+ &lt;li&gt;&lt;pre&gt;optim&lt;/pre&gt;&lt;/li&gt;
+ &lt;li&gt;&lt;pre&gt;plot&lt;/pre&gt;&lt;/li&gt;
+ &lt;/ul&gt;
+ &lt;ul&gt;
+ &lt;li&gt;&lt;pre&gt;preprocessing&lt;/pre&gt;&lt;/li&gt;
+ &lt;li&gt;&lt;pre&gt;proba&lt;/pre&gt;&lt;/li&gt;
+ &lt;li&gt;&lt;pre&gt;reco&lt;/pre&gt;&lt;/li&gt;
+ &lt;li&gt;&lt;pre&gt;stats&lt;/pre&gt;&lt;/li&gt;
+ &lt;li&gt;&lt;pre&gt;stream&lt;/pre&gt;&lt;/li&gt;
+ &lt;li&gt;&lt;pre&gt;tree&lt;/pre&gt;&lt;/li&gt;
+ &lt;li&gt;&lt;pre&gt;utils&lt;/pre&gt;&lt;/li&gt;
+ &lt;/ul&gt;
 
-&lt;/div>
+&lt;/div&gt;
 
 ---
 
@@ -1608,9 +1608,9 @@ class: center, middle
 
 ### Alternative frameworks
 
-&lt;div align="center">
- &lt;img height="500px" src="https://maxhalford.github.io/img/slides/creme/others.svg" />
-&lt;/div>
+&lt;div align="center"&gt;
+ &lt;img height="500px" src="https://maxhalford.github.io/img/slides/creme/others.svg" /&gt;
+&lt;/div&gt;
 
 ---
 
@@ -1623,9 +1623,9 @@ class: center, middle
 - Way more fun than batch learning
 ]
 
-&lt;div align="center" style="margin-top: 20px;">
- &lt;iframe src="https://giphy.com/embed/IKyw3IP1keKk0" width="480" height="220" frameBorder="0" class="giphy-embed" allowFullScreen>&lt;/iframe>
-&lt;/div>
+&lt;div align="center" style="margin-top: 20px;"&gt;
+ &lt;iframe src="https://giphy.com/embed/IKyw3IP1keKk0" width="480" height="220" frameBorder="0" class="giphy-embed" allowFullScreen&gt;&lt;/iframe&gt;
+&lt;/div&gt;
 
 ---
 
@@ -1639,9 +1639,9 @@ class: center, middle
 - Many issues [on GitHub](https://github.com/creme-ml/creme/issues)
 ]
 
-&lt;div align="center">
- &lt;iframe src="https://giphy.com/embed/JltOMwYmi0VrO" width="480" height="220" frameBorder="0" class="giphy-embed" allowFullScreen>&lt;/iframe>
-&lt;/div>
+&lt;div align="center"&gt;
+ &lt;iframe src="https://giphy.com/embed/JltOMwYmi0VrO" width="480" height="220" frameBorder="0" class="giphy-embed" allowFullScreen&gt;&lt;/iframe&gt;
+&lt;/div&gt;
 
 ---
 
@@ -1653,9 +1653,9 @@ class: center, middle
 - Get in touch if you want help and/or advice
 - Starring us on GitHub helps a lot 🌟
 
-&lt;div align="center">
- &lt;img height="230px" src="https://maxhalford.github.io/img/slides/creme/we_need_you_fr.jpg" />
-&lt;/div>
+&lt;div align="center"&gt;
+ &lt;img height="230px" src="https://maxhalford.github.io/img/slides/creme/we_need_you_fr.jpg" /&gt;
+&lt;/div&gt;
 
 ---
 
@@ -1664,24 +1664,24 @@ class: center, middle
 # Thanks for listening!
 
 .left-column[
-&lt;div align="center" style="margin-top: 50px;">
- &lt;iframe src="https://giphy.com/embed/DUrdT2xEmJWbS" width="400px" height="400px" frameBorder="0" class="giphy-embed" allowFullScreen>&lt;/iframe>
-&lt;/div>
+&lt;div align="center" style="margin-top: 50px;"&gt;
+ &lt;iframe src="https://giphy.com/embed/DUrdT2xEmJWbS" width="400px" height="400px" frameBorder="0" class="giphy-embed" allowFullScreen&gt;&lt;/iframe&gt;
+&lt;/div&gt;
 ]
 
 .right-column[
-&lt;div align="center" style="margin-top: 50px;">
- &lt;img height="400px" src="https://maxhalford.github.io/img/slides/creme/qr_code.svg" />
-&lt;/div>
+&lt;div align="center" style="margin-top: 50px;"&gt;
+ &lt;img height="400px" src="https://maxhalford.github.io/img/slides/creme/qr_code.svg" /&gt;
+&lt;/div&gt;
 ]
 
- &lt;/textarea>
- &lt;script src="https://remarkjs.com/downloads/remark-latest.min.js">&lt;/script>
- &lt;script src="https://gnab.github.io/remark/downloads/remark-latest.min.js">&lt;/script>
- &lt;script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.5.1/katex.min.js">&lt;/script>
- &lt;script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.5.1/contrib/auto-render.min.js">&lt;/script>
- &lt;link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.5.1/katex.min.css">
- &lt;script type="text/javascript">
+ &lt;/textarea&gt;
+ &lt;script src="https://remarkjs.com/downloads/remark-latest.min.js"&gt;&lt;/script&gt;
+ &lt;script src="https://gnab.github.io/remark/downloads/remark-latest.min.js"&gt;&lt;/script&gt;
+ &lt;script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.5.1/katex.min.js"&gt;&lt;/script&gt;
+ &lt;script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.5.1/contrib/auto-render.min.js"&gt;&lt;/script&gt;
+ &lt;link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.5.1/katex.min.css"&gt;
+ &lt;script type="text/javascript"&gt;
  var options = {};
  var renderMath = function() {
  renderMathInElement(document.body, {delimiters: [ // mind the order of delimiters(!?)
@@ -1703,14 +1703,14 @@ class: center, middle
  },
  renderMath
  );
- &lt;/script>
- &lt;/body>
-&lt;/html></description></item><item><title/><link>https://maxhalford.github.io/slides/the-benefits-of-online-learning/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>maxhalford25@gmail.com (Max Halford)</author><guid>https://maxhalford.github.io/slides/the-benefits-of-online-learning/</guid><description>&lt;!DOCTYPE html>
-&lt;html>
- &lt;head>
- &lt;title>The Benefits of Online Learning&lt;/title>
- &lt;meta charset="utf-8">
- &lt;style>
+ &lt;/script&gt;
+ &lt;/body&gt;
+&lt;/html&gt;</description></item><item><title/><link>https://maxhalford.github.io/slides/the-benefits-of-online-learning/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>maxhalford25@gmail.com (Max Halford)</author><guid>https://maxhalford.github.io/slides/the-benefits-of-online-learning/</guid><description>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+ &lt;head&gt;
+ &lt;title&gt;The Benefits of Online Learning&lt;/title&gt;
+ &lt;meta charset="utf-8"&gt;
+ &lt;style&gt;
  @import url(https://fonts.googleapis.com/css?family=Open+Sans:700);
  @import url(https://fonts.googleapis.com/css?family=Fira+Mono:400,700,400italic);
 
@@ -1786,10 +1786,10 @@ class: center, middle
  border-left: 0px !important;
  }
 
- &lt;/style>
- &lt;/head>
- &lt;body>
- &lt;textarea id="source">
+ &lt;/style&gt;
+ &lt;/head&gt;
+ &lt;body&gt;
+ &lt;textarea id="source"&gt;
 
 class: center, middle
 
@@ -1799,13 +1799,13 @@ class: center, middle
 
 #### Max Halford
 
-&lt;div style="display: flex; flex-direction: row; justify-content: center;">
+&lt;div style="display: flex; flex-direction: row; justify-content: center;"&gt;
 
- &lt;div align="center">
- &lt;img height="180px" src="https://maxhalford.github.io/img/slides/creme/creme.svg" />
- &lt;/div>
+ &lt;div align="center"&gt;
+ &lt;img height="180px" src="https://maxhalford.github.io/img/slides/creme/creme.svg" /&gt;
+ &lt;/div&gt;
 
-&lt;/div>
+&lt;/div&gt;
 
 ???
 
@@ -1817,18 +1817,18 @@ class: middle
 
 ## Outline
 
-&lt;div align="center">
- &lt;img height="300px" src="https://maxhalford.github.io/img/slides/creme/knowledge.jpg" />
-&lt;/div>
+&lt;div align="center"&gt;
+ &lt;img height="300px" src="https://maxhalford.github.io/img/slides/creme/knowledge.jpg" /&gt;
+&lt;/div&gt;
 
 ---
 
 ### A bit about me
 
 .left-column[
-&lt;div align="center">
- &lt;img height="500px" src="https://maxhalford.github.io/img/slides/creme/moneyball.jpg" />
-&lt;/div>
+&lt;div align="center"&gt;
+ &lt;img height="500px" src="https://maxhalford.github.io/img/slides/creme/moneyball.jpg" /&gt;
+&lt;/div&gt;
 ]
 
 .right-column[
@@ -1858,19 +1858,19 @@ class: middle
 With code:
 
 ```python
->>> model.fit(X_train, y_train)
->>> dump(model, 'model.json')
->>> model = load('model.json')
->>> y_pred = model.predict(X_test)
+&gt;&gt;&gt; model.fit(X_train, y_train)
+&gt;&gt;&gt; dump(model, 'model.json')
+&gt;&gt;&gt; model = load('model.json')
+&gt;&gt;&gt; y_pred = model.predict(X_test)
 ```
 
 ---
 
 ## Lambda architecture
 
-&lt;div align="center">
- &lt;img height="500px" src="https://maxhalford.github.io/img/slides/creme/lambda_architecture.svg" />
-&lt;/div>
+&lt;div align="center"&gt;
+ &lt;img height="500px" src="https://maxhalford.github.io/img/slides/creme/lambda_architecture.svg" /&gt;
+&lt;/div&gt;
 
 ---
 
@@ -1898,25 +1898,25 @@ As we looked at last month with Continuum, the latency of incorporating the late
 
 ## Banana rotting time
 
-&lt;div align="center">
- &lt;img height="440px" src="https://maxhalford.github.io/img/slides/creme/banana_rotting_time.png" />
-&lt;/div>
+&lt;div align="center"&gt;
+ &lt;img height="440px" src="https://maxhalford.github.io/img/slides/creme/banana_rotting_time.png" /&gt;
+&lt;/div&gt;
 
 ---
 
 ### "If everyone's doing it, it's got to be the best way, right?"
 
-&lt;div align="center">
- &lt;img height="480px" src="https://maxhalford.github.io/img/slides/creme/everyone_is_doing_it.png" />
-&lt;/div>
+&lt;div align="center"&gt;
+ &lt;img height="480px" src="https://maxhalford.github.io/img/slides/creme/everyone_is_doing_it.png" /&gt;
+&lt;/div&gt;
 
 ---
 
 ## Kappa architecture
 
-&lt;div align="center">
- &lt;img height="500px" src="https://maxhalford.github.io/img/slides/creme/kappa_architecture.svg" />
-&lt;/div>
+&lt;div align="center"&gt;
+ &lt;img height="500px" src="https://maxhalford.github.io/img/slides/creme/kappa_architecture.svg" /&gt;
+&lt;/div&gt;
 
 ???
 
@@ -1981,7 +1981,7 @@ class: middle, white
 - Recommender systems
 - Ad placement
 - Internet of things
-- Basically, &lt;span style="text-decoration:underline">anything event based&lt;/span>
+- Basically, &lt;span style="text-decoration:underline"&gt;anything event based&lt;/span&gt;
 ]
 
 ---
@@ -2003,9 +2003,9 @@ class: middle, white
 
 class: center, middle
 
-&lt;img height="400px" src="https://maxhalford.github.io/img/slides/creme/edward-bear-bump-bump.png" />
+&lt;img height="400px" src="https://maxhalford.github.io/img/slides/creme/edward-bear-bump-bump.png" /&gt;
 
-> It is, as far as he knows, the only way of coming downstairs, but sometimes he feels that there really is another way, if only he could stop bumping for a moment and think of it.
+&gt; It is, as far as he knows, the only way of coming downstairs, but sometimes he feels that there really is another way, if only he could stop bumping for a moment and think of it.
 
 ???
 
@@ -2015,9 +2015,9 @@ And just like Winnie the Pooh, we're spending too much time banging our heads to
 
 class: middle
 
-&lt;div align="center">
- &lt;img height="250" src="https://maxhalford.github.io/img/slides/creme/creme.svg" alt="creme_logo"/>
-&lt;/div>
+&lt;div align="center"&gt;
+ &lt;img height="250" src="https://maxhalford.github.io/img/slides/creme/creme.svg" alt="creme_logo"/&gt;
+&lt;/div&gt;
 
 .bullets[
 - Online machine learning library for Python 🐍
@@ -2033,9 +2033,9 @@ class: center, middle
 
 ### PyData Amsterdam, May 2019 🐍 🇳🇱 🧀
 
-&lt;div align="center">
- &lt;img height="400px" src="https://maxhalford.github.io/img/slides/creme/max_pydata.jpg" />
-&lt;/div>
+&lt;div align="center"&gt;
+ &lt;img height="400px" src="https://maxhalford.github.io/img/slides/creme/max_pydata.jpg" /&gt;
+&lt;/div&gt;
 
 ---
 
@@ -2193,9 +2193,9 @@ model.draw()
 ]
 
 .right-column[
-&lt;div align="center">
- &lt;img height="400px" src="https://maxhalford.github.io/img/slides/creme/pipeline.svg" />
-&lt;/div>
+&lt;div align="center"&gt;
+ &lt;img height="400px" src="https://maxhalford.github.io/img/slides/creme/pipeline.svg" /&gt;
+&lt;/div&gt;
 ]
 
 ---
@@ -2208,14 +2208,14 @@ For every incoming $x$, do:
 2. $\mu\_{i+1} = \mu\_{i} + \frac{x - \mu\_{i}}{n}$
 
 ```python
->>> mean = creme.stats.Mean()
+&gt;&gt;&gt; mean = creme.stats.Mean()
 
->>> mean.update(5)
->>> mean.get()
+&gt;&gt;&gt; mean.update(5)
+&gt;&gt;&gt; mean.get()
 5
 
->>> mean.update(10)
->>> mean.get()
+&gt;&gt;&gt; mean.update(10)
+&gt;&gt;&gt; mean.get()
 7.5
 ```
 
@@ -2231,15 +2231,15 @@ For every incoming $x$, do:
 4. $\sigma\_{i+1} = \frac{s\_{i+1}}{n}$
 
 ```python
->>> variance = creme.stats.Variance()
+&gt;&gt;&gt; variance = creme.stats.Variance()
 
->>> X = [2, 3, 4, 5]
->>> for x in X:
+&gt;&gt;&gt; X = [2, 3, 4, 5]
+&gt;&gt;&gt; for x in X:
 ... variance.update(x)
->>> variance.get()
+&gt;&gt;&gt; variance.get()
 1.25
 
->>> numpy.var(X)
+&gt;&gt;&gt; numpy.var(X)
 1.25
 
 ```
@@ -2257,9 +2257,9 @@ class: middle
 Using the mean and the variance, we can rescale incoming data.
 
 ```python
->>> scaler = creme.preprocessing.StandardScaler()
+&gt;&gt;&gt; scaler = creme.preprocessing.StandardScaler()
 
->>> for x in [2, 3, 4, 5]:
+&gt;&gt;&gt; for x in [2, 3, 4, 5]:
 ... features = {'x': x}
 ... scaler.fit_one(features)
 ... new_x = scaler.transform_one(features)['x']
@@ -2308,9 +2308,9 @@ class: middle
 - Approximate Large Margin Algorithm (ALMA)
 ]
 
-&lt;div align="center">
+&lt;div align="center"&gt;
 Many variants of each, as you know
-&lt;/div>
+&lt;/div&gt;
 
 ---
 
@@ -2439,22 +2439,22 @@ class: middle
 ### Online aggregated features
 
 ```python
->>> import creme
+&gt;&gt;&gt; import creme
 
->>> X = [
+&gt;&gt;&gt; X = [
 ... {'meal': 'tika masala', 'sales': 42},
 ... {'meal': 'kale salad', 'sales': 16},
 ... {'meal': 'kale salad', 'sales': 24},
 ... {'meal': 'tika masala', 'sales': 58}
 ... ]
 
->>> agg = creme.feature_extraction.Agg(
+&gt;&gt;&gt; agg = creme.feature_extraction.Agg(
 ... on='sales',
 ... by='meal',
 ... how=creme.stats.Mean()
 ... )
 
->>> for x in X:
+&gt;&gt;&gt; for x in X:
 ... print(agg.fit_one(x).transform_one(x))
 {'sales_mean_by_meal': 42.0}
 {'sales_mean_by_meal': 16.0}
@@ -2483,9 +2483,9 @@ class: middle, white
 
 ### Alternative frameworks
 
-&lt;div align="center">
- &lt;img height="500px" src="https://maxhalford.github.io/img/slides/creme/others.svg" />
-&lt;/div>
+&lt;div align="center"&gt;
+ &lt;img height="500px" src="https://maxhalford.github.io/img/slides/creme/others.svg" /&gt;
+&lt;/div&gt;
 
 ---
 
@@ -2493,7 +2493,7 @@ class: center, middle
 
 ### Binary classification benchmark with default parameters
 
-&lt;div align="center">
+&lt;div align="center"&gt;
 .pure-table.pure-table-striped[
 | Library | Method | Accuracy | Average fit time | Average predict time |
 |---------|------------|----------|------------------|----------------------|
@@ -2508,7 +2508,7 @@ class: center, middle
 | scikit-learn | SGDClassifier | 0.56161 | 420μs | 116μs |
 | scikit-learn | PassiveAggressiveClassifier | 0.55009 | 398μs | 114μs |
 ]
-&lt;/div>
+&lt;/div&gt;
 
 ---
 
@@ -2516,7 +2516,7 @@ class: center, middle
 
 ### Linear regression benchmark
 
-&lt;div align="center">
+&lt;div align="center"&gt;
 .pure-table.pure-table-striped[
 | Library | Method | MSE | Average fit time | Average predict time |
 |---------|------------|----------|------------------|----------------------|
@@ -2525,7 +2525,7 @@ class: center, middle
 | PyTorch (CPU) | Linear | 23.035086 | 577μs | 187μs |
 | scikit-learn | SGDRegressor | 25.295369 | 305μs | 108μs |
 ]
-&lt;/div>
+&lt;/div&gt;
 
 ---
 
@@ -2584,25 +2584,25 @@ class: center, middle
 # Thanks for listening!
 
 .left-column[
-&lt;div align="center">
- &lt;img height="440px" src="https://maxhalford.github.io/img/slides/creme/yoda.jpg" />
-&lt;/div>
+&lt;div align="center"&gt;
+ &lt;img height="440px" src="https://maxhalford.github.io/img/slides/creme/yoda.jpg" /&gt;
+&lt;/div&gt;
 ]
 
 .right-column[
-&lt;div align="center" style="margin-top: 50px;">
- &lt;img height="400px" src="https://maxhalford.github.io/img/slides/creme/qr_code.svg" />
-&lt;/div>
+&lt;div align="center" style="margin-top: 50px;"&gt;
+ &lt;img height="400px" src="https://maxhalford.github.io/img/slides/creme/qr_code.svg" /&gt;
+&lt;/div&gt;
 ]
 
- &lt;/textarea>
- &lt;script src="https://remarkjs.com/downloads/remark-latest.min.js">&lt;/script>
- &lt;script src="https://gnab.github.io/remark/downloads/remark-latest.min.js">&lt;/script>
- &lt;script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.5.1/katex.min.js">&lt;/script>
- &lt;script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.5.1/contrib/auto-render.min.js">&lt;/script>
- &lt;link rel="stylesheet" href="https://unpkg.com/purecss@1.0.1/build/pure-min.css" integrity="sha384-oAOxQR6DkCoMliIh8yFnu25d7Eq/PHS21PClpwjOTeU2jRSq11vu66rf90/cZr47" crossorigin="anonymous">
- &lt;link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.5.1/katex.min.css">
- &lt;script type="text/javascript">
+ &lt;/textarea&gt;
+ &lt;script src="https://remarkjs.com/downloads/remark-latest.min.js"&gt;&lt;/script&gt;
+ &lt;script src="https://gnab.github.io/remark/downloads/remark-latest.min.js"&gt;&lt;/script&gt;
+ &lt;script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.5.1/katex.min.js"&gt;&lt;/script&gt;
+ &lt;script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.5.1/contrib/auto-render.min.js"&gt;&lt;/script&gt;
+ &lt;link rel="stylesheet" href="https://unpkg.com/purecss@1.0.1/build/pure-min.css" integrity="sha384-oAOxQR6DkCoMliIh8yFnu25d7Eq/PHS21PClpwjOTeU2jRSq11vu66rf90/cZr47" crossorigin="anonymous"&gt;
+ &lt;link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.5.1/katex.min.css"&gt;
+ &lt;script type="text/javascript"&gt;
  var options = {};
  var renderMath = function() {
  renderMathInElement(document.body, {delimiters: [ // mind the order of delimiters(!?)
@@ -2624,13 +2624,13 @@ class: center, middle
  },
  renderMath
  );
- &lt;/script>
- &lt;/body>
-&lt;/html></description></item><item><title>An introduction to symbolic regression</title><link>https://maxhalford.github.io/slides/symbolic-regression/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>maxhalford25@gmail.com (Max Halford)</author><guid>https://maxhalford.github.io/slides/symbolic-regression/</guid><description>&lt;div align="center">
-&lt;h1>An introduction to symbolic regression&lt;/h1>
-&lt;h3>Max Halford - PhD student IRIT/IMT&lt;/h3>
-&lt;h4>Toulouse Data Science Meetup - December 2017&lt;/h4>
-&lt;/div>
+ &lt;/script&gt;
+ &lt;/body&gt;
+&lt;/html&gt;</description></item><item><title>An introduction to symbolic regression</title><link>https://maxhalford.github.io/slides/symbolic-regression/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>maxhalford25@gmail.com (Max Halford)</author><guid>https://maxhalford.github.io/slides/symbolic-regression/</guid><description>&lt;div align="center"&gt;
+&lt;h1&gt;An introduction to symbolic regression&lt;/h1&gt;
+&lt;h3&gt;Max Halford - PhD student IRIT/IMT&lt;/h3&gt;
+&lt;h4&gt;Toulouse Data Science Meetup - December 2017&lt;/h4&gt;
+&lt;/div&gt;
 
 .center[
 .left-column[![tds_logo](/assets/img/presentations/tds_logo.jpeg)]
@@ -2654,13 +2654,13 @@ layout: true
 
 ---
 
-&lt;img src="https://maxhalford.github.io/assets/img/presentations/evolutionary_algorithms.png" width="120%">
+&lt;img src="https://maxhalford.github.io/assets/img/presentations/evolutionary_algorithms.png" width="120%"&gt;
 
 ---
 
 ## Example programs
 
-&lt;img src="https://maxhalford.github.io/assets/img/presentations/example_programs.png" width="100%">
+&lt;img src="https://maxhalford.github.io/assets/img/presentations/example_programs.png" width="100%"&gt;
 
 ---
 

@@ -481,6 +481,7 @@ I like these retrocool websites:
 - [neal.fun](https://neal.fun/)
 - [wplace.live](https://wplace.live/)
 - [historicaltechtree.com](https://www.historicaltechtree.com/) -- just like Civ!
+- [loadmo.re](https://loadmo.re/)
 
 ## Documentaries
 

@@ -12,6 +12,8 @@ toc = true
 
 **Edit 3** -- _Someone did some digging and sent me [Decomposition techniques for financial ratios of European non-financial listed groups](https://www.ecb.europa.eu/pub/pdf/scpsps/ecb.sps.21.en.pdf). It appears to use the same methodology for unpacking a weighted average, which they call Marshall-Edgeworth decomposition. I also stumbled on [this](https://www.nbb.be/doc/dq/mir/facteurs_fr.pdf) simplified version, written in French._
 
+**Edit 4** -- _Surendra Singh made [this nice interactive tool](https://www.metric.center/)._
+
 ## Motivation
 
 Say you're a data analyst at a company. You've built a dashboard with several KPIs. You're happy because it took you a couple of days of hard work. You even went the extra mile of writing unit tests. You share the dashboard on Slack with the relevant stakeholders, call it a day, and go grab a beer.

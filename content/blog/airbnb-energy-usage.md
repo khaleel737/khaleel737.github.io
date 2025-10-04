@@ -25,7 +25,7 @@ The question as to whether Airbnb guests are less energy efficient than their ho
 
 Even if the data were available, the question would still be difficult to answer. Indeed, hosts don't necessarily live in the flat they rent on Airbnb, so we can't tell if they would have consumed less energy than their guests. Moreover, consider a host who stays at their flat in summer, and rents it out in winter. Naturally, guests will consume more energy than the host, but that's just because more heat is needed in winter.
 
-Ideally, we want to compare the guests to the host [all other things being equal](https://www.wikiwand.com/en/Ceteris_paribus). In particular, we should discount the weather's impact on energy consumption. We'll attempt this in a visual manner, and then proceed with some [regression analysis](https://www.wikiwand.com/en/Regression_analysis).
+Ideally, we want to compare the guests to the host [all other things being equal](https://en.wikipedia.org/wiki/Ceteris_paribus). In particular, we should discount the weather's impact on energy consumption. We'll attempt this in a visual manner, and then proceed with some [regression analysis](https://en.wikipedia.org/wiki/Regression_analysis).
 
 As it turns out, my SO bought a flat about a year ago. She's been renting it out on Airbnb, as well as staying there from time to time. This is an interesting case, because we can compare her energy consumption with her guests. Naturally, we won't be able to draw a general conclusion from analysing one listing over a year. But still, it's an interesting learning exercise. Also, what I did should be straightforward to reproduce for other listings.
 
@@ -50,7 +50,7 @@ To do a fair comparison, I had to know the days when someone who didn't book wit
 
 I didn't have an easy time finding historical weather data. My SO's flat is in Toulouse, France. I expected [MeteoFrance](https://donneespubliques.meteofrance.fr/) to have a good open data offer. Alas, I didn't manage to find hourly -- or even daily -- weather indicators that were freely available.
 
-In the end, I found [this](https://public.opendatasoft.com/explore/dataset/donnees-synop-essentielles-omm/table/?sort=date&q=toulouse) SYNOP dataset on [Opendatasoft](https://www.opendatasoft.com/). [SYNOP](https://www.wikiwand.com/en/SYNOP) corresponds to data coming from automated weather stations. The dataset I found provided values every 3 hours of the day, without too many gaps. Good enough.
+In the end, I found [this](https://public.opendatasoft.com/explore/dataset/donnees-synop-essentielles-omm/table/?sort=date&q=toulouse) SYNOP dataset on [Opendatasoft](https://www.opendatasoft.com/). [SYNOP](https://en.wikipedia.org/wiki/SYNOP) corresponds to data coming from automated weather stations. The dataset I found provided values every 3 hours of the day, without too many gaps. Good enough.
 
 ### Energy consumption
 
@@ -103,7 +103,7 @@ It's nice to view the evolution of the data. However, a timeline obfuscates the 
 </br>
 </br>
 
-I also drew a [quadratic curve](https://www.wikiwand.com/en/Quadratic_function) through each group of points. I preferred that to a straight line, because [there is](https://www.linkedin.com/pulse/why-heating-cooling-loads-never-feature-linear-smith-mpa-capm-/) a non-linear relationship between temperature and electricity usage, which is somewhat apparent in the point cloud. This chart tells us that <span style="color: #7DC0A6;">guests</span> are more liberal as to electricity usage. They probably set the desired radiator temperature to a higher value than <span style="color: #ED936B;">hosts</span>. It's cool to confirm that with data.
+I also drew a [quadratic curve](https://en.wikipedia.org/wiki/Quadratic_function) through each group of points. I preferred that to a straight line, because [there is](https://www.linkedin.com/pulse/why-heating-cooling-loads-never-feature-linear-smith-mpa-capm-/) a non-linear relationship between temperature and electricity usage, which is somewhat apparent in the point cloud. This chart tells us that <span style="color: #7DC0A6;">guests</span> are more liberal as to electricity usage. They probably set the desired radiator temperature to a higher value than <span style="color: #ED936B;">hosts</span>. It's cool to confirm that with data.
 
 A second takeaway from this chart is that there are days where the energy consumption is quite high, but nobody is at home. Indeed, the orange curve should be a perfect straight line: it should be the energy consumption of the flat when <span style="color: rgb(141, 160, 203);">nobody</span> is there -- this is called the *talon de consommation* in French. This is likely because the radiator is turned on, and someone forgot to turn if off before they left.
 
@@ -113,9 +113,9 @@ I checked. I looked at periods of time with nobody at home, as well as at least 
 
 *PS: I was very inspired by Martin Daniel's [article](http://www.martindaniel.co/roof/index.html) about the energy savings of his new roof. Also, the procedure I used is similar to [what is done on degreedays.net](https://www.degreedays.net/calculate-energy-savings), which I discovered after writing this post.*
 
-It's quite clear that the outside temperature is the biggest cause of energy usage in the flat. It also seems that guests consume more energy than hosts. I decided to confirm this by running a [regression analysis](https://www.wikiwand.com/en/Regression_analysis). The point being that you can't consider the effect of all variables with a chart, and that a model is needed to go deeper.
+It's quite clear that the outside temperature is the biggest cause of energy usage in the flat. It also seems that guests consume more energy than hosts. I decided to confirm this by running a [regression analysis](https://en.wikipedia.org/wiki/Regression_analysis). The point being that you can't consider the effect of all variables with a chart, and that a model is needed to go deeper.
 
-I used the average daily temperature in the charts above. However, there's something more appropriate called [degree days](https://www.degreedays.net/) -- [*degré jour unifié*](https://www.wikiwand.com/fr/Degr%C3%A9%20jour%20unifi%C3%A9) in French. It basically sums up the hourly temperature differences with a reference temperature. I considered a reference temperature of 18°C. I also only counted [heating degree days](https://www.wikiwand.com/en/Heating_degree_day):
+I used the average daily temperature in the charts above. However, there's something more appropriate called [degree days](https://www.degreedays.net/) -- [*degré jour unifié*](https://www.wikiwand.com/fr/Degr%C3%A9%20jour%20unifi%C3%A9) in French. It basically sums up the hourly temperature differences with a reference temperature. I considered a reference temperature of 18°C. I also only counted [heating degree days](https://en.wikipedia.org/wiki/Heating_degree_day):
 
 $$\sum_{h=1}^{24} max(0, 18 - t_h)$$
 
@@ -139,7 +139,7 @@ is_guest               1.7145     0.451     3.798     0.000
 heating_degree_days    0.0405     0.001    27.288     0.000
 ```
 
-I ran a vanilla linear regression with [statsmodel](https://www.statsmodels.org/stable/index.html). The [adjusted $R^2$](https://www.wikiwand.com/en/Coefficient_of_determination#Adjusted_R2) is 0.843, which is good enough to interpret the model. Moreover, all the regression coefficients appear to be significant. An interesting observation is that using the `temperature` variable instead of `heating_degree_days` leads to an ajusted $R^2$ of 0.578, which is significantly worse.
+I ran a vanilla linear regression with [statsmodel](https://www.statsmodels.org/stable/index.html). The [adjusted $R^2$](https://en.wikipedia.org/wiki/Coefficient_of_determination#Adjusted_R2) is 0.843, which is good enough to interpret the model. Moreover, all the regression coefficients appear to be significant. An interesting observation is that using the `temperature` variable instead of `heating_degree_days` leads to an ajusted $R^2$ of 0.578, which is significantly worse.
 
 Positive coefficients linear regression are indicative of a variable being positively correlated with the target. In this case, the number of people, the fact that those people are guests, and the number of heating degree days are all positively correlated with the amount of kWh. Meanwhile, the weekend indicator is negatively correlated with the latter.
 

@@ -5,11 +5,11 @@ title = "Unknown pleasures with JavaScript"
 tags = ['generative-art']
 +++
 
-No this blog post is not about how nice JavaScript can be, instead it's just another one of my attempts at reproducing modern art with [procedural generation](https://www.wikiwand.com/en/Procedural_generation) and the [HTML5 `<canvas>` element](https://www.w3schools.com/html/html5_canvas.asp). This time I randomly generated images resembling the cover of the album by Joy Division called "Unknown Pleasures".
+No this blog post is not about how nice JavaScript can be, instead it's just another one of my attempts at reproducing modern art with [procedural generation](https://en.wikipedia.org/wiki/Procedural_generation) and the [HTML5 `<canvas>` element](https://www.w3schools.com/html/html5_canvas.asp). This time I randomly generated images resembling the cover of the album by Joy Division called "Unknown Pleasures".
 
 ![album](/img/blog/unknown-pleasures/album.png)
 
-[According to Wikipedia](https://www.wikiwand.com/en/Unknown_Pleasures#/Artwork_and_packaging), this somewhat iconic album cover is based on radio waves. I saw a poster of it in a bar not long ago and decided to reproduce the next time I had some time to kill.
+[According to Wikipedia](https://en.wikipedia.org/wiki/Unknown_Pleasures#/Artwork_and_packaging), this somewhat iconic album cover is based on radio waves. I saw a poster of it in a bar not long ago and decided to reproduce the next time I had some time to kill.
 
 First of all let's set up a black canvas - I used the same dimensions as the image above.
 
@@ -71,11 +71,11 @@ The randomness in the album cover comes from the $y$ coordinate. For example by 
 
 ![result2](/img/blog/unknown-pleasures/result2.png)
 
-Of course the noise in the album cover is not uniform at all, in fact each line has multiple "peaks" which points the way towards [multimodal distributions](https://www.wikiwand.com/en/Multimodal_distribution). It seems that each line has one or more peaks, moreover some of the peaks are skewed towards the left or the right. Although the distributions don't seem to be normal, using a [mixture distribution](https://www.wikiwand.com/en/Mixture_distribution) composed of multiple normal distributions seems to be a reasonably good start.
+Of course the noise in the album cover is not uniform at all, in fact each line has multiple "peaks" which points the way towards [multimodal distributions](https://en.wikipedia.org/wiki/Multimodal_distribution). It seems that each line has one or more peaks, moreover some of the peaks are skewed towards the left or the right. Although the distributions don't seem to be normal, using a [mixture distribution](https://en.wikipedia.org/wiki/Mixture_distribution) composed of multiple normal distributions seems to be a reasonably good start.
 
-To obtain values for $y$ we have to use the [probability density function](https://www.wikiwand.com/en/Probability_density_function) -- in short PDF -- of each normal distribution. Basically for each $x_i$ the PDF will tell us the associated value $y_i$. To make the process different per line we can sample a mean $\mu$ and a standard deviation $\sigma$ from two normal distributions -- one for each parameter -- that we can then inside another normal distribution whose PDF will be used to generate values for $y$.
+To obtain values for $y$ we have to use the [probability density function](https://en.wikipedia.org/wiki/Probability_density_function) -- in short PDF -- of each normal distribution. Basically for each $x_i$ the PDF will tell us the associated value $y_i$. To make the process different per line we can sample a mean $\mu$ and a standard deviation $\sigma$ from two normal distributions -- one for each parameter -- that we can then inside another normal distribution whose PDF will be used to generate values for $y$.
 
-Sadly the JavaScript standard library doesn't provide a function to sample from a normal distribution. I didn't want to use an external library so I decided to implement my own. Although there exist fancy techniques with even fancier names -- I'm looking at you [Ziggurat algorithm](https://www.wikiwand.com/en/Ziggurat_algorithm) -- a simple way of going is simply to compute the average of values sampled from a uniform distribution.
+Sadly the JavaScript standard library doesn't provide a function to sample from a normal distribution. I didn't want to use an external library so I decided to implement my own. Although there exist fancy techniques with even fancier names -- I'm looking at you [Ziggurat algorithm](https://en.wikipedia.org/wiki/Ziggurat_algorithm) -- a simple way of going is simply to compute the average of values sampled from a uniform distribution.
 
 ```javascript
 function rand (min, max) {
@@ -170,7 +170,7 @@ This procedure gives a satisfying 3D feel to the image.
 
 ![result4](/img/blog/unknown-pleasures/result4.png)
 
-Now all we have to do is generate more resembling lines. As I mentioned the lines have multiple peaks and using a multimodal distribution *could* do well. To generate an arbitrary multimodal distribution one may use a mixture distribution, which is nothing more than sum over two or more distributions. For example the following figure -- obtained from [the Wikipedia page](https://www.wikiwand.com/en/Mixture_distribution) on mixture distributions -- shows how summing three normal distributions results in a new distributions with three modes.
+Now all we have to do is generate more resembling lines. As I mentioned the lines have multiple peaks and using a multimodal distribution *could* do well. To generate an arbitrary multimodal distribution one may use a mixture distribution, which is nothing more than sum over two or more distributions. For example the following figure -- obtained from [the Wikipedia page](https://en.wikipedia.org/wiki/Mixture_distribution) on mixture distributions -- shows how summing three normal distributions results in a new distributions with three modes.
 
 Producing a mixture distribution is not too complex code-wise. For each line we want to generate a multimodal distribution with a random number of modes, thus we can first of all assign a random integer to a variable called `nModes` to indicate how many modes we want. Then we can generate `nModes` values for $\mu$ and for $\sigma$ just as we did previously. Then we can sum returned by the PDF of each distribution and use the sum as a value for $y$.
 

@@ -4,7 +4,7 @@ title = "Online active learning in 80 lines of Python"
 tags = ['online-machine-learning']
 +++
 
-[Active learning](https://www.wikiwand.com/en/Active_learning_(machine_learning)) is a way to get humans to label data efficiently. A good active learning strategy minimizes the number of necessary labels, while maximizing a model's performance. This usually works by focusing on samples where the model is unsure of its prediction.
+[Active learning](https://en.wikipedia.org/wiki/Active_learning_(machine_learning)) is a way to get humans to label data efficiently. A good active learning strategy minimizes the number of necessary labels, while maximizing a model's performance. This usually works by focusing on samples where the model is unsure of its prediction.
 
 In a batch setting, the model is periodically retrained to learn from the freshly labeled samples. However, the training time is usually too prohibitive for this to happen each time a new label is provided. This isn't the case with online models, because they are able to learn one sample at a time. Active and online learning naturally fit together.
 

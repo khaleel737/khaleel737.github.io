@@ -129,7 +129,7 @@ Date
 
 ## Running covariance
 
-The query above measures the running average for a single variable -- namely `Adj Close`. What if we want to compute something that involves more than one variable? The naive way is to just copy/paste the logic for each variable. For instance, to calculate a running covariance, it is necessary to compute the running average of two variables. Check out [Welford's algorithm](https://www.wikiwand.com/en/Algorithms_for_calculating_variance#Covariance) for more information.
+The query above measures the running average for a single variable -- namely `Adj Close`. What if we want to compute something that involves more than one variable? The naive way is to just copy/paste the logic for each variable. For instance, to calculate a running covariance, it is necessary to compute the running average of two variables. Check out [Welford's algorithm](https://en.wikipedia.org/wiki/Algorithms_for_calculating_variance#Covariance) for more information.
 
 ```sql
 WITH RECURSIVE
@@ -317,7 +317,7 @@ Volume     1.965181
 
 Finally, we have enough experience to implement online gradient descent. To keep things simple, we will use a very vanilla version:
 
-- Constant learning rate, as opposed to a [schedule](https://www.wikiwand.com/en/Learning_rate#Learning_rate_schedule).
+- Constant learning rate, as opposed to a [schedule](https://en.wikipedia.org/wiki/Learning_rate#Learning_rate_schedule).
 - Single epoch, we only do one pass on the data.
 - Not stochastic: the rows are not shuffled.
 - Squared loss, which is the standard loss for regression.

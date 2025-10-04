@@ -11,7 +11,7 @@ Imagine that you're looking to buy a home. If you have an analytical mind then y
 - The `size` of the house, which you want to maximize
 - The `city` where the house if located, which you don't really care about
 
-Some houses will be objectively better than others because they will be cheaper and bigger. However, for some pairs of houses the comparison will not be as clear. It might be that house A is more expensive than house B but is also larger. In data analysis this set of best houses which are incomparable with each other is called a [skyline](https://www.wikiwand.com/en/Skyline_operator). As they say, a picture is worth a thousand words, so let's draw one.
+Some houses will be objectively better than others because they will be cheaper and bigger. However, for some pairs of houses the comparison will not be as clear. It might be that house A is more expensive than house B but is also larger. In data analysis this set of best houses which are incomparable with each other is called a [skyline](https://en.wikipedia.org/wiki/Skyline_operator). As they say, a picture is worth a thousand words, so let's draw one.
 
 We'll simulate some houses using a very simple random process. Each house will be located in a random city. Then, the size of the house in square meters will be sampled from a normal distribution with mean 200 and standard deviation 50. Finally, the price of the house will be obtained by multiplying the size of the house by a price per square meter sampled from a given uniform distribution. I chose as cities Bordeaux, Lyon, and Toulouse. I got the prices per square meter from [meilleursagents.com](https://www.meilleursagents.com/). In any case, none of the details really matter. The following piece of code will generate `n_houses` houses using the process I just described.
 
@@ -69,7 +69,7 @@ ax.set_title('100 simulated houses')
 
 ![houses](/img/blog/skyline-queries/houses.svg)
 
-The points that are to the bottom right are part of the skyline. Indeed they are either better or not comparable to the rest of the points. In other words, for any point in the skyline, it is impossible to find a point which is at least as good in every regard. In optimisation this is called the [Pareto frontier](https://www.wikiwand.com/en/Pareto_efficiency#/Pareto_frontier) (the link has some nice visuals).
+The points that are to the bottom right are part of the skyline. Indeed they are either better or not comparable to the rest of the points. In other words, for any point in the skyline, it is impossible to find a point which is at least as good in every regard. In optimisation this is called the [Pareto frontier](https://en.wikipedia.org/wiki/Pareto_efficiency#/Pareto_frontier) (the link has some nice visuals).
 
 I was surprised to find that there isn't any canonical way to do this in `pandas`, and that not many people at all discuss how to find a skyline using Python. On the other hand skylines are really useful for specific tasks, such as ranking items online. For example if you're looking for a hotel you might to find one that is cheap, big, and close to the beach. Instead of looking at each hotel you could first compute the skyline and check those instead. Of course there will be always some attributes that are impossible to rank because they depend on a person's taste, but you get the idea. Some things are just objectively better.
 

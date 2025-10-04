@@ -17,7 +17,7 @@ The general idea is to know $P\_F(C)$ where $C$ is a discrete class/label and $F
 
 >"What is the probability that a text is written by author $C$ given that words $F$ are in the text?"
 
-Good question. This is where the "Bayes" in the title comes from [Bayes' theorem](https://www.wikiwand.com/en/Bayes'_theorem) gives
+Good question. This is where the "Bayes" in the title comes from [Bayes' theorem](https://en.wikipedia.org/wiki/Bayes'_theorem) gives
 
 $$P\_F(C\_j) = \frac{P(C\_j) \times P\_{C\_j}(F)}{P(F)}$$
 
@@ -45,7 +45,7 @@ It's important to understand that this isn't true if the features occurrences ar
 
 If you want to run the code that will come up yourself, you can simply copy/paste it all into your text editor, it will work out of the box. However you will have to download the pandas module in order to read a CSV dataframe.
 
-I like using classes, you really can make most of [object-oriented programming](https://www.wikiwand.com/en/Object-oriented_programming) for creating tidy packages. In this case there are two classes.
+I like using classes, you really can make most of [object-oriented programming](https://en.wikipedia.org/wiki/Object-oriented_programming) for creating tidy packages. In this case there are two classes.
 
 - A ``Counter`` class for parsing the texts and estimating the probabilities.
 - A ``NaiveBayes`` class for predicting the class of new texts which inherits from ``Counter``.
@@ -72,7 +72,7 @@ class Counter:
                         args=(textCol, classCol,))
 ```
 
-The ``Counter`` class takes 4 arguments. The first is a dataframe which should contain a column for the texts (3rd argument) and a column for the classes (4th argument). The ``features`` argument is a function that extracts the desired features from a text; it can be anything as long as it returns an iterable (list, set, array). For example one could extract [stemmed](https://www.wikiwand.com/en/Word_stem) and/or lower cased words. We will get to that later on. In order to compute the probabilities described above we have to count the features and class occurences, the best way to do this is to use dictionaries. The last line parses all the dataframe with the following procedure.
+The ``Counter`` class takes 4 arguments. The first is a dataframe which should contain a column for the texts (3rd argument) and a column for the classes (4th argument). The ``features`` argument is a function that extracts the desired features from a text; it can be anything as long as it returns an iterable (list, set, array). For example one could extract [stemmed](https://en.wikipedia.org/wiki/Word_stem) and/or lower cased words. We will get to that later on. In order to compute the probabilities described above we have to count the features and class occurences, the best way to do this is to use dictionaries. The last line parses all the dataframe with the following procedure.
 
 
 ```python

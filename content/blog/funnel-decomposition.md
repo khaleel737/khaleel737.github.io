@@ -25,7 +25,7 @@ This allows us to understand whether a clothing line's total footprint has incre
 
 ## The intuition
 
-Let's take a typical revenue funnel as an example. People come to a website, which are counted as impressions. They are presented with a [CTA](<https://www.wikiwand.com/en/Call_to_action_(marketing)>), which may or not result into a click. Each user may then subscribe to a service, or not. Each user will then spend some money through their subscription, which is often defined as their [LTV](https://www.wikiwand.com/en/Customer_lifetime_value). This funnel has 4 steps:
+Let's take a typical revenue funnel as an example. People come to a website, which are counted as impressions. They are presented with a [CTA](<https://en.wikipedia.org/wiki/Call_to_action_(marketing)>), which may or not result into a click. Each user may then subscribe to a service, or not. Each user will then spend some money through their subscription, which is often defined as their [LTV](https://en.wikipedia.org/wiki/Customer_lifetime_value). This funnel has 4 steps:
 
 <div align="center" >
 <figure>

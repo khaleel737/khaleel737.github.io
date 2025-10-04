@@ -9,7 +9,7 @@ tags = ['text-processing']
 
 Say we're looking for a pattern in a blob of text. If you know the text has no typos, then determining whether it contains a pattern is trivial. In Python you can use the `in` function. You can also write a regex pattern with the `re` module from the standard library. But what about if the text contains typos? For instance, this might be the case with user inputs on a website, or with OCR outputs. This is a much harder problem.
 
-[Fuzzy string matching](https://www.wikiwand.com/en/Approximate_string_matching) is a cool technique to find patterns in noisy text. In Python there used to be a ubiquitous library called [`fuzzywuzzy`](https://github.com/seatgeek/fuzzywuzzy). It got renamed to [`thefuzz`](https://github.com/seatgeek/thefuzz/blob/master/thefuzz). Then [`RapidFuzz`](https://github.com/maxbachmann/RapidFuzz) became the latest kid on the block. Here's an example using the latter:
+[Fuzzy string matching](https://en.wikipedia.org/wiki/Approximate_string_matching) is a cool technique to find patterns in noisy text. In Python there used to be a ubiquitous library called [`fuzzywuzzy`](https://github.com/seatgeek/fuzzywuzzy). It got renamed to [`thefuzz`](https://github.com/seatgeek/thefuzz/blob/master/thefuzz). Then [`RapidFuzz`](https://github.com/maxbachmann/RapidFuzz) became the latest kid on the block. Here's an example using the latter:
 
 ```py
 from rapidfuzz import fuzz

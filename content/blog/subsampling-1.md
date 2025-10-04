@@ -13,7 +13,7 @@ One of the basic requirements for a machine learning model to do well is that th
 
 A shift in the test set distribution can occur for many reasons. For example when Facebook split it's messaging system to a new app called Messenger the average time people spent on the main app probably decreased by a lot, but it probably also didn't impact churn, quite the contrary I imagine. Shifts like these can occur through time and make part of historical data useless after a while. In the case of the Deezer competition, we had a feature which measured the number of songs a user had listened to up to when the listen occurred. This feature was on average lower than in the training set. In both datasets the data followed an exponential distribution but it was more accentuated in the test set. After subsampling the training set so that this particular feature had the same distribution as in the test set we gained a few percentage points in ROC AUC and climbed the ladder by around 20 spots.
 
-Here is an example of what the difference in distribution looks like. Here and in the rest of the blog I'll use [KDEs](https://www.wikiwand.com/en/Kernel_density_estimation) to represent distributions.
+Here is an example of what the difference in distribution looks like. Here and in the rest of the blog I'll use [KDEs](https://en.wikipedia.org/wiki/Kernel_density_estimation) to represent distributions.
 
 ```python
 import matplotlib.pyplot as plt

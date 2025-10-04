@@ -14,7 +14,7 @@ Duplicate detection is the task of finding two or more instances in a dataset th
 | 2 |    Erlik   |   Bachman  |  eb@piedpiper.co |
 | 3 |   Erlich   |  Bachmann  | eb@piedpiper.com |
 
-Each of these instances (rows, if you prefer) corresponds to the same "thing" -- note that I'm not using the word "entity" because [entity resolution](https://www.wikiwand.com/en/Record_linkage#/Entity_resolution) is a different, and yet related, concept. In my experience there are two main reasons why data duplication may occur:
+Each of these instances (rows, if you prefer) corresponds to the same "thing" -- note that I'm not using the word "entity" because [entity resolution](https://en.wikipedia.org/wiki/Record_linkage#/Entity_resolution) is a different, and yet related, concept. In my experience there are two main reasons why data duplication may occur:
 
 1. Somebody made a spelling mistake when entering data somewhere.
 2. Some (very naughty) people create fake accounts to gain freebies for newly registered accounts.

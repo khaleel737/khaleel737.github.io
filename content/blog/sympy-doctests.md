@@ -48,7 +48,7 @@ test_add.py .                                         [100%]
 
 As I was saying, I like using SymPy to test mathematical functions. If a function uses mathematical operators, then there is a good chance you can feed it with SymPy variables as well as numbers and arrays.
 
-I'll provide an example. A year ago, I added an online version of [ARIMA](https://www.wikiwand.com/en/Autoregressive_integrated_moving_average) to [River](https://riverml.xyz/0.14.0/). ARIMA is a time series forecasting model. Like other forecasting models, it assumes the time series is stationary. If it isn't, [differencing](https://www.wikiwand.com/en/Autoregressive_integrated_moving_average#Differencing) has to be applied.
+I'll provide an example. A year ago, I added an online version of [ARIMA](https://en.wikipedia.org/wiki/Autoregressive_integrated_moving_average) to [River](https://riverml.xyz/0.14.0/). ARIMA is a time series forecasting model. Like other forecasting models, it assumes the time series is stationary. If it isn't, [differencing](https://en.wikipedia.org/wiki/Autoregressive_integrated_moving_average#Differencing) has to be applied.
 
 The idea behind differencing is quite intuitive, but the implementation is easy to get wrong. I've included down below the `Differencer` class which is currently used in River.
 
@@ -198,7 +198,7 @@ Y[t - 2]
 
 ```
 
-Now we have everything we need to write pretty unit tests. The first case is a differencer which does nothing. Here I'll use [backshift notation](https://www.wikiwand.com/en/Lag_operator) to describe lag operations. I'll actually reproduce the [examples](https://otexts.com/fpp2/backshift.html) Rob J. Hyndman and George Athanasopoulos provide in their [*Forecasting: Principles and Practice*](https://otexts.com/fpp2/) textbook.
+Now we have everything we need to write pretty unit tests. The first case is a differencer which does nothing. Here I'll use [backshift notation](https://en.wikipedia.org/wiki/Lag_operator) to describe lag operations. I'll actually reproduce the [examples](https://otexts.com/fpp2/backshift.html) Rob J. Hyndman and George Athanasopoulos provide in their [*Forecasting: Principles and Practice*](https://otexts.com/fpp2/) textbook.
 
 $$(1 - B)^0 = 1$$
 

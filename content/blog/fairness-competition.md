@@ -78,7 +78,7 @@ In the above example, it's quite easy to guess that the bio corresponds to a pro
 
 Other jobs are more polarised. For instance, rappers are mostly men and yoga teachers are typically women. This is just the way things are in modern western societies. I am in no position to say if this state of things is good or bad. What I do know is that machine learning models replicate the bias that can be found in data in their predictions. Machine learning models are meant to be accurate, and therefore would rely on gendered words such as "she" and "his" to make their predictions. Machine learning is very pragmatic that way.
 
-For whatever reason, we might want to build models that don't exploit gender to make a prediction. We might want to do this because as a society we believe that each gender should be equally represented in each job -- note that I'm not expressing an opinion. To do so we may want to break the negative reinforcement loop that automated decisions would entail. Concretely, we could prefer to have a decision process that is less accurate while being fairer. There is a whole area of research called [fair learning](<https://www.wikiwand.com/en/Fairness_(machine_learning)>) that tackles these questions.
+For whatever reason, we might want to build models that don't exploit gender to make a prediction. We might want to do this because as a society we believe that each gender should be equally represented in each job -- note that I'm not expressing an opinion. To do so we may want to break the negative reinforcement loop that automated decisions would entail. Concretely, we could prefer to have a decision process that is less accurate while being fairer. There is a whole area of research called [fair learning](<https://en.wikipedia.org/wiki/Fairness_(machine_learning)>) that tackles these questions.
 
 Fair learning is very exciting, and we thought it would be worthwhile to include fairness as a competition metric. The main goal being to encourage students to discover fair learning by themselves, as it not necessarily a topic that is being taught in their curriculums.
 
@@ -90,7 +90,7 @@ What is fair? It's a very vague concept when you think about it for a bit. I'm n
   <img src="/img/blog/fairness-competition/def.jpg" width="80%">
 </p>
 
-We went with the notion of [disparate impact](https://www.wikiwand.com/en/Disparate_impact). Essentially, our motivation was for the students to make predictions that are not biased towards one gender in particular. For instance, if we tallied up all the "rapper" predictions, well we would consider a model to be fair if 50% of those predictions are for women and 50% are for men. We compute the disparate impact for each job and average them in order to obtain a so-called "macro disparate impact":
+We went with the notion of [disparate impact](https://en.wikipedia.org/wiki/Disparate_impact). Essentially, our motivation was for the students to make predictions that are not biased towards one gender in particular. For instance, if we tallied up all the "rapper" predictions, well we would consider a model to be fair if 50% of those predictions are for women and 50% are for men. We compute the disparate impact for each job and average them in order to obtain a so-called "macro disparate impact":
 
 $$
 \frac{1}{jobs} \sum_{job \in jobs} \frac{max(P(male \mid job), P(female \mid job))}{min(P(male \mid job), P(female \mid job))}
@@ -140,11 +140,11 @@ Once the competition was over, the students were instructed to send me their cod
 
 - Everyone used Python. That's somewhat interesting because during the past years there were still some teams that used R.
 - Apart from one team, everyone sent me one or more [Jupyter Notebooks](https://jupyter.org/). I wonder if they know about Jupyter Lab 😉
-- 14 used some flavor of [BERT](<https://www.wikiwand.com/en/BERT_(language_model)>).
+- 14 used some flavor of [BERT](<https://en.wikipedia.org/wiki/BERT_(language_model)>).
 - 14 preprocessed the text in some way (lowercasing, stemming, stop words, etc.)
 - Absolutely no team did any effort to make their model fairer with respect to both genders 😩
-- 2 did [cross-validation](<https://www.wikiwand.com/en/Cross-validation_(statistics)>). The rest did a simple train/test split, if that.
-- 8 used a [TF-IDF](https://www.wikiwand.com/en/Tf%E2%80%93idf) approach.
+- 2 did [cross-validation](<https://en.wikipedia.org/wiki/Cross-validation_(statistics)>). The rest did a simple train/test split, if that.
+- 8 used a [TF-IDF](https://en.wikipedia.org/wiki/Tf%E2%80%93idf) approach.
 - 16 really used [scikit-learn](https://scikit-learn.org/stable/). Other teams used scikit-learn only for metrics and train/test splitting.
 - My estimate is that 17 teams made a real effort. From what I can tell, the 12 others just mindlessly imported libraries, figured out the API, and [called it a day](https://tenor.com/view/and-thats-it-guys-its-awrap-finished-lets-call-it-aday-happy-gif-14375900).
 - 10 used Hugging Face's [transformers](https://huggingface.co/transformers/) library.
@@ -154,8 +154,8 @@ Once the competition was over, the students were instructed to send me their cod
 - 2 attempted to [rebalance](https://github.com/scikit-learn-contrib/imbalanced-learn) the dataset.
 - 2 built their own model in [PyTorch](https://pytorch.org/).
 - 8 built their own odel with [Keras](https://keras.io/).
-- 3 built an [RNN](https://www.wikiwand.com/en/Recurrent_neural_network).
-- 2 did [model ensembling](https://www.wikiwand.com/en/Ensemble_learning).
+- 3 built an [RNN](https://en.wikipedia.org/wiki/Recurrent_neural_network).
+- 2 did [model ensembling](https://en.wikipedia.org/wiki/Ensemble_learning).
 - 7 used the [simpletransformers](https://github.com/ThilinaRajapakse/simpletransformers) library, which I find to be frightfully high level.
 - 2 used [spaCy](https://spacy.io/)
 - 2 used [Gensim](https://radimrehurek.com/gensim/)

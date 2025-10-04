@@ -169,7 +169,7 @@ What I call travel distance is the amount of necessary ⬆️⬇️⬅️➡️ 
 
 The basic idea is that when you press a key, you want the keyboard to be layed out in such a manner that the next likely characters are close by. A static keyboard organised in alphabetical order is not optimal in that sense. It doesn't take into account the frequency of juxtaposed characters. Other static keyboards take this into account, such as the QWERTY and AZERTY layouts. However, the latter were designed for physical keyboards, where the layout can't change dynamically. We can do whatever we want with a virtual keyboard.
 
-For an on-screen TV keyboard, it makes sense to measure the distance between keys with a [taxicab geometry](https://www.wikiwand.com/en/Taxicab_geometry). Indeed, one can only go ⬆️⬇️⬅️➡️ with a remote controller. The following grid is interactive, and indicates a key's distance with respect to the last key that was pressed:
+For an on-screen TV keyboard, it makes sense to measure the distance between keys with a [taxicab geometry](https://en.wikipedia.org/wiki/Taxicab_geometry). Indeed, one can only go ⬆️⬇️⬅️➡️ with a remote controller. The following grid is interactive, and indicates a key's distance with respect to the last key that was pressed:
 
 </br>
 {{< rawhtml >}}

@@ -10,7 +10,7 @@ I'm currently working on a problem at work where I have to measure the impact of
 
 > I've spent <span style="color: SlateBlue;">X amount of money</span>, what is the impact on the <span style="color: MediumSeaGreen;">number of visitors on my website</span>?
 
-Of course, there are many measures that can be taken to answer such a question. I decided to measure the correlation between the <span style="color: SlateBlue;">initiative</span> and the <span style="color: MediumSeaGreen;">metric</span>, with the latter being shifted forward in time. This measure is called the [cross-correlation](https://www.wikiwand.com/en/Cross-correlation). It's different from [serial correlation](https://www.wikiwand.com/en/Autocorrelation), which is the correlation of a series with a shifted version of itself.
+Of course, there are many measures that can be taken to answer such a question. I decided to measure the correlation between the <span style="color: SlateBlue;">initiative</span> and the <span style="color: MediumSeaGreen;">metric</span>, with the latter being shifted forward in time. This measure is called the [cross-correlation](https://en.wikipedia.org/wiki/Cross-correlation). It's different from [serial correlation](https://en.wikipedia.org/wiki/Autocorrelation), which is the correlation of a series with a shifted version of itself.
 
 Computing the cross-correlation between two series of numbers $X$ and $Y$ is simple. Assuming that we want to measure the impact of $X$ on $Y$, we just have to shift $Y$ forward and compute the correlation between $X$ and the shifted version of $Y$. Of course, one has to decide by how much to shift $Y$. Ideally, we would like to measure the impact of $X$ on multiple shifted versions of $Y$. Indeed, we might want to know how increasing $X$ affects $Y$ in one week, two weeks, three weeks, etc.
 
@@ -181,7 +181,7 @@ SELECT * FROM cross_corrs;
 
 ## Different kinds of correlations
 
-Up until now, I've been making the common assumption that "correlation" refers to the [Pearson correlation](https://www.wikiwand.com/en/Pearson_correlation_coefficient). There are other kinds of correlations, such as [Spearman's rank correlation](https://www.wikiwand.com/en/Spearman%27s_rank_correlation_coefficient). The latter is not available in PostgreSQL 12.3, but it is easy to calculate, as it is just the Pearson correlation of the ranks of the values of $X$ and $Y$. In SQL, this translates to:
+Up until now, I've been making the common assumption that "correlation" refers to the [Pearson correlation](https://en.wikipedia.org/wiki/Pearson_correlation_coefficient). There are other kinds of correlations, such as [Spearman's rank correlation](https://en.wikipedia.org/wiki/Spearman%27s_rank_correlation_coefficient). The latter is not available in PostgreSQL 12.3, but it is easy to calculate, as it is just the Pearson correlation of the ranks of the values of $X$ and $Y$. In SQL, this translates to:
 
 ```sql
 SELECT

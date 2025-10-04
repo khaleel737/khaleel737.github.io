@@ -27,7 +27,7 @@ I'm always wary of using `numpy` without thinking because I know it incurs some 
 
 Python has a [`random` module](https://docs.python.org/3/library/random.html) in its standard library. This module provides a [`choices` function](https://docs.python.org/3/library/random.html#random.choices) to do random sampling. But this function doesn't support sampling without replacement.
 
-I therefore set out to find a nice and simple algorithm to implement in pure Python. I knew that weighted sampling with replacement can be done with [Vose's alias method](https://www.keithschwarz.com/darts-dice-coins/) -- which I have implemented [here](https://github.com/MaxHalford/vose) in Cython. I also knew that simple (non-weighted) sampling without replacement can be done with [reservoir sampling](https://www.wikiwand.com/en/Reservoir_sampling). But I'd never looked into weighted sampling without replacement.
+I therefore set out to find a nice and simple algorithm to implement in pure Python. I knew that weighted sampling with replacement can be done with [Vose's alias method](https://www.keithschwarz.com/darts-dice-coins/) -- which I have implemented [here](https://github.com/MaxHalford/vose) in Cython. I also knew that simple (non-weighted) sampling without replacement can be done with [reservoir sampling](https://en.wikipedia.org/wiki/Reservoir_sampling). But I'd never looked into weighted sampling without replacement.
 
 After some research, I found the algorithm of Efraimidis and Spirakis, which is succintely presented in section 3.2 of [this](https://arxiv.org/pdf/1012.0256.pdf) paper. It's very simple, and from what I can tell it runs in $\mathcal{O}(nlog(n))$ time. Here is a Python implementation:
 

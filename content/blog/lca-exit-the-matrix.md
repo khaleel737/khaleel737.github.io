@@ -4,7 +4,7 @@ title = 'LCA software: exit the matrix'
 tags = ['sustainability', 'python']
 +++
 
-Measuring the environmental impact of a product is done using [life cycle assessment](https://en.wikipedia.org/wiki/Life-cycle_assessment) (LCA). This is a methodology that breaks down a product's life cycle into stages ([LCI](<https://www.wikiwand.com/en/Life-cycle_assessment#Life_cycle_inventory_(LCI)>)), and measures the impact of each stage on the environment ([LCIA](<https://www.wikiwand.com/en/Life-cycle_assessment#Life_cycle_impact_assessment_(LCIA)>)).
+Measuring the environmental impact of a product is done using [life cycle assessment](https://en.wikipedia.org/wiki/Life-cycle_assessment) (LCA). This is a methodology that breaks down a product's life cycle into stages ([LCI](<https://en.wikipedia.org/wiki/Life-cycle_assessment#Life_cycle_inventory_(LCI)>)), and measures the impact of each stage on the environment ([LCIA](<https://en.wikipedia.org/wiki/Life-cycle_assessment#Life_cycle_impact_assessment_(LCIA)>)).
 
 There are a few pieces of LCA software to choose from. The leading ones are [SimaPro](https://simapro.com/), [GaBi](https://sphera.com/life-cycle-assessment-lca-software/), [openLCA](https://www.openlca.org/), and [Umberto](https://www.ifu.com/umberto/). These are all proprietary software, and they're expensive. But there's a free and open source alternative: [Brightway](https://docs.brightway.dev/en/latest/).
 

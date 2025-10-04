@@ -4,11 +4,11 @@ title = "Matrix inverse mini-batch updates"
 tags = ['online-machine-learning']
 +++
 
-The inverse covariance matrix, also called [precision matrix](https://www.wikiwand.com/en/Precision_matrix), is useful in many places across the field of statistics. For instance, in machine learning, it is used for [Bayesian regression](/blog/bayesian-linear-regression) and [mixture modelling](https://scikit-learn.org/stable/modules/mixture.html#gmm).
+The inverse covariance matrix, also called [precision matrix](https://en.wikipedia.org/wiki/Precision_matrix), is useful in many places across the field of statistics. For instance, in machine learning, it is used for [Bayesian regression](/blog/bayesian-linear-regression) and [mixture modelling](https://scikit-learn.org/stable/modules/mixture.html#gmm).
 
 What's interesting is that any batch model which uses a precision matrix can be turned into an online model. That is, provided the precision matrix can be estimated in a streaming fashion. For instance, scikit-learn's [elliptic envelope](https://scikit-learn.org/stable/modules/generated/sklearn.covariance.EllipticEnvelope.html#sklearn.covariance.EllipticEnvelope) method could have an online variant with a `partial_fit` method.
 
-Thankfully, there is a way to (efficiently) estimate a precision matrix online, through the use of the [Sherman-Morrison formula](https://www.wikiwand.com/en/Sherman%E2%80%93Morrison_formula). Markus Thill provides details [here](https://markusthill.github.io/math/stats/ml/online-estimation-of-the-inverse-covariance-matrix/) with some accompanying R code.
+Thankfully, there is a way to (efficiently) estimate a precision matrix online, through the use of the [Sherman-Morrison formula](https://en.wikipedia.org/wiki/Sherman%E2%80%93Morrison_formula). Markus Thill provides details [here](https://markusthill.github.io/math/stats/ml/online-estimation-of-the-inverse-covariance-matrix/) with some accompanying R code.
 
 Of course, one could just estimate the covariance matrix online, and invert the matrix at each step. But that would be too expensive, due to the fact matrix inversion takes $\mathcal{O}(n^3)$ time. The Sherman-Morrison formula runs in $\mathcal{O}(n^2)$ time. The downside is that the result is not exact, although the error margin is small enough for machine learning purposes -- at least in my experience.
 
@@ -72,7 +72,7 @@ I didn't invent this trick, I got it from Tim Vieira's [excellent article](https
 
 The Sherman-Morrison formula is great, but processing $n$ samples with $p$ features still requires a non-negligible $\mathcal{O}(np^2)$ amount of computing time. That may be prohibitive, depending on the use case. This is emphasized in a mini-batch scenario -- think scikit-learn's `partial_fit` -- where hardware acceleration can be used to process a batch of data faster than one sample at a time.
 
-As it just so happens, the Sherman-Morrison formula is a special case of the [Woodbury matrix identity](https://www.wikiwand.com/en/Woodbury_matrix_identity). Here it is, implemented in NumPy:
+As it just so happens, the Sherman-Morrison formula is a special case of the [Woodbury matrix identity](https://en.wikipedia.org/wiki/Woodbury_matrix_identity). Here it is, implemented in NumPy:
 
 ```py
 def woodbury_identity(A, U, V):
@@ -237,6 +237,6 @@ inv_cov = len(X) * M
 
 Alas, this didn't result in a significant speed-up for me, which is why I'm leaving it the appendix. I believe this is because most of the computation happens in `np.linalg.inv(I + V @ AU)`, which occurs before calling the DGEMM routine.
 
-I would also like to echo Tim Vieira's suggestion that using the [Cholesky factorisation](https://www.wikiwand.com/en/Cholesky_decomposition) is a better way for estimating a covariance matrix, as well as a precision matrix. This saves some computation by leveraging the fact both matrices are symmetric. The Cholesky factorisation should also result in more stable and accurate results. I haven't yet come around to trying this out, but if I do I'll start by checking out Tim Vieira's code [here](https://github.com/timvieira/arsenal/blob/master/arsenal/maths/cholesky.py).
+I would also like to echo Tim Vieira's suggestion that using the [Cholesky factorisation](https://en.wikipedia.org/wiki/Cholesky_decomposition) is a better way for estimating a covariance matrix, as well as a precision matrix. This saves some computation by leveraging the fact both matrices are symmetric. The Cholesky factorisation should also result in more stable and accurate results. I haven't yet come around to trying this out, but if I do I'll start by checking out Tim Vieira's code [here](https://github.com/timvieira/arsenal/blob/master/arsenal/maths/cholesky.py).
 
 We've [recently added](https://github.com/online-ml/river/pull/999) an online precision matrix to [River](https://github.com/online-ml/river). It implements the Sherman-Morrison formula, as well as the Woodbury matrix identity. This precision matrix is likely going to become the building block for higher-level algorithms. We're thus always on the lookout for faster solutions. Please feel welcome sharing any insight you way have 👐

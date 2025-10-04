@@ -19,7 +19,7 @@ I decided to have a go and write some Python code to segment a comic strip page.
 
 ## Loading an image
 
-I'm taking as an example the first page of [The Invisible Fortress](https://readcomiconline.li/Comic/Thorgal/Issue-11?id=73734#1), which is the 11th installment in the [Thorgal](https://www.wikiwand.com/en/Thorgal) series.
+I'm taking as an example the first page of [The Invisible Fortress](https://readcomiconline.li/Comic/Thorgal/Issue-11?id=73734#1), which is the 11th installment in the [Thorgal](https://en.wikipedia.org/wiki/Thorgal) series.
 
 I don't know what is the *goût du jour*, but I like using [imageio](https://imageio.readthedocs.io/en/stable/) for loading images. I use [PIL](https://pillow.readthedocs.io/en/stable/reference/Image.html) for displaying them in a Jupyter notebook.
 
@@ -41,7 +41,7 @@ Image.fromarray(im)
 
 There are many ways to do image segmentation. It's an entire field of research. In the present case, it seemed to me that I should make use of the fact that each panel has some sort of border around it. The background of the page is also always made up of a single tone of white.
 
-I did a bit of research and experimenting and settled on using a [Canny edge detector](https://www.wikiwand.com/en/Canny_edge_detector). I have absolutely no clue how it works, but I had a feeling that looking for the edges of the panels was the way to go. This detector works on grayscale images, so I first did the conversion.
+I did a bit of research and experimenting and settled on using a [Canny edge detector](https://en.wikipedia.org/wiki/Canny_edge_detector). I have absolutely no clue how it works, but I had a feeling that looking for the edges of the panels was the way to go. This detector works on grayscale images, so I first did the conversion.
 
 ```py
 from skimage.color import rgb2gray
@@ -73,7 +73,7 @@ Image.fromarray(edges)
 
 ## Edge thickening via dilation
 
-To make the segmentation process more robust, I decided to thicken the edges so that the lines along each panel's border are contiguous. Indeed, these panel borders are sometimes a bit rough, so it's possible that background pixels insert themselves. Thickening the output of the edge detector is a cheap way to make the ensuing segmentation process more robust. This can be done with a [dilation](https://www.wikiwand.com/en/Dilation_(morphology)) operator.
+To make the segmentation process more robust, I decided to thicken the edges so that the lines along each panel's border are contiguous. Indeed, these panel borders are sometimes a bit rough, so it's possible that background pixels insert themselves. Thickening the output of the edge detector is a cheap way to make the ensuing segmentation process more robust. This can be done with a [dilation](https://en.wikipedia.org/wiki/Dilation_(morphology)) operator.
 
 ```py
 from skimage.morphology import dilation

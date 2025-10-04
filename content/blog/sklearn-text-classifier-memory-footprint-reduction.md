@@ -87,7 +87,7 @@ I'm confident enough to put this model into production. At Alan we like to keep 
 
 The model I trained weighs around 2.7 MB. That's over 8000 times [the amount of RAM](https://www.bbc.com/future/article/20190704-apollo-in-50-numbers-the-technology) in the first Apollo shuttle that went to the Moon. Obviously I'm saying this with my tongue in my cheek. And yet, I believe it's important to be frugal and not waste the memory of our precious [Heroku dynos](https://www.heroku.com/dynos). Especially if I want to convince the engineering team to use more machine learning models.
 
-In a text classifier, the importance of each word follows a long-tail distribution. Most words are not important at all, which is the driving insight for [knowledge distillation](https://www.wikiwand.com/en/Knowledge_distillation). As we will see, this is very true for the above model. I decided to push the envelope and lighten the memory footprint of the model, while preserving its accuracy. Anyway, enough with the (long) introduction, here goes.
+In a text classifier, the importance of each word follows a long-tail distribution. Most words are not important at all, which is the driving insight for [knowledge distillation](https://en.wikipedia.org/wiki/Knowledge_distillation). As we will see, this is very true for the above model. I decided to push the envelope and lighten the memory footprint of the model, while preserving its accuracy. Anyway, enough with the (long) introduction, here goes.
 
 ## Measuring the model's size
 
@@ -237,7 +237,7 @@ print(f'Recall is {confident.sum() / len(confident):.2%}')
 Recall is 93.42%
 ```
 
-The performance is (slightly) better! The intention of this pruning process was not to improve the model, but it did. That's the magic of regularization for you. Indeed, the pruning process we've applied boils down to [sparsity regularisation](https://www.wikiwand.com/en/Regularization_(mathematics)#/Regularizers_for_sparsity).
+The performance is (slightly) better! The intention of this pruning process was not to improve the model, but it did. That's the magic of regularization for you. Indeed, the pruning process we've applied boils down to [sparsity regularisation](https://en.wikipedia.org/wiki/Regularization_(mathematics)#/Regularizers_for_sparsity).
 
 Let's now see the memory footprint of the pruned model.
 

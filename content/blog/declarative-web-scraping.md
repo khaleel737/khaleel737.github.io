@@ -143,7 +143,7 @@ I -- [and others](https://bxroberts.org/files/autoscrape.pdf) -- think this is a
 Of course, the declarative vs. procedural debate is a well-known one. I just haven't seen the declarative approach being used much for scraping/parsing. Here are a few projects I did find:
 
 - [autoscraper](https://github.com/alirezamika/autoscraper), which is very similar to what I've discussed in this article.
-- [grex](https://github.com/pemistahl/grex), which infers a regex pattern from examples. It's based on the theory of [deterministic finite automata](https://www.wikiwand.com/en/Deterministic_finite_automaton) learning (DFAL).
+- [grex](https://github.com/pemistahl/grex), which infers a regex pattern from examples. It's based on the theory of [deterministic finite automata](https://en.wikipedia.org/wiki/Deterministic_finite_automaton) learning (DFAL).
 - [dateinfer](https://github.com/jeffreystarr/dateinfer), which infers a date pattern from examples.
 
 Thanks for reading the article, I hope you enjoyed it ツ

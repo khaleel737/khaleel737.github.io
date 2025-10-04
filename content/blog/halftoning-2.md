@@ -19,11 +19,11 @@ The next stop on my travel through the world of halftoning will be the implement
 
 I found a fair amount of resources about the method, most of them being implementations of Adrian Secord's paper. However, not many of these resources went into the nitty-gritty details which are not obvious for beginners in image processing. Before delving into the code, I want to go through some concepts that may seem obvious to some readers but that I judge worthy of detailing.
 
-In art, [stippling](https://www.wikiwand.com/en/Stippling) is a process where single-colored dots are laid out on a white image so as to reproduce an image. The denser the dots, the darker the area they cover. The visual appeal of stippled images comes from the way the dots are laid out. A good stippling method generates evenly spaces dots which makes the image seem *organized*. This kind of harmonious distribution is often referred to as [blue noise](https://www.wikiwand.com/en/Colors_of_noise#/Blue_noise) and is notoriously difficult to generate.
+In art, [stippling](https://en.wikipedia.org/wiki/Stippling) is a process where single-colored dots are laid out on a white image so as to reproduce an image. The denser the dots, the darker the area they cover. The visual appeal of stippled images comes from the way the dots are laid out. A good stippling method generates evenly spaces dots which makes the image seem *organized*. This kind of harmonious distribution is often referred to as [blue noise](https://en.wikipedia.org/wiki/Colors_of_noise#/Blue_noise) and is notoriously difficult to generate.
 
 Adrian Secord's idea - inspired Oliver Deussen's previous work from 2000 - is to use *weighted centroidal Voronoi diagrams* to place the dots. Although the name may seem far fetched, the underlying idea is very simple and can be broken down into three parts.
 
-[Voronoi diagrams](https://www.wikiwand.com/en/Voronoi_diagram) (also called *Voronoi tessellations*) are a huge topic and are surprisingly used in many areas of research. A Voronoi diagram consists of a number of *sites* and *regions*. To each site there belongs a region wherein each point has a shorter distance to the site than it does to any other site. In an image, the sites would a list of $(x, y)$ pairs with discrete coordinates; to generate the Voronoi diagram we would iterate over each pixel in the image, calculate the distance to each site and then assign each pixel to the site to which it is closest. This is one of way of generating Voronoi diagrams, however it obliges us to use integers which isn't very handy when doing fine-grained image processing. A Voronoi diagram can also be seen as a set of vertices and edges which can be obtained by using [Fortune's algorithm](https://www.wikiwand.com/en/Fortune's_algorithm). As we will see this representation doesn't suit our purpose and we have to stick to the sites/regions representation. I'll detail the method I used in a further section.
+[Voronoi diagrams](https://en.wikipedia.org/wiki/Voronoi_diagram) (also called *Voronoi tessellations*) are a huge topic and are surprisingly used in many areas of research. A Voronoi diagram consists of a number of *sites* and *regions*. To each site there belongs a region wherein each point has a shorter distance to the site than it does to any other site. In an image, the sites would a list of $(x, y)$ pairs with discrete coordinates; to generate the Voronoi diagram we would iterate over each pixel in the image, calculate the distance to each site and then assign each pixel to the site to which it is closest. This is one of way of generating Voronoi diagrams, however it obliges us to use integers which isn't very handy when doing fine-grained image processing. A Voronoi diagram can also be seen as a set of vertices and edges which can be obtained by using [Fortune's algorithm](https://en.wikipedia.org/wiki/Fortune's_algorithm). As we will see this representation doesn't suit our purpose and we have to stick to the sites/regions representation. I'll detail the method I used in a further section.
 
 <div align="center" >
 <figure style="width: 60%;">
@@ -32,7 +32,7 @@ Adrian Secord's idea - inspired Oliver Deussen's previous work from 2000 - is to
 </figure>
 </div>
 
-A [*Centroidal Voronoi diagram*](https://www.wikiwand.com/en/Centroidal_Voronoi_tessellation) is a Voronoi diagram where the sites are at the *centroid* of their respective region. Because each region is a polygon, their exists a [formula](https://www.wikiwand.com/en/Centroid#/Centroid_of_polygon) for calculating the centroids by looking at the vertices. However, a more intuitive way of calculating a polygon centroid is:
+A [*Centroidal Voronoi diagram*](https://en.wikipedia.org/wiki/Centroidal_Voronoi_tessellation) is a Voronoi diagram where the sites are at the *centroid* of their respective region. Because each region is a polygon, their exists a [formula](https://en.wikipedia.org/wiki/Centroid#/Centroid_of_polygon) for calculating the centroids by looking at the vertices. However, a more intuitive way of calculating a polygon centroid is:
 
 $$c\_x = \frac{1}{|S|} \int_S x dS$$
 
@@ -51,7 +51,7 @@ Producing a centroidal Voronoi diagram requires iterating the following steps:
 2. Move the sites to their corresponding centroid
 3. Reassign the points to their closest site
 
-This procedure is called [Lloyd's algorithm](https://www.wikiwand.com/en/Lloyd's_algorithm) and is used in other algorithms just as [k-means clustering](https://www.wikiwand.com/en/Lloyd's_algorithm). As can be seen in the following image, after a few iterations - usually 15 does the trick - the regions start to have the same shape and size and seem to *organize* themselves.
+This procedure is called [Lloyd's algorithm](https://en.wikipedia.org/wiki/Lloyd's_algorithm) and is used in other algorithms just as [k-means clustering](https://en.wikipedia.org/wiki/Lloyd's_algorithm). As can be seen in the following image, after a few iterations - usually 15 does the trick - the regions start to have the same shape and size and seem to *organize* themselves.
 
 <div align="center" >
 <figure style="width: 60%;">
@@ -84,7 +84,7 @@ Now for the implementation!
 
 An initial set of points is required for generating a Voronoi diagram. What's more, it would be nice to be able to control the number of points used for stippling. A simple solution is to sample a set of points completely at random. Although this works, it means that more iterations will be required to converge onto a weighted centroidal Voronoi diagram. A smarter way of doing is to sample points with a distribution based on the gray scale intensities of an image. In other words to sample more points where the image is dark and less where the image is light. This way of doing is called *importance sampling* because the darker pixels - the dark ones - will be sampled more that the light ones.
 
-My implementation is inspired from the [roulette wheel selection algorithm](https://www.wikiwand.com/en/Fitness_proportionate_selection) used in genetic algorithms:
+My implementation is inspired from the [roulette wheel selection algorithm](https://en.wikipedia.org/wiki/Fitness_proportionate_selection) used in genetic algorithms:
 
 1. Created a weighted roulette with decreasing pocket sizes and one pocket per gray scale intensity
 2. Choose a random number between 0 and the sum of the pocket sizes
@@ -143,7 +143,7 @@ type Point struct {
 }
 ```
 
-The final step is to generate random numbers and see in which pocket they lie. Once we generate a number, we could simply iterate through the roulette wheel and check for the first index whose value is above the generated number. However the values in our roulette wheel are sorted, hence we can use [binary search](https://www.wikiwand.com/en/Binary_search_algorithm) to speed things up. Conveniently Go's standard library contains a [`sort.Search`](https://golang.org/pkg/sort/#Search) method which does exactly what we need; a [`sort.SearchInts`](https://golang.org/pkg/sort/#SearchInts) convenience method even exists. The following snippet contains my final implementation of importance sampling.
+The final step is to generate random numbers and see in which pocket they lie. Once we generate a number, we could simply iterate through the roulette wheel and check for the first index whose value is above the generated number. However the values in our roulette wheel are sorted, hence we can use [binary search](https://en.wikipedia.org/wiki/Binary_search_algorithm) to speed things up. Conveniently Go's standard library contains a [`sort.Search`](https://golang.org/pkg/sort/#Search) method which does exactly what we need; a [`sort.SearchInts`](https://golang.org/pkg/sort/#SearchInts) convenience method even exists. The following snippet contains my final implementation of importance sampling.
 
 ```go
 func ImportanceSample(n int, gray *image.Gray, threshold uint8, rng *rand.Rand) Points {
@@ -205,9 +205,9 @@ I don't want to spend more time going through the intricacies of importance samp
 
 Now that we have an initial set of points, we are going to use Lloyd's algorithm for "relaxing" the points in a harmonious disposition. However, to do so we need to be able to build a Voronoi diagram because the relaxation step involves points towards their Voronoi region centroid.
 
-As mentioned earlier, obtaining the vertices and edges that define a Voronoi diagram isn't enough if we want to compute weighted centroids. We need to be able to know the coordinates and the weights of each point belonging to a region to be able to calculate it's region. A naive way of doing is to iterate through each point of an image and to determine it's closest site by calculating the distance towards each site. This is called [nearest neighbour search](https://www.wikiwand.com/en/Nearest_neighbor_search) and is a well known problem in computer science; there are many data structures that make it possible to save a lot of time.
+As mentioned earlier, obtaining the vertices and edges that define a Voronoi diagram isn't enough if we want to compute weighted centroids. We need to be able to know the coordinates and the weights of each point belonging to a region to be able to calculate it's region. A naive way of doing is to iterate through each point of an image and to determine it's closest site by calculating the distance towards each site. This is called [nearest neighbour search](https://en.wikipedia.org/wiki/Nearest_neighbor_search) and is a well known problem in computer science; there are many data structures that make it possible to save a lot of time.
 
-I settled on using a [kd-tree](https://www.wikiwand.com/en/K-d_tree); I don't want to delve into it too far because there are already many existing resources online. I based myself on [this tutorial](https://www.ri.cmu.edu/pub_files/pub1/moore_andrew_1991_1/moore_andrew_1991_1.pdf) from Carnegie Mellon. I used three Go structs for the implementation.
+I settled on using a [kd-tree](https://en.wikipedia.org/wiki/K-d_tree); I don't want to delve into it too far because there are already many existing resources online. I based myself on [this tutorial](https://www.ri.cmu.edu/pub_files/pub1/moore_andrew_1991_1/moore_andrew_1991_1.pdf) from Carnegie Mellon. I used three Go structs for the implementation.
 
 ```go
 type rectangle struct {
@@ -351,7 +351,7 @@ func (t kdTree) findNearestNeighbour(p Point) (best Point, bestSqd float64) {
 
 ## Point relaxation
 
-The last piece of the puzzle is implementing Lloyd's algorithm for relaxing the points obtained after importance sampling. First of all we are going to generate a 2D [probability density function (PDF)](https://www.wikiwand.com/en/Probability_density_function) to determine the tone distribution on a given image. We will be using the PDF to "weight" the centroids calculations. Generating a PDF from an image is trivial.
+The last piece of the puzzle is implementing Lloyd's algorithm for relaxing the points obtained after importance sampling. First of all we are going to generate a 2D [probability density function (PDF)](https://en.wikipedia.org/wiki/Probability_density_function) to determine the tone distribution on a given image. We will be using the PDF to "weight" the centroids calculations. Generating a PDF from an image is trivial.
 
 ```go
 // A PDF is a probability density function.

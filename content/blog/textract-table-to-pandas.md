@@ -12,7 +12,7 @@ I wanted to write this short blog post to share a piece of code I use to convert
 
 You can process PDF files with Amazon Textract, but only in [asynchronous mode](https://docs.aws.amazon.com/textract/latest/dg/async.html). That implies uploading a job to a queue and waiting for the job to be done. You can however process images in synchronous mode via a simple API call. Therefore, you could convert a PDF file to an image in Python with [`pdf2image`](https://pypi.org/project/pdf2image/) in order to process it synchronously. In this example I'm just using an image though.
 
-The first step is to load the image, which can be done with [PIL](https://www.wikiwand.com/en/Python_Imaging_Library):
+The first step is to load the image, which can be done with [PIL](https://en.wikipedia.org/wiki/Python_Imaging_Library):
 
 ```py
 from PIL import Image
@@ -20,7 +20,7 @@ from PIL import Image
 im = Image.open('example.jpg')
 ```
 
-Amazon Textract expects the image to be encoded via the [Base64](https://www.wikiwand.com/en/Base64) encoding scheme. This is very easy to do in Python:
+Amazon Textract expects the image to be encoded via the [Base64](https://en.wikipedia.org/wiki/Base64) encoding scheme. This is very easy to do in Python:
 
 ```py
 import io

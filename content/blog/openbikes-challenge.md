@@ -13,7 +13,7 @@ The challenge was split into two phases. During the first phase, the teams were 
 
 During the second part of the challenge, which lasted from the 12th of January 2017 until the 20th of January 2017, the teams were provided with a new dataset containing similar data than the first part, except that Lyon has been swapped out for New-York. The data went from the 1st of April 2016 until the 11th of January 2017. The timesteps to predict were the same - both test sets went from a Wednesday till a Sunday. The teams did not get any feedback when they made a submission during the second part, they were scored based on their last submission, _à l'aveugle_.
 
-In each part of the challenge the chosen metric to score the students was the [mean absolute error](https://www.wikiwand.com/en/Mean_absolute_error) between their submissions and the truth. The use of the MAE makes it possible to say things such as "team A was, on average, 3.2 bikes off target".
+In each part of the challenge the chosen metric to score the students was the [mean absolute error](https://en.wikipedia.org/wiki/Mean_absolute_error) between their submissions and the truth. The use of the MAE makes it possible to say things such as "team A was, on average, 3.2 bikes off target".
 
 ## Technical notes
 
@@ -620,7 +620,7 @@ Every team was asked to submit their code for the second submission. Mostly this
 - 1 team used a CART
 - 1 team used a SARIMA process
 - 1 team used a recurrent neural network (me!)
-- 1 team used [dynamic time warping](https://www.wikiwand.com/en/Dynamic_time_warping)
+- 1 team used [dynamic time warping](https://en.wikipedia.org/wiki/Dynamic_time_warping)
 - 1 team used principal component analysis
 
 An interesting fact is that out of the 7 teams who used Python, 4 used it for preparing their data but coded their model in R.

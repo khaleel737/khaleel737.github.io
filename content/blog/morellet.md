@@ -4,7 +4,7 @@ title = "Morellet crosses with JavaScript"
 tags = ['generative-art']
 +++
 
-The days I'm working on a deep learning project. I hate it but I promised myself to give it a real try. My scripts are taking a long time so I decided to do some procedural art while I waited. This time I'm going to reproduce the following crosses made by [François Morellet](https://www.wikiwand.com/en/Fran%C3%A7ois_Morellet). I saw them the last I went to the Musée Pompidou with some friends from university. I don't have any smartphone anymore so one my friends was kind enough to take a few pictures for me, including this one. The painting is called [*Violet, bleu, vert, jaune, orange, rouge*](https://www.centrepompidou.fr/cpv/resource/cxx585o/ryjG5EL).
+The days I'm working on a deep learning project. I hate it but I promised myself to give it a real try. My scripts are taking a long time so I decided to do some procedural art while I waited. This time I'm going to reproduce the following crosses made by [François Morellet](https://en.wikipedia.org/wiki/Fran%C3%A7ois_Morellet). I saw them the last I went to the Musée Pompidou with some friends from university. I don't have any smartphone anymore so one my friends was kind enough to take a few pictures for me, including this one. The painting is called [*Violet, bleu, vert, jaune, orange, rouge*](https://www.centrepompidou.fr/cpv/resource/cxx585o/ryjG5EL).
 
 ![pompidou](/img/blog/morellet/pompidou.jpg)
 

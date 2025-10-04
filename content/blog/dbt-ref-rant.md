@@ -11,7 +11,7 @@ tags = ['data-eng', 'sql', 'rant']
 
 ## dbt in a nutshell
 
-[dbt](https://www.getdbt.com/) is a workflow orchestrator for SQL. In other words, it's a fancy [Make](https://www.wikiwand.com/en/Make_(software)) for data analytics. What makes dbt special is that it is the first workflow orchestrator that is dedicated to the SQL language. It said out loud what many data teams were thinking: you can get a lot done with SQL.
+[dbt](https://www.getdbt.com/) is a workflow orchestrator for SQL. In other words, it's a fancy [Make](https://en.wikipedia.org/wiki/Make_(software)) for data analytics. What makes dbt special is that it is the first workflow orchestrator that is dedicated to the SQL language. It said out loud what many data teams were thinking: you can get a lot done with SQL.
 
 A workflow orchestrator is necessary to organise tasks into a DAG, and then execute (a subset of) tasks in the correct order. Some orchestrators need to be told which tasks depend on other tasks. Other might determine dependencies automatically. A good orchestrator should trivialise this operation and make you feel productive.
 
@@ -28,7 +28,7 @@ The emergence of dbt is one of the nicest things that happened to the data analy
 
 There's no doubt about dbt being an influencial tool. Instead of improving an existing workflow, it created its own paradigm. To me, it feels like what scikit-learn did for machine learning with its fit/predict concept, or what columnar databases did when they ousted Hadoop. dbt is setting a standard which most of its users seem to agree on.
 
-dbt encourages you to massage your data in SQL rather than in, say, Python. SQL is a language that [was designed](https://www.wikiwand.com/en/SQL) to manipulate data, which is likely why dbt feels so natural. The rumors that [many teams are adopting it](https://www.getdbt.com/blog/next-layer-of-the-modern-data-stack/) is a testimony to dbt's pervasiveness.
+dbt encourages you to massage your data in SQL rather than in, say, Python. SQL is a language that [was designed](https://en.wikipedia.org/wiki/SQL) to manipulate data, which is likely why dbt feels so natural. The rumors that [many teams are adopting it](https://www.getdbt.com/blog/next-layer-of-the-modern-data-stack/) is a testimony to dbt's pervasiveness.
 
 Just this week I chuckled while reading [blef.fr](https://www.blef.fr/), when I learned about a new tool called [fal](https://github.com/fal-ai/fal). The latter presents itself as "dbt for Python". To me that's just a sexier way to say "Airflow". The fact that dbt is generating offsprings tells you it caught the Zeitgeist. In short, dbt is *à la mode*.
 
@@ -90,7 +90,7 @@ I do however agree with their <span style="color: forestgreen;">first point</spa
 
 Rant aside, the real problem with the `ref` function is that you *can* still write your queries without it. The issue is that when dbt determines the dependencies, builds the execution DAG, and runs the queries in the resulting order, it won't magically indicate you forgot to specify a `ref`. Therefore, if your query $Q$ depends on a table $X$, there's no guarantee that said table $X$ will be refreshed when $Q$ is executed.
 
-This can lead to silent bugs, akin to what Donald Rumsfeld would call [*unknown unknowns*](https://www.wikiwand.com/en/There_are_known_knowns). Things get even worse if you start executing views in parallel. Indeed, the bug will become transient and you won't be able to reproduce it in a reliable manner. The result is a recipe for headaches.
+This can lead to silent bugs, akin to what Donald Rumsfeld would call [*unknown unknowns*](https://en.wikipedia.org/wiki/There_are_known_knowns). Things get even worse if you start executing views in parallel. Indeed, the bug will become transient and you won't be able to reproduce it in a reliable manner. The result is a recipe for headaches.
 
 Sure, there are ways to avoid this issue. You could visually inspect the execution DAG. You could rely on your colleagues, if you have any, to review your code. You could also add a linter in your CI routine to check this for you. But all these options feel like duct tape to me. By design, a good workflow orchestrator should have guardrails which prevent this issue in the first place.
 

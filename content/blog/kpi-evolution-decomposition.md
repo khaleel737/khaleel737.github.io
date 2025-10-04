@@ -416,7 +416,7 @@ In other words, in order to understand why the average fluctuated, we have to st
 
 Don't be alarmed: we are still looking to decompose the KPI in terms of volume change and average change. But the volume change is now expressed in terms of share of the total, and the average change is expressed in terms of average per group.
 
-It's a bit of a mindfuck because the KPI is an average. Both quantities are not independent, because they share $n_j$. Decomposing a sum is simpler due to its [associative property](https://www.wikiwand.com/en/Associative), which an average doesn't possess. From my experience, it's better to first look at some equations, and then at some visuals. Please bear with me 🐻
+It's a bit of a mindfuck because the KPI is an average. Both quantities are not independent, because they share $n_j$. Decomposing a sum is simpler due to its [associative property](https://en.wikipedia.org/wiki/Associative), which an average doesn't possess. From my experience, it's better to first look at some equations, and then at some visuals. Please bear with me 🐻
 
 First, let's define $KPI_t$ as the value of the KPI -- i.e. the ratio -- at time $t$. The following identity is a simplified version of the last equation, stating that $KPI_t$ is the sum of the product of shares $s_j(t)$ and ratios $r_j(t)$:
 
@@ -631,13 +631,13 @@ I've been fairly obsessed with this topic ever since joining Carbonfact. A lot o
 
 **When it's not MECE**
 
-All the grouping we've done assumes the [MECE principle](https://www.wikiwand.com/en/MECE_principle) (mutually exclusive, collectively exhaustive). That is, there is no overlap in the values of the dimension by which the data is grouped. It isn't clear to me what to do in the case where an observation may take several values for a single dimension. For instance, if I were studying YouTube videos, I wouldn't know how to decompose `number_of_videos x views_per_video` using tags -- because a video may have several tags. I would love to see an extension which supports this case.
+All the grouping we've done assumes the [MECE principle](https://en.wikipedia.org/wiki/MECE_principle) (mutually exclusive, collectively exhaustive). That is, there is no overlap in the values of the dimension by which the data is grouped. It isn't clear to me what to do in the case where an observation may take several values for a single dimension. For instance, if I were studying YouTube videos, I wouldn't know how to decompose `number_of_videos x views_per_video` using tags -- because a video may have several tags. I would love to see an extension which supports this case.
 
 **Decomposition methods in economics**
 
 In the field of economics, there is a bunch of literature on the topic of _decomposition methods_. For instance, [these](https://scholar.harvard.edu/files/melitz/files/melitz_et_al-2015-the_rand_journal_of_economics.pdf) [papers](https://www.mof.go.jp/english/pri/publication/pp_review/fy2017/ppr13_03_03.pdf) decompose productivity growth, by allocating growth to new companies, exiting companies, and existing companies.
 
-I also stumbled upon the [Kitagawa-Blinder-Oaxaca](https://www.wikiwand.com/en/Blinder%E2%80%93Oaxaca_decomposition) decomposition. This seems like a way to explain the difference of a value between two groups, when the value can be modelled as a linear regression. This is powerful: if you don't know the formula behind a KPI, but can fit it with a regression model, then you can decompose it using this method.
+I also stumbled upon the [Kitagawa-Blinder-Oaxaca](https://en.wikipedia.org/wiki/Blinder%E2%80%93Oaxaca_decomposition) decomposition. This seems like a way to explain the difference of a value between two groups, when the value can be modelled as a linear regression. This is powerful: if you don't know the formula behind a KPI, but can fit it with a regression model, then you can decompose it using this method.
 
 **Automatic differentiation**
 

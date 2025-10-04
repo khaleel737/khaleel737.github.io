@@ -5,7 +5,7 @@ title = "Halftoning with Go - Part 1"
 tags = ['image-processing']
 +++
 
-Recently I stumbled upon [this webpage](http://www.cgl.uwaterloo.ca/csk/projects/tsp/) which shows how to use a TSP solver as a [*halftoning*](https://www.wikiwand.com/en/Halftone) technique. I began to read about related concepts like [*dithering*](https://www.wikiwand.com/en/Dither) and [*stippling*](https://www.wikiwand.com/en/Stippling). I don't have any background in photography but I can appreciate the visual appeal of these techniques. As I understand it these techniques were first invented to save ink for printing. However nowadays printing has become cheaper and the modern use of these technique is mostly aesthetic, at least for images.
+Recently I stumbled upon [this webpage](http://www.cgl.uwaterloo.ca/csk/projects/tsp/) which shows how to use a TSP solver as a [*halftoning*](https://en.wikipedia.org/wiki/Halftone) technique. I began to read about related concepts like [*dithering*](https://en.wikipedia.org/wiki/Dither) and [*stippling*](https://en.wikipedia.org/wiki/Stippling). I don't have any background in photography but I can appreciate the visual appeal of these techniques. As I understand it these techniques were first invented to save ink for printing. However nowadays printing has become cheaper and the modern use of these technique is mostly aesthetic, at least for images.
 
 <div align="center" >
 <figure style="width: 80%;">
@@ -329,11 +329,11 @@ The result is a huge step forward. The same patches from threshold dithering are
 
 ## Floyd-Steinberg dithering
 
-Before talking about [Floyd-Steinberg dithering](https://www.wikiwand.com/en/Floyd%E2%80%93Steinberg_dithering), let's briefly delve into the concept of *error diffusion*. The issue with the previous methods is that when a pixel was set to black, this information was not taken into account when considering turning to black a neighboring pixel. With error diffusion, the idea is to "carry" the difference between a pixel's intensity and a threshold - this is called the *quantization error* - to the neighboring cells so as to reverse the turning into black or white decision. Admitedly this is still a vague concept, but it's worth understanding!
+Before talking about [Floyd-Steinberg dithering](https://en.wikipedia.org/wiki/Floyd%E2%80%93Steinberg_dithering), let's briefly delve into the concept of *error diffusion*. The issue with the previous methods is that when a pixel was set to black, this information was not taken into account when considering turning to black a neighboring pixel. With error diffusion, the idea is to "carry" the difference between a pixel's intensity and a threshold - this is called the *quantization error* - to the neighboring cells so as to reverse the turning into black or white decision. Admitedly this is still a vague concept, but it's worth understanding!
 
 The easiest error diffusion method is simply to add the quantization error of a pixel to the next one when looping through the image. For example, say a pixel's intensity is 90 and the threshold is 120, then the pixel is turned to black because 90 is lower than 120; the quantization error is $90-0=90$. Then say that the next pixel has an intensity of 80. Instead of setting it to 0 because it is lower than 120, add the quantization error of the previous pixel and turn it to white because $80+90=170$ which is higher than 120. The quantization error of that pixel is then $170-255=-85$. This way turning a pixel to black will "discourage" the next pixel to be turned to black.
 
-Algorithms such Floyd-Steinberg dithering use this principle and "spread" each pixel's quantization error following a certain pattern. This is quite well explained on the [error diffusion Wikipedia article](https://www.wikiwand.com/en/Error_diffusion) so I'm not going to explain it in detail. With the Floyd-Steinberg variant, the idea is to spread the quantization error in the following way:
+Algorithms such Floyd-Steinberg dithering use this principle and "spread" each pixel's quantization error following a certain pattern. This is quite well explained on the [error diffusion Wikipedia article](https://en.wikipedia.org/wiki/Error_diffusion) so I'm not going to explain it in detail. With the Floyd-Steinberg variant, the idea is to spread the quantization error in the following way:
 
           X      7/16
     3/16  5/16   1/16

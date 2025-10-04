@@ -51,7 +51,7 @@ FROM accounts
 ```
 </details>
 
-Typically, we compute a [loss ratio](https://www.wikiwand.com/en/Loss_ratio) by comparing the premiums with the claims:
+Typically, we compute a [loss ratio](https://en.wikipedia.org/wiki/Loss_ratio) by comparing the premiums with the claims:
 
 ```sql
 SELECT SUM(claims) / SUM(premiums) AS loss_ratio
@@ -220,7 +220,7 @@ That's as simple as a query can get. It's just a very readable `SELECT FROM WHER
 
 Writing down a `GROUPING SETS` operator can be a bit tedious. It's also slightly error-prone if you're juggling with a lot of dimensions. Thankfully, in Snowflake there are a couple of operators to ease this process.
 
-You can use [`CUBE`](https://docs.snowflake.com/en/sql-reference/constructs/group-by-cube.html) when you want to group on all the combinations of dimensions. It's a good default mode when you're not sure what dimensions are going to be used in the dashboard. By the way, I really think that this notion of having prepared data that does not know how it's going to be used is a powerful idea. It's yet another instance of [data independence](https://www.wikiwand.com/en/Data_independence).
+You can use [`CUBE`](https://docs.snowflake.com/en/sql-reference/constructs/group-by-cube.html) when you want to group on all the combinations of dimensions. It's a good default mode when you're not sure what dimensions are going to be used in the dashboard. By the way, I really think that this notion of having prepared data that does not know how it's going to be used is a powerful idea. It's yet another instance of [data independence](https://en.wikipedia.org/wiki/Data_independence).
 
 ```sql
 GROUP BY CUBE (week, country, industry)

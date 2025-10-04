@@ -14,7 +14,7 @@ The reason why I'm talking about this particular competition is that the data is
 3. Handle failures so that I don't have to start from scratch if my laptop turns off.
 4. To be written in Python.
 
-After a lot of playing around I found a good solution that is compatible with `pandas`. The trick is to do what I call a *streaming groupby*. The key idea is that we want to process the dataset in chunks. That is, we want to split the dataset in small chunks and apply the groupby to each chunk. In the end, we simply have to merge the results of each groupby. I've basically just described what [MapReduce](https://www.wikiwand.com/en/MapReduce) does. There are two downsides with this approach that don't suit my needs.
+After a lot of playing around I found a good solution that is compatible with `pandas`. The trick is to do what I call a *streaming groupby*. The key idea is that we want to process the dataset in chunks. That is, we want to split the dataset in small chunks and apply the groupby to each chunk. In the end, we simply have to merge the results of each groupby. I've basically just described what [MapReduce](https://en.wikipedia.org/wiki/MapReduce) does. There are two downsides with this approach that don't suit my needs.
 
 The first downside is that the way in which the results have to be merged in the final step strongly depends on the type of aggregate you're doing. For example, if you're just counting then you simply have to sum the counts of each groupby. However if you're computing a rolling kurtosis then it isn't as straightforward. In the MapReduce framework, the user is expected to provide the `reduce` function, which is specific to each situation.
 
@@ -103,7 +103,7 @@ One thing to notice in the above Python code is that the results are stored in a
 
 I would like to say that there is more to my approach than what I've just said but that's really it. It's nothing crazy but it really works well. Whatever the size of the dataset, you can process it with a very limited amount of RAM usage. There isn't any reason why this approach should be slower than performing a single groupby of one go. Howevern the downside of this approach is that it has to perform more function calls than a single groupby, but depending on your data the incurred overhead might be negligible.
 
-A natural thing we could do next is to process the groupbys concurrently. Indeed, we could use a [worker pool](https://www.wikiwand.com/en/Thread_pool) to run the successive `agg` calls. Thankfully, this is trivial to implement with Python's [`multiprocessing` module](https://docs.python.org/3.6/library/multiprocessing.html?highlight=process), which is included in the default library.
+A natural thing we could do next is to process the groupbys concurrently. Indeed, we could use a [worker pool](https://en.wikipedia.org/wiki/Thread_pool) to run the successive `agg` calls. Thankfully, this is trivial to implement with Python's [`multiprocessing` module](https://docs.python.org/3.6/library/multiprocessing.html?highlight=process), which is included in the default library.
 
 ```python
 import itertools

@@ -270,7 +270,7 @@ features
 
 Note that I have set `min_periods` to 1 so that statistics are still computed when there are less than `lag` values in a given window. As you can see, the `nan`s are present when there are no past values to aggregate on.
 
-When I do a Kaggle competition, I run the above code on a small subset of the data and manually check that it's doing what I want it to do. This is akin to [pointing and calling](https://www.wikiwand.com/en/Pointing_and_calling), which I highly recommend doing in any data science endeavour whatsoever.
+When I do a Kaggle competition, I run the above code on a small subset of the data and manually check that it's doing what I want it to do. This is akin to [pointing and calling](https://en.wikipedia.org/wiki/Pointing_and_calling), which I highly recommend doing in any data science endeavour whatsoever.
 
 You might have noticed that I used `apply` to shift the values backwards before aggregating. Since version `1.0`, it's also possible to define a custom window that does the shifting for us. This may be done by subclassing `pd.api.indexers.BaseIndexer`:
 

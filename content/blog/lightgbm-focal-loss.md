@@ -116,7 +116,7 @@ def logloss_objective(preds, train_data):
     return grad, hess
 ```
 
-The mathematics that are required in order to derive the gradient and the Hessian are not very involved, but they do require knowledge of the [chain rule](https://www.wikiwand.com/en/Chain_rule). I recommend checking out [this CrossValidated thread](https://stats.stackexchange.com/questions/231220/) as well as [this blog post](http://zpz.github.io/blog/gradient-boosting-tree-for-binary-classification/) for more information. One important thing to notice is that the `preds` array provided by LightGBM contains raw margin scores instead of probabilities. We have thus got to convert them to probabilities ourselves before evaluating the gradient and the Hessian by using a sigmoid transformation. So far, so good. The issue is that the same thing occurs in the metric function. We therefore have to define a custom metric function to accompany our custom objective function. This can be done via the `feval` parameter, which is short for "evaluation function". In our case, we can use scikit-learn's [`metrics.log_loss` function](https://scikit-learn.org/stable/modules/generated/sklearn.metrics.log_loss.html). However, the latter incurs a lot of overhead; it's much more efficient to implement it ourselves -- about 5 times faster in my experience:
+The mathematics that are required in order to derive the gradient and the Hessian are not very involved, but they do require knowledge of the [chain rule](https://en.wikipedia.org/wiki/Chain_rule). I recommend checking out [this CrossValidated thread](https://stats.stackexchange.com/questions/231220/) as well as [this blog post](http://zpz.github.io/blog/gradient-boosting-tree-for-binary-classification/) for more information. One important thing to notice is that the `preds` array provided by LightGBM contains raw margin scores instead of probabilities. We have thus got to convert them to probabilities ourselves before evaluating the gradient and the Hessian by using a sigmoid transformation. So far, so good. The issue is that the same thing occurs in the metric function. We therefore have to define a custom metric function to accompany our custom objective function. This can be done via the `feval` parameter, which is short for "evaluation function". In our case, we can use scikit-learn's [`metrics.log_loss` function](https://scikit-learn.org/stable/modules/generated/sklearn.metrics.log_loss.html). However, the latter incurs a lot of overhead; it's much more efficient to implement it ourselves -- about 5 times faster in my experience:
 
 ```py
 import numpy as np
@@ -177,7 +177,7 @@ Test's logloss: 0.00227
 
 As you can see, the test scores are somewhat similar to the previous outputs, but they're not *exactly* the same. What's more, the model has taken around 500 more iterations to converge. When you're implementing a fancy loss function with nothing to compare against, then it's virtually impossible to verify that your implementation is correct. In the above case, the scores are close, but that's not satisfactory.
 
-I didn't manage myself to find the discrepancy by myself, so I opened a [GitHub issue](https://github.com/microsoft/LightGBM/issues/3312). shiyu1994 [kindly](https://github.com/microsoft/LightGBM/issues/3312#issuecomment-674955643) made me aware that the problem was that I didn't specify any initialization values for my model. Indeed, if you look at some [gradient boosting algorithm pseudo-code](https://www.wikiwand.com/en/Gradient_boosting#/Algorithm), you'll see that the model starts off with an initial estimate. From Wikipedia, the latter is defined mathematically as so:
+I didn't manage myself to find the discrepancy by myself, so I opened a [GitHub issue](https://github.com/microsoft/LightGBM/issues/3312). shiyu1994 [kindly](https://github.com/microsoft/LightGBM/issues/3312#issuecomment-674955643) made me aware that the problem was that I didn't specify any initialization values for my model. Indeed, if you look at some [gradient boosting algorithm pseudo-code](https://en.wikipedia.org/wiki/Gradient_boosting#/Algorithm), you'll see that the model starts off with an initial estimate. From Wikipedia, the latter is defined mathematically as so:
 
 $$\begin{equation}
 F_0(x) = \mathop{\mathrm{argmin}}\limits_{\zeta} \sum_{i=1}^n L(y_i, \zeta)
@@ -198,7 +198,7 @@ $$\begin{equation}
 \zeta = \log(\frac{\frac{1}{n}\sum_{i=1}^n y_i}{1 - \frac{1}{n}\sum_{i=1}^n y_i})
 \end{equation}$$
 
-This should make sense intuitively, as $\frac{1}{n}\sum_{i=1}^n y_i$ is the average of the ground truths, which feels like the most reasonable default value to pick. The above formula is simply the [log-odds](https://www.wikiwand.com/en/Logit) of $\frac{1}{n}\sum_{i=1}^n y_i$.
+This should make sense intuitively, as $\frac{1}{n}\sum_{i=1}^n y_i$ is the average of the ground truths, which feels like the most reasonable default value to pick. The above formula is simply the [log-odds](https://en.wikipedia.org/wiki/Logit) of $\frac{1}{n}\sum_{i=1}^n y_i$.
 
 When using the generic Python interface of LightGBM, the initialization values can be specified by setting the `init_score` parameter of each dataset. Once the model is trained and available for making predictions, we also need to add the initialization score to the raw predictions before applying the sigmoid transformation.
 

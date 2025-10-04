@@ -78,7 +78,7 @@ function createConvexPolygon(box) {
 }
 ```
 
-I use the modulo operator so that I can join the last point of the polygon to the first one, it avoids adding another instruction after the loop. It's a bit like using a [linked list](https://www.wikiwand.com/en/Linked_list).
+I use the modulo operator so that I can join the last point of the polygon to the first one, it avoids adding another instruction after the loop. It's a bit like using a [linked list](https://en.wikipedia.org/wiki/Linked_list).
 
 ![3](/img/blog/recursive-polygons/3.png)
 ![4](/img/blog/recursive-polygons/4.png)

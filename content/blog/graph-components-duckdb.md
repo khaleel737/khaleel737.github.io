@@ -10,7 +10,7 @@ images = ["/img/blog/graph-components-duckdb/cover.png"]
 
 Graph problems are quite common. However, it's rare to have access to a database offering graph semantics. There are graph databases, such as [Neo4j](https://neo4j.com/) and [GraphX](https://spark.apache.org/docs/latest/graphx-programming-guide.html), but it's difficult to justify setting one of those up. One could simply use [networkx](https://networkx.org/) in Python. But that only works if the graph fits in memory.
 
-From a practical angle, the fact is that people are querying data warehouses in SQL. There are many good reasons to write graph algorithms in SQL. And anyway, one may argue that graphs are a special case of the [relational model](https://www.wikiwand.com/en/Relational_model).
+From a practical angle, the fact is that people are querying data warehouses in SQL. There are many good reasons to write graph algorithms in SQL. And anyway, one may argue that graphs are a special case of the [relational model](https://en.wikipedia.org/wiki/Relational_model).
 
 An ex-colleague recently shared a problem he was pulling his hair on:
 
@@ -18,7 +18,7 @@ An ex-colleague recently shared a problem he was pulling his hair on:
 >
 > Question: *How can I find groups of companies and admins that are connected with each other?*
 
-As you might guess, this boils down to finding [components in a graph](https://www.wikiwand.com/en/Component_(graph_theory)).
+As you might guess, this boils down to finding [components in a graph](https://en.wikipedia.org/wiki/Component_(graph_theory)).
 
 My ex-colleague had a few tens of thousands of rows sitting in a Snowflake table. Each row linking an admin to a company. It took us an hour to obtain a working solution in SQL. But it involved a recursive query with an uninspired stopping condition based on the recursion depth. Moreover, the query took a (painful) few minutes to run.
 
@@ -38,7 +38,7 @@ Let me illustrate with an example, which will also serve as a unit test. Let's s
 
 Let's say we have to find groups of customers/restaurants that are connected to each other, either directly or indirectly. For instance, this may be because it's COVID, and we want to notify customers that were at a restaurant which was visited by an infected person. We won't worry about visiting times, though -- people should only care if they visited the restaurant at the same time.
 
-The above graph is [bipartite](https://www.wikiwand.com/en/Bipartite_graph), in that the edges always go from a customer to a restaurant -- and not, say, from a customer to a customer. This is just a special case of a graph. If we have an algorithm to find components in any graph, then it would also work for bipartite graphs.
+The above graph is [bipartite](https://en.wikipedia.org/wiki/Bipartite_graph), in that the edges always go from a customer to a restaurant -- and not, say, from a customer to a customer. This is just a special case of a graph. If we have an algorithm to find components in any graph, then it would also work for bipartite graphs.
 
 ## A working implementation
 
@@ -172,7 +172,7 @@ FROM ( VALUES ('3'), ('B') )
 └─────────┘
 ```
 
-That was a bit of data munging to get the list of nodes and edges. But you might already have that in some different shape. What follows is the crux of this article. Indeed, we have everything needed to implement a connected components algorithm. This is [usually done](https://www.wikiwand.com/en/Connected_component_(graph_theory)#Algorithms) with a search algorithm, be it [BFS](https://www.wikiwand.com/en/Breadth-first_search) or [DFS](https://www.wikiwand.com/en/Depth-first_search). A variation is necessary to function with relational semantics.
+That was a bit of data munging to get the list of nodes and edges. But you might already have that in some different shape. What follows is the crux of this article. Indeed, we have everything needed to implement a connected components algorithm. This is [usually done](https://en.wikipedia.org/wiki/Connected_component_(graph_theory)#Algorithms) with a search algorithm, be it [BFS](https://en.wikipedia.org/wiki/Breadth-first_search) or [DFS](https://en.wikipedia.org/wiki/Depth-first_search). A variation is necessary to function with relational semantics.
 
 I have to admit, I got an implementation from Torsten Grust's [tutorial](https://www.youtube.com/watch?v=L967JqNFxkw). He calls it *parallel walks*, and it's admittedly rather elegant. The following code is more or less copy/pasted from that tutorial.
 
@@ -260,6 +260,6 @@ could not allocate block of 262144 bytes
 
 As a reminder, our goal boils down to determining which nodes are part of the same set. The fundamental issue is that we're representing these sets in the most inefficient way possible. The memory footprint of a set should be linear, because there's only a need to mention each node once. But here we're explicitly listing each pair within each component, which results in quadratic memory usage.
 
-That said, the idea of extending a front of nodes is the right one. It's simply that we're not using the right data structure to materialize said front. Ideally, each front would be represented with an actual set, on which set semantics could be applied. The fronts would then be [disjoint sets](https://www.wikiwand.com/en/Disjoint_sets). If two nodes are adjacent to one another, then their fronts would be merged. This is reminiscent of [Kruskal's algorithm](https://www.wikiwand.com/en/Kruskal's_algorithm).
+That said, the idea of extending a front of nodes is the right one. It's simply that we're not using the right data structure to materialize said front. Ideally, each front would be represented with an actual set, on which set semantics could be applied. The fronts would then be [disjoint sets](https://en.wikipedia.org/wiki/Disjoint_sets). If two nodes are adjacent to one another, then their fronts would be merged. This is reminiscent of [Kruskal's algorithm](https://en.wikipedia.org/wiki/Kruskal's_algorithm).
 
 The only issue is that I have no idea how to do this with DuckDB! The latter has a [`List` data type](https://duckdb.org/docs/sql/data_types/list), but not an equivalent for sets. I leave it to the reader to take up the baton 🦆

@@ -11,6 +11,7 @@
 
 
 
+- [Scraping Google Calendar events](https://maxhalford.github.io/blog/google-calendar-scraping/)
 - [Warmshowers sparks joy](https://maxhalford.github.io/blog/warmshowers-sparks-joy/)
 - [Do LLMs identify fonts?](https://maxhalford.github.io/blog/llm-font-identification/)
 - [Thoughts on DuckLake](https://maxhalford.github.io/blog/ducklake-thoughts/)

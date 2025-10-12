@@ -1,7 +1,7 @@
 +++
 date = "2025-07-30"
 title = 'Do LLMs identify fonts?'
-tags = ['llm', 'web-scraping']
+tags = ['llm', 'scraping']
 +++
 
 *Spoiler: [not really](https://maxhalford.github.io/llm-font-recognition/)*

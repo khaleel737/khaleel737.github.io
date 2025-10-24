@@ -1,20 +1,20 @@
-baseURL = "https://maxhalford.github.io/"
+baseURL = "https://khaleel737.github.io/"
 languageCode = "en-us"
-title = "Max Halford"
+title = "Khaleel Musleh"
 theme = "yinyang"
 enableRobotsTXT = true
 pygmentsUseClasses = true
 
 [params.author]
   email = "maxhalford25@gmail.com"
-  name = "Max Halford"
+  name = "Khaleel Musleh"
 
 [params]
-  headTitle = "Max Halford ツ"
+  headTitle = "Khaleel Musleh ツ"
   mainSections = ["blog"]
   favicon = "/img/favicon.ico"
   images = ["/img/belle-ile.jpg"]
-  description = "Max Halford's blog ツ"
+  description = "Khaleel Musleh's blog ツ"
 
 [markup.goldmark.renderer]
   unsafe = true

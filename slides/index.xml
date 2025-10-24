@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Slides on Max Halford</title><link>https://maxhalford.github.io/slides/</link><description>Recent content in Slides on Max Halford</description><generator>Hugo</generator><language>en-us</language><managingEditor>maxhalford25@gmail.com (Max Halford)</managingEditor><webMaster>maxhalford25@gmail.com (Max Halford)</webMaster><atom:link href="https://maxhalford.github.io/slides/index.xml" rel="self" type="application/rss+xml"/><item><title/><link>https://maxhalford.github.io/slides/creme-pydata/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>maxhalford25@gmail.com (Max Halford)</author><guid>https://maxhalford.github.io/slides/creme-pydata/</guid><description>&lt;!DOCTYPE html&gt;
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Slides on Khaleel Musleh</title><link>https://khaleel737.github.io/slides/</link><description>Recent content in Slides on Khaleel Musleh</description><generator>Hugo</generator><language>en-us</language><managingEditor>maxhalford25@gmail.com (Khaleel Musleh)</managingEditor><webMaster>maxhalford25@gmail.com (Khaleel Musleh)</webMaster><atom:link href="https://khaleel737.github.io/slides/index.xml" rel="self" type="application/rss+xml"/><item><title/><link>https://khaleel737.github.io/slides/creme-pydata/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>maxhalford25@gmail.com (Khaleel Musleh)</author><guid>https://khaleel737.github.io/slides/creme-pydata/</guid><description>&lt;!DOCTYPE html&gt;
 &lt;html&gt;
  &lt;head&gt;
  &lt;title&gt;Incremental machine learning&lt;/title&gt;
@@ -79,7 +79,7 @@ class: center, middle
 &lt;div style="display: flex; flex-direction: row; justify-content: center;"&gt;
 
  &lt;div align="center"&gt;
- &lt;img height="100px" src="https://maxhalford.github.io/img/slides/creme/logo_pydata.png" /&gt;
+ &lt;img height="100px" src="https://khaleel737.github.io/img/slides/creme/logo_pydata.png" /&gt;
  &lt;/div&gt;
 
  &lt;div align="center"&gt;
@@ -144,7 +144,7 @@ class: center, middle
 ### Batch machine learning in production
 
 &lt;div align="center"&gt;
- &lt;img height="500px" src="https://maxhalford.github.io/img/slides/creme/batch_production.svg" /&gt;
+ &lt;img height="500px" src="https://khaleel737.github.io/img/slides/creme/batch_production.svg" /&gt;
 &lt;/div&gt;
 
 ???
@@ -158,7 +158,7 @@ class: center, middle
 ### Batch machine learning in production is hard
 
 &lt;div align="center"&gt;
- &lt;img height="300px" src="https://maxhalford.github.io/img/slides/creme/boromir.jpg" /&gt;
+ &lt;img height="300px" src="https://khaleel737.github.io/img/slides/creme/boromir.jpg" /&gt;
 &lt;/div&gt;
 
 ???
@@ -201,7 +201,7 @@ This is more subtle. Sometimes it isn't possible to recreate features for past i
 
 class: center, middle
 
-&lt;img height="400px" src="https://maxhalford.github.io/img/slides/creme/edward-bear-bump-bump.png" /&gt;
+&lt;img height="400px" src="https://khaleel737.github.io/img/slides/creme/edward-bear-bump-bump.png" /&gt;
 
 &gt; It is, as far as he knows, the only way of coming downstairs, but sometimes he feels that there really is another way, if only he could stop bumping for a moment and think of it.
 
@@ -662,7 +662,7 @@ def predict_proba_one(self, x):
 ### League of Legends match duration forecasting (1)
 
 &lt;div align="center"&gt;
- &lt;img height="400px" src="https://maxhalford.github.io/img/slides/creme/lol_home.png" /&gt;
+ &lt;img height="400px" src="https://khaleel737.github.io/img/slides/creme/lol_home.png" /&gt;
 &lt;/div&gt;
 
 ---
@@ -670,7 +670,7 @@ def predict_proba_one(self, x):
 ### League of Legends match duration forecasting (2)
 
 &lt;div align="center"&gt;
- &lt;img height="400px" src="https://maxhalford.github.io/img/slides/creme/lol_matches.png" /&gt;
+ &lt;img height="400px" src="https://khaleel737.github.io/img/slides/creme/lol_matches.png" /&gt;
 &lt;/div&gt;
 
 ---
@@ -678,7 +678,7 @@ def predict_proba_one(self, x):
 ### Architecture
 
 &lt;div align="center"&gt;
- &lt;img height="450px" src="https://maxhalford.github.io/img/slides/creme/lol_architecture.svg" /&gt;
+ &lt;img height="450px" src="https://khaleel737.github.io/img/slides/creme/lol_architecture.svg" /&gt;
 &lt;/div&gt;
 
 ---
@@ -815,7 +815,7 @@ avg_error = agg['duration__avg']
 - Spread the word!
 
 &lt;div align="center"&gt;
- &lt;img height="230px" src="https://maxhalford.github.io/img/slides/creme/we_need_you.jpg" /&gt;
+ &lt;img height="230px" src="https://khaleel737.github.io/img/slides/creme/we_need_you.jpg" /&gt;
 &lt;/div&gt;
 
 ---
@@ -832,7 +832,7 @@ class: center, middle
 
 .right-column[
 &lt;div align="center" style="margin-top: 50px;"&gt;
- &lt;img height="343px" src="https://maxhalford.github.io/img/slides/creme/qr_code.svg" /&gt;
+ &lt;img height="343px" src="https://khaleel737.github.io/img/slides/creme/qr_code.svg" /&gt;
 &lt;/div&gt;
 ]
 
@@ -866,7 +866,7 @@ class: center, middle
  );
  &lt;/script&gt;
  &lt;/body&gt;
-&lt;/html&gt;</description></item><item><title/><link>https://maxhalford.github.io/slides/creme-tds/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>maxhalford25@gmail.com (Max Halford)</author><guid>https://maxhalford.github.io/slides/creme-tds/</guid><description>&lt;!DOCTYPE html&gt;
+&lt;/html&gt;</description></item><item><title/><link>https://khaleel737.github.io/slides/creme-tds/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>maxhalford25@gmail.com (Khaleel Musleh)</author><guid>https://khaleel737.github.io/slides/creme-tds/</guid><description>&lt;!DOCTYPE html&gt;
 &lt;html&gt;
  &lt;head&gt;
  &lt;title&gt;Machine learning incrémental: des concepts à la pratique&lt;/title&gt;
@@ -949,7 +949,7 @@ class: center, middle
 &lt;div style="display: flex; flex-direction: row; justify-content: center;"&gt;
 
  &lt;div align="center"&gt;
- &lt;img height="100px" src="https://maxhalford.github.io/img/slides/creme/logo_tds.png" /&gt;
+ &lt;img height="100px" src="https://khaleel737.github.io/img/slides/creme/logo_tds.png" /&gt;
  &lt;/div&gt;
 
  &lt;div align="center"&gt;
@@ -984,7 +984,7 @@ class: center, middle
 ### PyData Amsterdam 2019 🐍 🇳🇱 🧀
 
 &lt;div align="center"&gt;
- &lt;img height="400px" src="https://maxhalford.github.io/img/slides/creme/max_pydata.jpg" /&gt;
+ &lt;img height="400px" src="https://khaleel737.github.io/img/slides/creme/max_pydata.jpg" /&gt;
 &lt;/div&gt;
 
 ---
@@ -1013,7 +1013,7 @@ class: center, middle
 ### Batch machine learning in production
 
 &lt;div align="center"&gt;
- &lt;img height="500px" src="https://maxhalford.github.io/img/slides/creme/batch_production.svg" /&gt;
+ &lt;img height="500px" src="https://khaleel737.github.io/img/slides/creme/batch_production.svg" /&gt;
 &lt;/div&gt;
 
 ---
@@ -1048,7 +1048,7 @@ class: center, middle, white
 
 class: center, middle
 
-&lt;img height="400px" src="https://maxhalford.github.io/img/slides/creme/edward-bear-bump-bump.png" /&gt;
+&lt;img height="400px" src="https://khaleel737.github.io/img/slides/creme/edward-bear-bump-bump.png" /&gt;
 
 &gt; It is, as far as he knows, the only way of coming downstairs, but sometimes he feels that there really is another way, if only he could stop bumping for a moment and think of it.
 
@@ -1609,7 +1609,7 @@ class: center, middle
 ### Alternative frameworks
 
 &lt;div align="center"&gt;
- &lt;img height="500px" src="https://maxhalford.github.io/img/slides/creme/others.svg" /&gt;
+ &lt;img height="500px" src="https://khaleel737.github.io/img/slides/creme/others.svg" /&gt;
 &lt;/div&gt;
 
 ---
@@ -1654,7 +1654,7 @@ class: center, middle
 - Starring us on GitHub helps a lot 🌟
 
 &lt;div align="center"&gt;
- &lt;img height="230px" src="https://maxhalford.github.io/img/slides/creme/we_need_you_fr.jpg" /&gt;
+ &lt;img height="230px" src="https://khaleel737.github.io/img/slides/creme/we_need_you_fr.jpg" /&gt;
 &lt;/div&gt;
 
 ---
@@ -1671,7 +1671,7 @@ class: center, middle
 
 .right-column[
 &lt;div align="center" style="margin-top: 50px;"&gt;
- &lt;img height="400px" src="https://maxhalford.github.io/img/slides/creme/qr_code.svg" /&gt;
+ &lt;img height="400px" src="https://khaleel737.github.io/img/slides/creme/qr_code.svg" /&gt;
 &lt;/div&gt;
 ]
 
@@ -1705,7 +1705,7 @@ class: center, middle
  );
  &lt;/script&gt;
  &lt;/body&gt;
-&lt;/html&gt;</description></item><item><title/><link>https://maxhalford.github.io/slides/the-benefits-of-online-learning/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>maxhalford25@gmail.com (Max Halford)</author><guid>https://maxhalford.github.io/slides/the-benefits-of-online-learning/</guid><description>&lt;!DOCTYPE html&gt;
+&lt;/html&gt;</description></item><item><title/><link>https://khaleel737.github.io/slides/the-benefits-of-online-learning/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>maxhalford25@gmail.com (Khaleel Musleh)</author><guid>https://khaleel737.github.io/slides/the-benefits-of-online-learning/</guid><description>&lt;!DOCTYPE html&gt;
 &lt;html&gt;
  &lt;head&gt;
  &lt;title&gt;The Benefits of Online Learning&lt;/title&gt;
@@ -1802,7 +1802,7 @@ class: center, middle
 &lt;div style="display: flex; flex-direction: row; justify-content: center;"&gt;
 
  &lt;div align="center"&gt;
- &lt;img height="180px" src="https://maxhalford.github.io/img/slides/creme/creme.svg" /&gt;
+ &lt;img height="180px" src="https://khaleel737.github.io/img/slides/creme/creme.svg" /&gt;
  &lt;/div&gt;
 
 &lt;/div&gt;
@@ -1818,7 +1818,7 @@ class: middle
 ## Outline
 
 &lt;div align="center"&gt;
- &lt;img height="300px" src="https://maxhalford.github.io/img/slides/creme/knowledge.jpg" /&gt;
+ &lt;img height="300px" src="https://khaleel737.github.io/img/slides/creme/knowledge.jpg" /&gt;
 &lt;/div&gt;
 
 ---
@@ -1827,7 +1827,7 @@ class: middle
 
 .left-column[
 &lt;div align="center"&gt;
- &lt;img height="500px" src="https://maxhalford.github.io/img/slides/creme/moneyball.jpg" /&gt;
+ &lt;img height="500px" src="https://khaleel737.github.io/img/slides/creme/moneyball.jpg" /&gt;
 &lt;/div&gt;
 ]
 
@@ -1869,7 +1869,7 @@ With code:
 ## Lambda architecture
 
 &lt;div align="center"&gt;
- &lt;img height="500px" src="https://maxhalford.github.io/img/slides/creme/lambda_architecture.svg" /&gt;
+ &lt;img height="500px" src="https://khaleel737.github.io/img/slides/creme/lambda_architecture.svg" /&gt;
 &lt;/div&gt;
 
 ---
@@ -1899,7 +1899,7 @@ As we looked at last month with Continuum, the latency of incorporating the late
 ## Banana rotting time
 
 &lt;div align="center"&gt;
- &lt;img height="440px" src="https://maxhalford.github.io/img/slides/creme/banana_rotting_time.png" /&gt;
+ &lt;img height="440px" src="https://khaleel737.github.io/img/slides/creme/banana_rotting_time.png" /&gt;
 &lt;/div&gt;
 
 ---
@@ -1907,7 +1907,7 @@ As we looked at last month with Continuum, the latency of incorporating the late
 ### "If everyone's doing it, it's got to be the best way, right?"
 
 &lt;div align="center"&gt;
- &lt;img height="480px" src="https://maxhalford.github.io/img/slides/creme/everyone_is_doing_it.png" /&gt;
+ &lt;img height="480px" src="https://khaleel737.github.io/img/slides/creme/everyone_is_doing_it.png" /&gt;
 &lt;/div&gt;
 
 ---
@@ -1915,7 +1915,7 @@ As we looked at last month with Continuum, the latency of incorporating the late
 ## Kappa architecture
 
 &lt;div align="center"&gt;
- &lt;img height="500px" src="https://maxhalford.github.io/img/slides/creme/kappa_architecture.svg" /&gt;
+ &lt;img height="500px" src="https://khaleel737.github.io/img/slides/creme/kappa_architecture.svg" /&gt;
 &lt;/div&gt;
 
 ???
@@ -2003,7 +2003,7 @@ class: middle, white
 
 class: center, middle
 
-&lt;img height="400px" src="https://maxhalford.github.io/img/slides/creme/edward-bear-bump-bump.png" /&gt;
+&lt;img height="400px" src="https://khaleel737.github.io/img/slides/creme/edward-bear-bump-bump.png" /&gt;
 
 &gt; It is, as far as he knows, the only way of coming downstairs, but sometimes he feels that there really is another way, if only he could stop bumping for a moment and think of it.
 
@@ -2016,7 +2016,7 @@ And just like Winnie the Pooh, we're spending too much time banging our heads to
 class: middle
 
 &lt;div align="center"&gt;
- &lt;img height="250" src="https://maxhalford.github.io/img/slides/creme/creme.svg" alt="creme_logo"/&gt;
+ &lt;img height="250" src="https://khaleel737.github.io/img/slides/creme/creme.svg" alt="creme_logo"/&gt;
 &lt;/div&gt;
 
 .bullets[
@@ -2034,7 +2034,7 @@ class: center, middle
 ### PyData Amsterdam, May 2019 🐍 🇳🇱 🧀
 
 &lt;div align="center"&gt;
- &lt;img height="400px" src="https://maxhalford.github.io/img/slides/creme/max_pydata.jpg" /&gt;
+ &lt;img height="400px" src="https://khaleel737.github.io/img/slides/creme/max_pydata.jpg" /&gt;
 &lt;/div&gt;
 
 ---
@@ -2194,7 +2194,7 @@ model.draw()
 
 .right-column[
 &lt;div align="center"&gt;
- &lt;img height="400px" src="https://maxhalford.github.io/img/slides/creme/pipeline.svg" /&gt;
+ &lt;img height="400px" src="https://khaleel737.github.io/img/slides/creme/pipeline.svg" /&gt;
 &lt;/div&gt;
 ]
 
@@ -2484,7 +2484,7 @@ class: middle, white
 ### Alternative frameworks
 
 &lt;div align="center"&gt;
- &lt;img height="500px" src="https://maxhalford.github.io/img/slides/creme/others.svg" /&gt;
+ &lt;img height="500px" src="https://khaleel737.github.io/img/slides/creme/others.svg" /&gt;
 &lt;/div&gt;
 
 ---
@@ -2585,13 +2585,13 @@ class: center, middle
 
 .left-column[
 &lt;div align="center"&gt;
- &lt;img height="440px" src="https://maxhalford.github.io/img/slides/creme/yoda.jpg" /&gt;
+ &lt;img height="440px" src="https://khaleel737.github.io/img/slides/creme/yoda.jpg" /&gt;
 &lt;/div&gt;
 ]
 
 .right-column[
 &lt;div align="center" style="margin-top: 50px;"&gt;
- &lt;img height="400px" src="https://maxhalford.github.io/img/slides/creme/qr_code.svg" /&gt;
+ &lt;img height="400px" src="https://khaleel737.github.io/img/slides/creme/qr_code.svg" /&gt;
 &lt;/div&gt;
 ]
 
@@ -2626,7 +2626,7 @@ class: center, middle
  );
  &lt;/script&gt;
  &lt;/body&gt;
-&lt;/html&gt;</description></item><item><title>An introduction to symbolic regression</title><link>https://maxhalford.github.io/slides/symbolic-regression/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>maxhalford25@gmail.com (Max Halford)</author><guid>https://maxhalford.github.io/slides/symbolic-regression/</guid><description>&lt;div align="center"&gt;
+&lt;/html&gt;</description></item><item><title>An introduction to symbolic regression</title><link>https://khaleel737.github.io/slides/symbolic-regression/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>maxhalford25@gmail.com (Khaleel Musleh)</author><guid>https://khaleel737.github.io/slides/symbolic-regression/</guid><description>&lt;div align="center"&gt;
 &lt;h1&gt;An introduction to symbolic regression&lt;/h1&gt;
 &lt;h3&gt;Max Halford - PhD student IRIT/IMT&lt;/h3&gt;
 &lt;h4&gt;Toulouse Data Science Meetup - December 2017&lt;/h4&gt;
@@ -2654,13 +2654,13 @@ layout: true
 
 ---
 
-&lt;img src="https://maxhalford.github.io/assets/img/presentations/evolutionary_algorithms.png" width="120%"&gt;
+&lt;img src="https://khaleel737.github.io/assets/img/presentations/evolutionary_algorithms.png" width="120%"&gt;
 
 ---
 
 ## Example programs
 
-&lt;img src="https://maxhalford.github.io/assets/img/presentations/example_programs.png" width="100%"&gt;
+&lt;img src="https://khaleel737.github.io/assets/img/presentations/example_programs.png" width="100%"&gt;
 
 ---
 

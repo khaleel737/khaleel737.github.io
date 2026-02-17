@@ -3,70 +3,70 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Projects - Khaleel's Terminal Portfolio</title>
+    <title>Projects - Khaleel</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
-        <h1>Projects</h1>
-        <p class="terminal-prompt">ls -la ~/projects/<span class="blink">_</span></p>
+        <h1>projects</h1>
     </header>
 
     <nav>
-        <a href="/">home</a>
-        <a href="about">about</a>
-        <a href="projects" class="active">projects</a>
-        <a href="skills">skills</a>
-        <a href="contact">contact</a>
-        <a href="blog">blog</a>
+        <a href="/">[home]</a>
+        <a href="about">[about]</a>
+        <a href="projects" class="active">[projects]</a>
+        <a href="skills">[skills]</a>
+        <a href="contact">[contact]</a>
+        <a href="blog">[blog]</a>
     </nav>
 
+    <div class="divider">========================================</div>
+
     <main>
-        <section>
-            <h2>$ cat projects_list.txt</h2>
+        <p class="prompt">ls ~/projects/</p>
 
-            <div class="project-item">
-                <h3>Project Alpha</h3>
-                <p><strong>Tech Stack:</strong> JavaScript, HTML, CSS</p>
-                <p><strong>Description:</strong> A web application that demonstrates modern web development practices and responsive design.</p>
-                <p><strong>Status:</strong> Completed</p>
-            </div>
+        <div class="item">
+            <h3>Project Alpha</h3>
+            <p>JavaScript, HTML, CSS</p>
+            <p>Modern web app with responsive design.</p>
+            <p><em>completed</em></p>
+        </div>
 
-            <div class="project-item">
-                <h3>Project Beta</h3>
-                <p><strong>Tech Stack:</strong> Python, APIs, Data Processing</p>
-                <p><strong>Description:</strong> Automation tool that streamlines workflows and increases productivity.</p>
-                <p><strong>Status:</strong> Completed</p>
-            </div>
+        <div class="item">
+            <h3>Project Beta</h3>
+            <p>Python, APIs, Data Processing</p>
+            <p>Automation tool for streamlining workflows.</p>
+            <p><em>completed</em></p>
+        </div>
 
-            <div class="project-item">
-                <h3>Project Gamma</h3>
-                <p><strong>Tech Stack:</strong> Full Stack Development</p>
-                <p><strong>Description:</strong> End-to-end solution for managing and organizing data efficiently.</p>
-                <p><strong>Status:</strong> In Progress</p>
-            </div>
+        <div class="item">
+            <h3>Project Gamma</h3>
+            <p>Full Stack</p>
+            <p>End-to-end data management solution.</p>
+            <p><em>in progress</em></p>
+        </div>
 
-            <div class="project-item">
-                <h3>Open Source Contributions</h3>
-                <p><strong>Description:</strong> Active contributor to various open source projects, helping improve documentation, fix bugs, and add features.</p>
-                <p><strong>Status:</strong> Ongoing</p>
-            </div>
-        </section>
+        <div class="item">
+            <h3>Open Source</h3>
+            <p>Contributing to docs, bugs, and features across projects.</p>
+            <p><em>ongoing</em></p>
+        </div>
 
-        <section>
-            <h2>$ cat upcoming.txt</h2>
-            <ul>
-                <li>Machine Learning Integration Project</li>
-                <li>Mobile Application Development</li>
-                <li>Cloud-based Solutions</li>
-                <li>More Open Source Contributions</li>
-            </ul>
-        </section>
+        <div class="divider">----------------------------------------</div>
+
+        <p class="prompt">cat upcoming.txt</p>
+        <ul>
+            <li>Machine Learning Integration</li>
+            <li>Mobile App Development</li>
+            <li>Cloud-based Solutions</li>
+            <li>More Open Source</li>
+        </ul>
     </main>
 
+    <div class="divider">========================================</div>
+
     <footer>
-        <p>&copy; 2026 Khaleel's Terminal Portfolio</p>
-        <p>Built with HTML & CSS</p>
+        <p>khaleel@portfolio:~$ // 2026</p>
     </footer>
 </body>
 </html>

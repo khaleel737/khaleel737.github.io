@@ -3,36 +3,38 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Blog - Khaleel's Terminal Portfolio</title>
+    <title>Blog - Khaleel</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
-        <h1>Blog</h1>
-        <p class="terminal-prompt">cat ~/blog/posts.log<span class="blink">_</span></p>
+        <h1>blog</h1>
     </header>
 
     <nav>
-        <a href="/">home</a>
-        <a href="about">about</a>
-        <a href="projects">projects</a>
-        <a href="skills">skills</a>
-        <a href="contact">contact</a>
-        <a href="blog" class="active">blog</a>
+        <a href="/">[home]</a>
+        <a href="about">[about]</a>
+        <a href="projects">[projects]</a>
+        <a href="skills">[skills]</a>
+        <a href="contact">[contact]</a>
+        <a href="blog" class="active">[blog]</a>
     </nav>
+
+    <div class="divider">========================================</div>
 
     <main id="blog-content">
         <p>Loading...</p>
     </main>
 
+    <div class="divider">========================================</div>
+
     <footer>
-        <p>&copy; 2026 Khaleel's Terminal Portfolio</p>
-        <p>Built with HTML & CSS</p>
+        <p>khaleel@portfolio:~$ // 2026</p>
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
     <script>
-        const content = document.getElementById('blog-content');
+        var content = document.getElementById('blog-content');
 
         function getSlug() {
             return window.location.hash.slice(1);
@@ -43,19 +45,21 @@
                 content.innerHTML = '<p>No posts yet.</p>';
                 return;
             }
-            const items = posts.map(function(post) {
-                return '<li>'
-                    + '<a href="blog#' + post.slug + '">' + post.title + '</a>'
-                    + '<div class="post-date">' + post.date + '</div>'
-                    + '<div class="post-desc">' + post.description + '</div>'
+            var html = '<p class="prompt">ls posts/</p><ul class="post-list">';
+            for (var i = 0; i < posts.length; i++) {
+                var p = posts[i];
+                html += '<li>'
+                    + '<a href="blog#' + p.slug + '">' + p.title + '</a>'
+                    + ' <span class="post-date">(' + p.date + ')</span>'
+                    + '<br><span class="post-desc">' + p.description + '</span>'
                     + '</li>';
-            }).join('');
-            content.innerHTML = '<section><h2>$ ls posts/</h2>'
-                + '<ul class="post-list">' + items + '</ul></section>';
+            }
+            html += '</ul>';
+            content.innerHTML = html;
         }
 
         function renderPost(markdown) {
-            content.innerHTML = '<a href="blog" class="back-link">&larr; back to posts</a>'
+            content.innerHTML = '<a href="blog" class="back-link">&lt;-- back to posts</a>'
                 + '<div class="blog-content">' + marked.parse(markdown) + '</div>';
         }
 
@@ -63,21 +67,21 @@
             var slug = getSlug();
             if (!slug) {
                 fetch('posts/posts.json')
-                    .then(function(res) { return res.json(); })
+                    .then(function(r) { return r.json(); })
                     .then(renderPostList)
                     .catch(function() {
                         content.innerHTML = '<p>Could not load posts.</p>';
                     });
             } else {
                 fetch('posts/' + slug + '.md')
-                    .then(function(res) {
-                        if (!res.ok) throw new Error('Not found');
-                        return res.text();
+                    .then(function(r) {
+                        if (!r.ok) throw new Error('Not found');
+                        return r.text();
                     })
                     .then(renderPost)
                     .catch(function() {
                         content.innerHTML = '<p>Post not found.</p>'
-                            + '<a href="blog" class="back-link">&larr; back to posts</a>';
+                            + '<a href="blog" class="back-link">&lt;-- back to posts</a>';
                     });
             }
         }

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog - Khaleel's Terminal Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Blog</h1>
+        <p class="terminal-prompt">cat ~/blog/posts.log<span class="blink">_</span></p>
+    </header>
+
+    <nav>
+        <a href="/">home</a>
+        <a href="about">about</a>
+        <a href="projects">projects</a>
+        <a href="skills">skills</a>
+        <a href="contact">contact</a>
+        <a href="blog" class="active">blog</a>
+    </nav>
+
+    <main id="blog-content">
+        <p>Loading...</p>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Khaleel's Terminal Portfolio</p>
+        <p>Built with HTML & CSS</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <script>
+        const content = document.getElementById('blog-content');
+
+        function getSlug() {
+            return window.location.hash.slice(1);
+        }
+
+        function renderPostList(posts) {
+            if (posts.length === 0) {
+                content.innerHTML = '<p>No posts yet.</p>';
+                return;
+            }
+            const items = posts.map(function(post) {
+                return '<li>'
+                    + '<a href="blog#' + post.slug + '">' + post.title + '</a>'
+                    + '<div class="post-date">' + post.date + '</div>'
+                    + '<div class="post-desc">' + post.description + '</div>'
+                    + '</li>';
+            }).join('');
+            content.innerHTML = '<section><h2>$ ls posts/</h2>'
+                + '<ul class="post-list">' + items + '</ul></section>';
+        }
+
+        function renderPost(markdown) {
+            content.innerHTML = '<a href="blog" class="back-link">&larr; back to posts</a>'
+                + '<div class="blog-content">' + marked.parse(markdown) + '</div>';
+        }
+
+        function loadContent() {
+            var slug = getSlug();
+            if (!slug) {
+                fetch('posts/posts.json')
+                    .then(function(res) { return res.json(); })
+                    .then(renderPostList)
+                    .catch(function() {
+                        content.innerHTML = '<p>Could not load posts.</p>';
+                    });
+            } else {
+                fetch('posts/' + slug + '.md')
+                    .then(function(res) {
+                        if (!res.ok) throw new Error('Not found');
+                        return res.text();
+                    })
+                    .then(renderPost)
+                    .catch(function() {
+                        content.innerHTML = '<p>Post not found.</p>'
+                            + '<a href="blog" class="back-link">&larr; back to posts</a>';
+                    });
+            }
+        }
+
+        window.addEventListener('hashchange', loadContent);
+        loadContent();
+    </script>
+</body>
+</html>

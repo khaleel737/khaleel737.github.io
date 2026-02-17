@@ -6,8 +6,8 @@
 }
 
 body {
-    background-color: #000000;
-    color: #00ff00;
+    background-color: #1a1a1a;
+    color: #d4d4d4;
     font-family: 'Courier New', Courier, monospace;
     line-height: 1.6;
     padding: 20px;
@@ -16,29 +16,28 @@ body {
 }
 
 header {
-    border-bottom: 2px solid #00ff00;
+    border-bottom: 1px solid #444;
     padding-bottom: 20px;
     margin-bottom: 30px;
 }
 
 h1 {
-    color: #00ff00;
+    color: #e0e0e0;
     font-size: 2em;
     margin-bottom: 10px;
-    text-shadow: 0 0 5px #00ff00;
 }
 
 h2 {
-    color: #00ff00;
+    color: #e0e0e0;
     font-size: 1.5em;
     margin-top: 30px;
     margin-bottom: 15px;
-    border-bottom: 1px solid #00ff00;
+    border-bottom: 1px solid #444;
     padding-bottom: 5px;
 }
 
 h3 {
-    color: #00ff00;
+    color: #e0e0e0;
     font-size: 1.2em;
     margin-top: 20px;
     margin-bottom: 10px;
@@ -49,55 +48,56 @@ nav {
 }
 
 nav a {
-    color: #00ff00;
+    color: #d4d4d4;
     text-decoration: none;
     margin-right: 20px;
     padding: 5px 10px;
-    border: 1px solid #00ff00;
+    border: 1px solid #444;
     transition: all 0.3s ease;
 }
 
 nav a:hover {
-    background-color: #00ff00;
-    color: #000000;
-    box-shadow: 0 0 10px #00ff00;
+    background-color: #333;
+    color: #ffffff;
 }
 
 nav a.active {
-    background-color: #00ff00;
-    color: #000000;
+    background-color: #333;
+    color: #ffffff;
 }
 
 .ascii-art {
-    color: #00ff00;
+    color: #d4d4d4;
     font-size: 0.8em;
     white-space: pre;
     overflow-x: auto;
     margin: 20px 0;
-    text-shadow: 0 0 2px #00ff00;
 }
 
 .terminal-prompt {
-    color: #00ff00;
+    color: #d4d4d4;
     margin: 20px 0;
 }
 
 .terminal-prompt::before {
     content: '> ';
-    color: #00ff00;
+    color: #e0e0e0;
 }
 
 section {
     margin: 30px 0;
-    padding: 20px;
-    border: 1px solid #00ff00;
-    background-color: rgba(0, 255, 0, 0.02);
+    padding: 20px 0;
+    border-bottom: 1px solid #333;
+}
+
+section:last-child {
+    border-bottom: none;
 }
 
 .project-item, .skill-item {
     margin: 15px 0;
     padding: 10px;
-    border-left: 3px solid #00ff00;
+    border-left: 2px solid #444;
     padding-left: 15px;
 }
 
@@ -107,26 +107,26 @@ ul {
 }
 
 ul li::before {
-    content: '► ';
-    color: #00ff00;
+    content: '> ';
+    color: #e0e0e0;
 }
 
 a {
-    color: #00ff00;
+    color: #ffffff;
     text-decoration: underline;
 }
 
 a:hover {
     color: #ffffff;
-    text-shadow: 0 0 5px #00ff00;
+    opacity: 0.8;
 }
 
 footer {
     margin-top: 50px;
     padding-top: 20px;
-    border-top: 2px solid #00ff00;
+    border-top: 1px solid #444;
     text-align: center;
-    color: #00ff00;
+    color: #d4d4d4;
 }
 
 .blink {
@@ -138,17 +138,103 @@ footer {
     50%, 100% { opacity: 0; }
 }
 
+/* Blog styles */
+.post-list {
+    list-style: none;
+    padding-left: 0;
+}
+
+.post-list li {
+    margin: 20px 0;
+    padding: 15px 0;
+    border-bottom: 1px solid #333;
+}
+
+.post-list li::before {
+    content: none;
+}
+
+.post-list a {
+    font-size: 1.2em;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.post-list a:hover {
+    text-decoration: underline;
+}
+
+.post-list .post-date {
+    color: #888;
+    font-size: 0.9em;
+    margin-top: 4px;
+}
+
+.post-list .post-desc {
+    color: #aaa;
+    margin-top: 4px;
+}
+
+.blog-content {
+    line-height: 1.8;
+}
+
+.blog-content h1,
+.blog-content h2,
+.blog-content h3 {
+    margin-top: 24px;
+    margin-bottom: 12px;
+}
+
+.blog-content p {
+    margin-bottom: 12px;
+}
+
+.blog-content pre {
+    background-color: #111;
+    padding: 16px;
+    overflow-x: auto;
+    border: 1px solid #333;
+    margin: 16px 0;
+}
+
+.blog-content code {
+    background-color: #111;
+    padding: 2px 6px;
+}
+
+.blog-content blockquote {
+    border-left: 2px solid #444;
+    padding-left: 16px;
+    color: #aaa;
+    margin: 16px 0;
+}
+
+.back-link {
+    display: inline-block;
+    margin-bottom: 20px;
+    color: #d4d4d4;
+    text-decoration: none;
+    border: 1px solid #444;
+    padding: 5px 10px;
+}
+
+.back-link:hover {
+    background-color: #333;
+    color: #ffffff;
+}
+
 /* Responsive design */
 @media (max-width: 768px) {
     body {
         padding: 10px;
     }
-    
+
     nav a {
         display: block;
         margin: 10px 0;
     }
-    
+
     .ascii-art {
         font-size: 0.6em;
     }

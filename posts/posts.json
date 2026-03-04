@@ -4,5 +4,11 @@
     "title": "Hello World",
     "date": "2026-02-17",
     "description": "My first blog post."
+  },
+  {
+    "slug": "salvation-through-suffering",
+    "title": "Salvation Through Suffering",
+    "date": "2026-03-04",
+    "description": "Constrain and elegance in the face of adversity."
   }
 ]
